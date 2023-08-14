@@ -18,7 +18,7 @@
 <td style="padding:0; margin:0;">
 
 | Proje         | Durum  |
-| :-  	        |	-:	   |
+| :-  	        | :-     |
 | Libft         | [![nunnu's 42 Libft Score](https://badge42.vercel.app/api/v2/cldyzvso800060fmnnkmsw17v/project/3144746)](https://github.com/nisaunnu/42_School_Curses/tree/libft)|
 | get_next_line | [![nunnu's 42 get_next_line](https://badge42.vercel.app/api/v2/cldyzvso800060fmnnkmsw17v/project/3208387)](https://github.com/nisaunnu/42_School_Curses/tree/get_next_line)|
 | ft_printf     | [![nunnu's 42 ft_printf](https://badge42.vercel.app/api/v2/cldyzvso800060fmnnkmsw17v/project/3208180)](https://github.com/nisaunnu/42_School_Curses/tree/ft_printf)|
