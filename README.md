@@ -17,7 +17,7 @@
 <tr style="display:flex; justify-content:space-around; paddind:0;">
 <td style="padding:0; margin:0;">
 
-| Proje         | Durum  |
+| Circle 0 & 1  | Durum  |
 | :-  	        | :-     |
 | Libft         | [![nunnu's 42 Libft Score](https://badge42.vercel.app/api/v2/cldyzvso800060fmnnkmsw17v/project/3144746)](https://github.com/nisaunnu/42_School_Curses/tree/libft)|
 | get_next_line | [![nunnu's 42 get_next_line](https://badge42.vercel.app/api/v2/cldyzvso800060fmnnkmsw17v/project/3208387)](https://github.com/nisaunnu/42_School_Curses/tree/get_next_line)|
