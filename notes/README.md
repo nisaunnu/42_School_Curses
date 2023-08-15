@@ -18,15 +18,15 @@
 12. `"->"` Operatörü Nedir?
 13. Node Nedir?
 14. Fonksiyonlar Hakkında Satır Açıklamaları
-   1. `is` ile başlayan fonksiyonlar : Neden `int` veri tipi ile argüman alınır?
-   2. `ft_memset` : Neden `void *b` tanımlandıktan sonra `unsigned char *b` tanımlıyoruz?
-   3. `ft_memcpy` : `if (dst == src)` ve `else if (ds > sr)`kod satırlarında yer alan dizilerin karşılaştırılmaları nasıl yapılıyor?
-   4. `ft_memmove` ve `ft_memcpy` : Overloop Durumu
-   5. `ft_strlcpy` : fonksiyon açıklaması, `ft_strlen(src)`kulanımı ve `size - 1` yazımı
-   6. `ft_strmapi` : `f(i, s[i])` anlamı
-   7. `libft.h` : bonus kısmında eklenmesi zorunlu `struct` açıklaması
-   8. `ft_lstdelone` : `del` fonksiyonu nasıl kullanılır?
-15. Makefile
+    1.  `is` ile başlayan fonksiyonlar : Neden `int` veri tipi ile argüman alınır?
+    2.  `ft_memset` : Neden `void *b` tanımlandıktan sonra `unsigned char *b` tanımlıyoruz?
+    3.  `ft_memcpy` : `if (dst == src)` ve `else if (ds > sr)`kod satırlarında yer alan dizilerin karşılaştırılmaları nasıl yapılıyor?
+    4.  `ft_memmove` ve `ft_memcpy` : Overloop Durumu
+    5.  `ft_strlcpy` : fonksiyon açıklaması, `ft_strlen(src)`kulanımı ve `size - 1` yazımı
+    6.  `ft_strmapi` : `f(i, s[i])` anlamı
+    7.  `libft.h` : bonus kısmında eklenmesi zorunlu `struct` açıklaması
+    8.  `ft_lstdelone` : `del` fonksiyonu nasıl kullanılır?
+16. Makefile
     1.  Derleyici
         *  Derleme Adımları
         *  Linker (Bağlayıcı)
