@@ -27,7 +27,7 @@
 	- [`ft_strlcpy` : fonksiyon açıklaması, `ft_strlen(src)`kullanımı ve `size - 1` yazımı](#ft_strlcpy--fonksiyon-açıklaması-ft_strlensrckullanımı-ve-size---1-yazımı)
 	- [`ft_strmapi` : `f(i, s[i])` anlamı](#ft_strmapi--fi-si-anlamı)
 	- [`libft.h` : bonus kısmında eklenmesi zorunlu `struct` açıklaması](#libfth--bonus-kısmında-eklenmesi-zorunlu-struct-açıklaması)
-	- [`ft_lstnew` : neden `t_list *ft_lstnew` şeklinde fonksiyonu tanımlıyoruz?](#ft_lstnew--neden-t_listft_lstnew-şeklinde-fonksiyonu-tanımlıyoruz)
+	- [`ft_lstnew` : neden `t_list *ft_lstnew` şeklinde fonksiyonu tanımlıyoruz?](#ft_lstnew--neden-t_list-ft_lstnew-şeklinde-fonksiyonu-tanımlıyoruz)
 	- [`ft_lstdelone` : `del` fonksiyonu nasıl kullanılır?](#ft_lstdelone--del-fonksiyonu-nasıl-kullanılır)
 - [Makefile](#makefile)
 	- [Derleyici](#derleyici)
