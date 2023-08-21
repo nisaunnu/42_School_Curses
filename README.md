@@ -1,5 +1,9 @@
 # 42 Curses Libft
 Ecole 42 okullarında 42Curses (ana eğitim) olarak ilk yapılan proje libft projesidir. Libft projesi, kendi kütüphanemizi oluşturmaya olanak tanır. Sonraki projeler için bu kütüphane kullanılacaktır. Bu github deposu libft için gerekli açıklamaları ve kodları içermektedir.
+<br>
+
+Libft projesinin notlarına ulaşmak için [tıklayınız](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes).
+
 <br></br>
 
 ## Fonksiyonlar
