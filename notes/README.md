@@ -27,7 +27,7 @@
 	- [`ft_strlcpy` : fonksiyon açıklaması, `ft_strlen(src)`kullanımı ve `size - 1` yazımı](#ft_strlcpy--fonksiyon-açıklaması-ft_strlensrckullanımı-ve-size---1-yazımı)
 	- [`ft_strmapi` : `f(i, s[i])` anlamı](#ft_strmapi--fi-si-anlamı)
 	- [`libft.h` : bonus kısmında eklenmesi zorunlu `struct` açıklaması](#libfth--bonus-kısmında-eklenmesi-zorunlu-struct-açıklaması)
-	- [`ft_lstnew` : neden `t_list	*ft_lstnew` şeklinde fonksiyonu tanımlıyoruz?](#ft_lstnew--neden-t_listft_lstnew-şeklinde-fonksiyonu-tanımlıyoruz)
+	- [`ft_lstnew` : neden `t_list *ft_lstnew` şeklinde fonksiyonu tanımlıyoruz?](#ft_lstnew--neden-t_listft_lstnew-şeklinde-fonksiyonu-tanımlıyoruz)
 	- [`ft_lstdelone` : `del` fonksiyonu nasıl kullanılır?](#ft_lstdelone--del-fonksiyonu-nasıl-kullanılır)
 - [Makefile](#makefile)
 	- [Derleyici](#derleyici)
@@ -624,7 +624,7 @@ Bu kod parçası, C programlama dilinde bir bağlı liste veri yapısını (link
 Kısacası, bu kod parçası bir bağlı liste veri yapısını tanımlar. Her eleman, içeriği `void *` türünde bir işaretçi olan `content` ve bir sonraki elemana işaret eden bir işaretçi olan `next` içerir. Bu yapının kullanımı, dinamik veri depolama ve elemanları bağlama gereksinimlerini karşılamak için oldukça yaygındır.
 <br></br>
 
-## `ft_lstnew` : neden `t_list	*ft_lstnew` şeklinde fonksiyonu tanımlıyoruz?
+## `ft_lstnew` : neden `t_list *ft_lstnew` şeklinde fonksiyonu tanımlıyoruz?
 
 Bir struct yapıları dizisi veya bağlı liste gibi veri yapıları oluşturmak istediğinizde, her bir elemanın farklı büyüklükte olabileceği durumlar söz konusu olabilir. Dinamik bellek tahsisi, her bir elemanın ihtiyaca göre ayarlanabilmesini sağlar. Bu yüzden `ft_lstnew` fonksiyonunu yazarken `malloc`kullanılmalıdır.
 
