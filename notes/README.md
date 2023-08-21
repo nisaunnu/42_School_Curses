@@ -1,42 +1,40 @@
 # Libft Projesi Notları
 
 ## İçerik
-
-- [`typedef` nedir?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#typedef-nedir)
-- [`size_t` ne demek?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#size_t-ne-demek)
-- [`const` nedir?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#const-nedir)
-- [`src + i` ifadesi nedir?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#src--i-ifadesi-nedir)
-- [Type Casting (Tür Dönüştürme)](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#type-casting-tür-dönüştürme)
-- [Char - Integer Dönüşümü : ASCII Temelli Yaklaşım](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#char---integer-dönüşümü--ascii-temelli-yaklaşım)
-- [`malloc` Kullanımı ve Heap Bellek](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#malloc-kullanımı-ve-heap-bellek)
-- [Tür Dönüşümü ile `malloc` Kullanımı: Bellek Ayırma ve Veri Türü Uyumu](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#tür-dönüşümü-ile-malloc-kullanımı-bellek-ayırma-ve-veri-türü-uyumu)
-- [File Descriptor (FD) ve `open` Fonksiyonu: Dosya Açma Modları ve Seçenekleri](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#file-descriptor-fd-ve-open-fonksiyonu-dosya-açma-modları-ve-seçenekleri)
-	- [File Descriptor (FD)](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#file-descriptor-fd)
-	- [`open` Fonksiyonu ve Dosya Açma Seçenekleri](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#open-fonksiyonu-ve-dosya-açma-seçenekleri)
-- [`struct` nedir?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#struct-nedir)
-	- [`struct pointer` nedir ve neden kullanılır?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#struct-pointer-nedir-ve-neden-kullanılır)
-	- [`struct`'larda Operatörler ve Kullanımları](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#structlarda-operatörler-ve-kullanımları)
-		- [Nokta (Point) Operatörü (.)](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#nokta-point-operatörü-)
-		- [Ok İşareti (Arrow) Operatörü (-\>)](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#ok-i̇şareti-arrow-operatörü--)
-		- [Operatörler Hakkında Ek Bilgiler](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#operatörler-hakkında-ek-bilgiler)
-- [Bağlı Liste ve Node Nedir?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#bağlı-liste-ve-node-nedir)
-- [Fonksiyonlar Hakkında Satır Açıklamaları](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#fonksiyonlar-hakkında-satır-açıklamaları)
-	- [`is` ile başlayan fonksiyonlar : Neden `int` veri tipi ile argüman alınır?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#is-ile-başlayan-fonksiyonlar--neden-int-veri-tipi-ile-argüman-alınır)
-	- [`ft_memset` : Neden `void *b` tanımlandıktan sonra `unsigned char *b` tanımlıyoruz?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#ft_memset--neden-void-b-tanımlandıktan-sonra-unsigned-char-b-tanımlıyoruz)
-	- [`ft_memcpy` : `if (dst == src)` ve `else if (ds > sr)`kod satırlarında yer alan dizilerin karşılaştırılmaları nasıl yapılıyor?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#ft_memcpy--if-dst--src-ve-else-if-ds--srkod-satırlarında-yer-alan-dizilerin-karşılaştırılmaları-nasıl-yapılıyor)
-	- [`ft_memmove` ve `ft_memcpy` : Overloop Durumu](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#ft_memmove-ve-ft_memcpy--overloop-durumu)
-	- [`ft_strlcpy` : fonksiyon açıklaması, `ft_strlen(src)`kulanımı ve `size - 1` yazımı](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#ft_strlcpy--fonksiyon-açıklaması-ft_strlensrckulanımı-ve-size---1-yazımı)
-	- [`ft_strmapi` : `f(i, s[i])` anlamı](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#ft_strmapi--fi-si-anlamı)
-	- [`libft.h` : bonus kısmında eklenmesi zorunlu `struct` açıklaması](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#libfth--bonus-kısmında-eklenmesi-zorunlu-struct-açıklaması)
-	- [`ft_lstnew` : neden `t_list	*ft_lstnew` şeklinde fonksiyonu tanımlıyoruz?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#ft_lstnew--neden-t_listft_lstnew-şeklinde-fonksiyonu-tanımlıyoruz)
-	- [`ft_lstdelone` : `del` fonksiyonu nasıl kullanılır?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#ft_lstdelone--del-fonksiyonu-nasıl-kullanılır)
-- [Makefile](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#makefile)
-	- [Derleyici](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#derleyici)
-		- [Derleme Adımları](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#derleme-adımları)
-		- [Linker (Bağlayıcı)](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#linker-bağlayıcı)
-		- [Statik Kitaplık](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#statik-kitaplık)
-	- [Makefile Dosya İçeriği (Basic)](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#makefile-dosya-i̇çeriği-basic)
-
+- [`typedef` nedir?](#typedef-nedir)
+- [`size_t` ne demek?](#size_t-ne-demek)
+- [`const` nedir?](#const-nedir)
+- [`src + i` ifadesi nedir?](#src--i-ifadesi-nedir)
+- [Type Casting (Tür Dönüştürme)](#type-casting-tür-dönüştürme)
+- [Char - Integer Dönüşümü : ASCII Temelli Yaklaşım](#char---integer-dönüşümü--ascii-temelli-yaklaşım)
+- [`malloc` Kullanımı ve Heap Bellek](#malloc-kullanımı-ve-heap-bellek)
+- [Tür Dönüşümü ile `malloc` Kullanımı: Bellek Ayırma ve Veri Türü Uyumu](#tür-dönüşümü-ile-malloc-kullanımı-bellek-ayırma-ve-veri-türü-uyumu)
+- [File Descriptor (FD) ve `open` Fonksiyonu: Dosya Açma Modları ve Seçenekleri](#file-descriptor-fd-ve-open-fonksiyonu-dosya-açma-modları-ve-seçenekleri)
+	- [File Descriptor (FD)](#file-descriptor-fd)
+	- [`open` Fonksiyonu ve Dosya Açma Seçenekleri](#open-fonksiyonu-ve-dosya-açma-seçenekleri)
+- [`struct` nedir?](#struct-nedir)
+	- [`struct pointer` nedir ve neden kullanılır?](#struct-pointer-nedir-ve-neden-kullanılır)
+	- [`struct`'larda Operatörler ve Kullanımları](#structlarda-operatörler-ve-kullanımları)
+		- [Nokta (Point) Operatörü (.)](#nokta-point-operatörü-)
+		- [Ok İşareti (Arrow) Operatörü (-\>)](#ok-i̇şareti-arrow-operatörü--)
+		- [Operatörler Hakkında Ek Bilgiler](#operatörler-hakkında-ek-bilgiler)
+- [Bağlı Liste ve Node Nedir?](#bağlı-liste-ve-node-nedir)
+- [Fonksiyonlar Hakkında Satır Açıklamaları](#fonksiyonlar-hakkında-satır-açıklamaları)
+	- [`is` ile başlayan fonksiyonlar : Neden `int` veri tipi ile argüman alınır?](#is-ile-başlayan-fonksiyonlar--neden-int-veri-tipi-ile-argüman-alınır)
+	- [`ft_memset` : Neden `void *b` tanımlandıktan sonra `unsigned char *b` tanımlıyoruz?](#ft_memset--neden-void-b-tanımlandıktan-sonra-unsigned-char-b-tanımlıyoruz)
+	- [`ft_memcpy` : `if (dst == src)` ve `else if (ds > sr)`kod satırlarında yer alan dizilerin karşılaştırılmaları nasıl yapılıyor?](#ft_memcpy--if-dst--src-ve-else-if-ds--srkod-satırlarında-yer-alan-dizilerin-karşılaştırılmaları-nasıl-yapılıyor)
+	- [`ft_memmove` ve `ft_memcpy` : Overloop Durumu](#ft_memmove-ve-ft_memcpy--overloop-durumu)
+	- [`ft_strlcpy` : fonksiyon açıklaması, `ft_strlen(src)`kullanımı ve `size - 1` yazımı](#ft_strlcpy--fonksiyon-açıklaması-ft_strlensrckullanımı-ve-size---1-yazımı)
+	- [`ft_strmapi` : `f(i, s[i])` anlamı](#ft_strmapi--fi-si-anlamı)
+	- [`libft.h` : bonus kısmında eklenmesi zorunlu `struct` açıklaması](#libfth--bonus-kısmında-eklenmesi-zorunlu-struct-açıklaması)
+	- [`ft_lstnew` : neden `t_list	*ft_lstnew` şeklinde fonksiyonu tanımlıyoruz?](#ft_lstnew--neden-t_listft_lstnew-şeklinde-fonksiyonu-tanımlıyoruz)
+	- [`ft_lstdelone` : `del` fonksiyonu nasıl kullanılır?](#ft_lstdelone--del-fonksiyonu-nasıl-kullanılır)
+- [Makefile](#makefile)
+	- [Derleyici](#derleyici)
+		- [Derleme Adımları](#derleme-adımları)
+		- [Linker (Bağlayıcı)](#linker-bağlayıcı)
+		- [Statik Kitaplık](#statik-kitaplık)
+	- [Makefile Dosya İçeriği (Basic)](#makefile-dosya-i̇çeriği-basic)
 
 <br></br>
 
@@ -574,20 +572,20 @@ if (dst == src) ve else if (ds > sr) ifadeleri, ft_memcpy fonksiyonunun içinde 
 ## `ft_memmove` ve `ft_memcpy` : Overloop Durumu
 memcpy işlevi, bellekteki verilerin bir bellek bloğundan başka bir bellek bloğuna kopyalanmasını sağlar. Ancak, memcpy işlevinin kullanımında dikkat edilmesi gereken bir durum, kaynak ve hedef bellek blokları arasında bir overlap durumu olup olmadığıdır.
 
-Eğer memcpy işlevinde kaynak ve hedef bellek blokları tamamen ayrık ve birbirinden bağımsız ise, yani herhangi bir örtüşme (overlap) yoksa, bir sorun oluşmaz ve veriler doğru şekilde kopyalanır.
+Eğer memcpy işlevinde kaynak ve hedef bellek blokları tamamen ayrık ve birbirinden bağımsız ise, yani herhangi bir örtüşme (overloop) yoksa, bir sorun oluşmaz ve veriler doğru şekilde kopyalanır.
 
-Fakat, kaynak ve hedef bellek blokları arasında bir örtüşme (overlap) varsa (iki bellek bloğu birbirini kısmen veya tamamen içeriyorsa) memcpy işlevi tanımsız bir davranışa neden olur. Bu durumda, sonuç öngörülemez ve istenmeyen sonuçlar ortaya çıkabilir.
+Fakat, kaynak ve hedef bellek blokları arasında bir örtüşme (overloop) varsa (iki bellek bloğu birbirini kısmen veya tamamen içeriyorsa) memcpy işlevi tanımsız bir davranışa neden olur. Bu durumda, sonuç öngörülemez ve istenmeyen sonuçlar ortaya çıkabilir.
 
-Overlap durumu, kaynak ve hedef bellek bloklarının adreslerinin ilişkisine bağlıdır.
+Overloop durumu, kaynak ve hedef bellek bloklarının adreslerinin ilişkisine bağlıdır.
 
-Overlap durumunun oluşma koşulu:
-* Kaynak bellek bloğunun adresi, hedef bellek bloğunun adresinden daha önceyse overlap durumu oluşur.
-* Hedef bellek bloğunun adresi, kaynak bellek bloğunun adresinden daha önceyse, overlap durumu oluşur.
+Overloop durumunun oluşma koşulu:
+* Kaynak bellek bloğunun adresi, hedef bellek bloğunun adresinden daha önceyse overloop durumu oluşur.
+* Hedef bellek bloğunun adresi, kaynak bellek bloğunun adresinden daha önceyse, overloop durumu oluşur.
 
 memmove işlevi, kaynak ve hedef arabelleklerinin overlap durumu olduğunda kullanılmalıdır. Memcpy işlevi yalnızca overlap durumu olmadığında kullanılmalıdır.
 <br></br>
 
-## `ft_strlcpy` : fonksiyon açıklaması, `ft_strlen(src)`kulanımı ve `size - 1` yazımı
+## `ft_strlcpy` : fonksiyon açıklaması, `ft_strlen(src)`kullanımı ve `size - 1` yazımı
 src'yi dest'e kopyalama işlemi gerçekleştirir ve dest'in sonuna '\0' atayarak dest'i sonlandırır.
 
 return (ft_strlen(src)); kullanılmasının nedeni, ft_strlcpy işlevinin dönüş değerinin kaynak dizinin uzunluğunu yansıtmasıdır.
@@ -652,8 +650,8 @@ t_list	*ft_lstnew(void *content)
 
 Kod açıklamaları:
 * **`void *content` kullanılma nedeni:** ft_lstnew fonksiyonunun daha genel ve esnek olmasını sağlamak için kullanılır. void işaretçisi (void *) herhangi bir türdeki veriye işaret edebilir, bu nedenle fonksiyona farklı veri tiplerinde içerikleri iletebilmenizi sağlar. Bu yöntem, veri yapısıyla çalışırken tür uyumsuzluğunu gidermeye yardımcı olur ve fonksiyonun daha geniş bir kullanım alanına sahip olmasını sağlar.
-* **`new`'in `t_list *` türünde olmasının nedeni:** `malloc` ile `t_list` boyutunda bellekte yer ayırmasını gerçekleştirdikten sonra bir pointer'a atamak gereklidir (Bunun nedenini **["`malloc` Kullanımı ve Heap Bellek"](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#malloc-kullanımı-ve-heap-bellek)** aslı başlıktan detaylarına bakabilirsiniz.). Bu pointer'da yukarıda bahsedilen kod loğundaki `new` olur böylelikle.
-* **Arrow (`->`) operatörü kullanılmasının nedeni:** `Struct pointer` kullanıldığı için arrow operatörü kullanılmaktadır. new değişkeni `t_list` olarak tanımlansaydı eğer point (.) operatörü kullanılacaktı. Bu konunun detaylı açıklamasına **["`struct`'larda Operatörler ve Kullanımları"](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#structlarda-operatörler-ve-kullanımları)** adlı başlıktan detaylarına bakabilirsiniz.
+* **`new`'in `t_list *` türünde olmasının nedeni:** `malloc` ile `t_list` boyutunda bellekte yer ayırmasını gerçekleştirdikten sonra bir pointer'a atamak gereklidir (Bunun nedenini **["`malloc` Kullanımı ve Heap Bellek"](#malloc-kullanımı-ve-heap-bellek)** adlı başlıktan detaylarına bakabilirsiniz.). Bu pointer'da yukarıda bahsedilen kod loğundaki `new` olur böylelikle.
+* **Arrow (`->`) operatörü kullanılmasının nedeni:** `Struct pointer` kullanıldığı için arrow operatörü kullanılmaktadır. new değişkeni `t_list` olarak tanımlansaydı eğer point (.) operatörü kullanılacaktı. Bu konunun detaylı açıklamasına **["`struct`'larda Operatörler ve Kullanımları"](#structlarda-operatörler-ve-kullanımları)** adlı başlıktan detaylarına bakabilirsiniz.
 
 <br></br>
 
@@ -737,7 +735,7 @@ Derleyici, yüksek seviyeli bir dilde yazılmış bir programı, makine dili gib
 ---
 * Derleyici; önişlemci kaynak kodu alır, yorumları ve kütüphaneleri kaldırır, makroları genişletir ve başlık dosyası içeriklerini çözer.
 * Derleyici, kodu assembly diline çevirir. Oluşan dosya uzantısı ".s" tir.
-* Derleyici, assembly dilindeki kodu makine dili olan object code'a çevrir. Oluşan dosya uzantısı ".o" dur.
+* Derleyici, assembly dilindeki kodu makine dili olan object code'a çevirir. Oluşan dosya uzantısı ".o" dur.
 * Bağlayıcı (Linker) daha sonra makine dili nesne dosyalarını (.o uzantılı dosya) yürütülebilir bir dosyaya bağlar.
 <br></br>
 
