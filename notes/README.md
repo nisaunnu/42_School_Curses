@@ -652,8 +652,8 @@ t_list	*ft_lstnew(void *content)
 
 Kod açıklamaları:
 * **`void *content` kullanılma nedeni:** ft_lstnew fonksiyonunun daha genel ve esnek olmasını sağlamak için kullanılır. void işaretçisi (void *) herhangi bir türdeki veriye işaret edebilir, bu nedenle fonksiyona farklı veri tiplerinde içerikleri iletebilmenizi sağlar. Bu yöntem, veri yapısıyla çalışırken tür uyumsuzluğunu gidermeye yardımcı olur ve fonksiyonun daha geniş bir kullanım alanına sahip olmasını sağlar.
-* **`new`'in `t_list *` türünde olmasının nedeni:** `malloc` ile `t_list` boyutunda bellekte yer ayırmasını gerçekleştirdikten sonra bir pointer'a atamak gereklidir (Bunun nedenini **"`malloc` Kullanımı ve Heap Bellek"** aslı başlıktan detaylarına bakabilirsiniz.). Bu pointer'da yukarıda bahsedilen kod loğundaki `new` olur böylelikle.
-* **Arrow (`->`) operatörü kullanılmasının nedeni:** `Struct pointer` kullanıldığı için arrow operatörü kullanılmaktadır. new değişkeni `t_list` olarak tanımlansaydı eğer point (.) operatörü kullanılacaktı. Bu konunun detaylı açıklamasına **"`struct`'larda Operatörler ve Kullanımları"** adlı başlıktan detaylarına bakabilirsiniz.
+* **`new`'in `t_list *` türünde olmasının nedeni:** `malloc` ile `t_list` boyutunda bellekte yer ayırmasını gerçekleştirdikten sonra bir pointer'a atamak gereklidir (Bunun nedenini **["`malloc` Kullanımı ve Heap Bellek"](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#malloc-kullanımı-ve-heap-bellek)** aslı başlıktan detaylarına bakabilirsiniz.). Bu pointer'da yukarıda bahsedilen kod loğundaki `new` olur böylelikle.
+* **Arrow (`->`) operatörü kullanılmasının nedeni:** `Struct pointer` kullanıldığı için arrow operatörü kullanılmaktadır. new değişkeni `t_list` olarak tanımlansaydı eğer point (.) operatörü kullanılacaktı. Bu konunun detaylı açıklamasına **["`struct`'larda Operatörler ve Kullanımları"](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#structlarda-operatörler-ve-kullanımları)** adlı başlıktan detaylarına bakabilirsiniz.
 
 <br></br>
 
