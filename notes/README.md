@@ -2,36 +2,40 @@
 
 ## İçerik
 
-1. `typedef` nedir?
-2. `size_t` ne demek?
-3. `const` nedir?
-4. `src + i` ifadesi nedir?
-5. Type Casting (Tür Dönüştürme)
-6. Char - Integer Dönüşümü : ASCII Temelli Yaklaşım
-7. `malloc` Kullanımı ve Heap Bellek
-8. Tür Dönüşümü ile `malloc` Kullanımı: Bellek Ayırma ve Veri Türü Uyumu
-9.  File Descriptor (FD) ve `open` Fonksiyonu: Dosya Açma Modları ve Seçenekleri
-    1.  File Descriptor (FD)
-    2.  `open` Fonksiyonu ve Dosya Açma Seçenekleri
-10. `struct` nedir?
-11. Bağlı Liste Nedir?
-12. `"->"` Operatörü Nedir?
-13. Node Nedir?
-14. Fonksiyonlar Hakkında Satır Açıklamaları
-    1.  `is` ile başlayan fonksiyonlar : Neden `int` veri tipi ile argüman alınır?
-    2.  `ft_memset` : Neden `void *b` tanımlandıktan sonra `unsigned char *b` tanımlıyoruz?
-    3.  `ft_memcpy` : `if (dst == src)` ve `else if (ds > sr)`kod satırlarında yer alan dizilerin karşılaştırılmaları nasıl yapılıyor?
-    4.  `ft_memmove` ve `ft_memcpy` : Overloop Durumu
-    5.  `ft_strlcpy` : fonksiyon açıklaması, `ft_strlen(src)`kulanımı ve `size - 1` yazımı
-    6.  `ft_strmapi` : `f(i, s[i])` anlamı
-    7.  `libft.h` : bonus kısmında eklenmesi zorunlu `struct` açıklaması
-    8.  `ft_lstdelone` : `del` fonksiyonu nasıl kullanılır?
-16. Makefile
-    1.  Derleyici
-        *  Derleme Adımları
-        *  Linker (Bağlayıcı)
-        *  Statik Kitaplık
-    2.  Makefile Dosya İçeriği (Basic)
+- [`typedef` nedir?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#typedef-nedir)
+- [`size_t` ne demek?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#size_t-ne-demek)
+- [`const` nedir?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#const-nedir)
+- [`src + i` ifadesi nedir?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#src--i-ifadesi-nedir)
+- [Type Casting (Tür Dönüştürme)](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#type-casting-tür-dönüştürme)
+- [Char - Integer Dönüşümü : ASCII Temelli Yaklaşım](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#char---integer-dönüşümü--ascii-temelli-yaklaşım)
+- [`malloc` Kullanımı ve Heap Bellek](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#malloc-kullanımı-ve-heap-bellek)
+- [Tür Dönüşümü ile `malloc` Kullanımı: Bellek Ayırma ve Veri Türü Uyumu](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#tür-dönüşümü-ile-malloc-kullanımı-bellek-ayırma-ve-veri-türü-uyumu)
+- [File Descriptor (FD) ve `open` Fonksiyonu: Dosya Açma Modları ve Seçenekleri](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#file-descriptor-fd-ve-open-fonksiyonu-dosya-açma-modları-ve-seçenekleri)
+	- [File Descriptor (FD)](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#file-descriptor-fd)
+	- [`open` Fonksiyonu ve Dosya Açma Seçenekleri](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#open-fonksiyonu-ve-dosya-açma-seçenekleri)
+- [`struct` nedir?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#struct-nedir)
+	- [`struct pointer` nedir ve neden kullanılır?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#struct-pointer-nedir-ve-neden-kullanılır)
+	- [`struct`'larda Operatörler ve Kullanımları](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#structlarda-operatörler-ve-kullanımları)
+		- [Nokta (Point) Operatörü (.)](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#nokta-point-operatörü-)
+		- [Ok İşareti (Arrow) Operatörü (-\>)](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#ok-i̇şareti-arrow-operatörü--)
+		- [Operatörler Hakkında Ek Bilgiler](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#operatörler-hakkında-ek-bilgiler)
+- [Bağlı Liste ve Node Nedir?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#bağlı-liste-ve-node-nedir)
+- [Fonksiyonlar Hakkında Satır Açıklamaları](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#fonksiyonlar-hakkında-satır-açıklamaları)
+	- [`is` ile başlayan fonksiyonlar : Neden `int` veri tipi ile argüman alınır?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#is-ile-başlayan-fonksiyonlar--neden-int-veri-tipi-ile-argüman-alınır)
+	- [`ft_memset` : Neden `void *b` tanımlandıktan sonra `unsigned char *b` tanımlıyoruz?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#ft_memset--neden-void-b-tanımlandıktan-sonra-unsigned-char-b-tanımlıyoruz)
+	- [`ft_memcpy` : `if (dst == src)` ve `else if (ds > sr)`kod satırlarında yer alan dizilerin karşılaştırılmaları nasıl yapılıyor?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#ft_memcpy--if-dst--src-ve-else-if-ds--srkod-satırlarında-yer-alan-dizilerin-karşılaştırılmaları-nasıl-yapılıyor)
+	- [`ft_memmove` ve `ft_memcpy` : Overloop Durumu](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#ft_memmove-ve-ft_memcpy--overloop-durumu)
+	- [`ft_strlcpy` : fonksiyon açıklaması, `ft_strlen(src)`kulanımı ve `size - 1` yazımı](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#ft_strlcpy--fonksiyon-açıklaması-ft_strlensrckulanımı-ve-size---1-yazımı)
+	- [`ft_strmapi` : `f(i, s[i])` anlamı](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#ft_strmapi--fi-si-anlamı)
+	- [`libft.h` : bonus kısmında eklenmesi zorunlu `struct` açıklaması](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#libfth--bonus-kısmında-eklenmesi-zorunlu-struct-açıklaması)
+	- [`ft_lstnew` : neden `t_list	*ft_lstnew` şeklinde fonksiyonu tanımlıyoruz?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#ft_lstnew--neden-t_listft_lstnew-şeklinde-fonksiyonu-tanımlıyoruz)
+	- [`ft_lstdelone` : `del` fonksiyonu nasıl kullanılır?](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#ft_lstdelone--del-fonksiyonu-nasıl-kullanılır)
+- [Makefile](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#makefile)
+	- [Derleyici](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#derleyici)
+		- [Derleme Adımları](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#derleme-adımları)
+		- [Linker (Bağlayıcı)](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#linker-bağlayıcı)
+		- [Statik Kitaplık](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#statik-kitaplık)
+	- [Makefile Dosya İçeriği (Basic)](https://github.com/nisaunnu/42_School_Curses/tree/libft/notes#makefile-dosya-i̇çeriği-basic)
 
 
 <br></br>
@@ -253,6 +257,12 @@ Bu basit aritmetik işlem sayesinde, rakam karakterlerini tamsayılara dönüşt
 
 Bellek tahsis edilen bu alan, **"heap"** adı verilen bellek bölgesinde yer alır. **Heap**, programın çalışma zamanında dinamik olarak yönetilen bir bellek alanıdır. Veriler ve nesneler genellikle heap bellek alanında saklanır ve bu alanın boyutu çalışma zamanında belirlenir.
 
+`malloc` fonksiyonu, bellekte dinamik olarak bir alan ayırır ve bu bellek bloğunun başlangıç adresini (pointer'ı) döndürür. Ayırdığınız bellek bloğunu kullanabilmeniz için bu başlangıç adresini bir pointer değişkenine atamanız gerekmektedir. Yani, malloc'un döndürdüğü bellek adresini bir pointer ile saklamanız, o bellek bloğuna erişim sağlamak için gereklidir. Bunun nedeni şunlardır:
+
+* **Bellek Erişimi:** Ayırdığınız bellek bloğuna erişmek ve içeriği değiştirmek için bir pointer gereklidir. Pointer, bellek bloğunun başlangıç adresini tutar ve bu adresi kullanarak belleğe erişim sağlar.
+* **Bellek Kontrolü:** Bellek bloğunun ne kadar alan kapladığını ve ne kadar kullanıldığını takip etmek önemlidir. Pointer, başlangıç adresini sakladığı için, malloc ile ayırdığınız bellek bloğunu kontrol etmenizi sağlar ve gerektiğinde belleği serbest bırakmanızı sağlar.
+* **Bellek Serbest Bırakma:** malloc ile ayrılan bellek bloğunu programın bitiminden önce serbest bırakmanız gerekmektedir. Bu, bellek sızıntılarını önlemek için önemlidir. Belleği serbest bırakmak için de bellek bloğunun başlangıç adresine erişim sağlayan bir pointer kullanmanız gerekir.
+
 Aşağıda, malloc ve heap bellek alanını kullanarak bir örnek bulunmaktadır:
 
 ```c
@@ -368,7 +378,175 @@ int main()
 
 <br></br>
 
+# `struct` nedir?
+
+`struct (structure)`, farklı veri tiplerini bir araya getirerek kendi veri tipinizi oluşturmanızı sağlayan bir yapıdır. Bu, farklı türlerdeki verileri tek bir yapı içinde gruplayarak daha düzenli ve anlamlı veri yapıları oluşturmanızı sağlar. Örneğin; bir kişinin adını, yaşını ve telefon numarasını saklamak için bir struct oluşturabilirsiniz.
+
+struct yapısını tanımlamak:
+
+```c
+struct Person {
+    char	name[50];
+    int		age;
+    char	phone[15];
+};
+```
+
+Oluşturduğunuz struct yapısını kullanmak için, struct türünden değişkenler oluşturabilir ve bu değişkenler üzerinden veri elemanlarına erişebilirsiniz. Örneğin, "Person" struct'ınızı kullanarak bir kişiyi temsil eden bir değişken oluşturabilirsiniz. Bu değişken üzerinden struct'ın veri elemanlarına erişebilir ve bu verileri kullanabilirsiniz.
+
+Önceki örnekteki "struct Person" yapısını kullanarak bir kişiyi temsil eden bir değişken oluşturmak:
+
+```c
+struct Person person1;
+```
+
+"person1" değişkeninin veri elemanlarına erişerek yeni veriler atamak:
+```c
+person1.name = "Venus";
+person1.age = 22;
+person1.phone = "121-212";
+```
+
+Struct'lar C programlama dilinde veri yapılarını düzenlemek ve yönetmek için kullanışlıdır.
+
+`struct` 'ların yaygın kullanım alanları:
+* Karmaşık veri yapılarını temsil etmek
+* Veriyi gruplamak
+* Veriyi yönetmek
+
+<br></br>
+
+## `struct pointer` nedir ve neden kullanılır?
+
+<br>
+
+`Struct pointer`, bir struct türündeki veri yapısının bellek adresini tutan bir göstericidir. Bu pointer, struct'ın elemanlarına erişim sağlamak için kullanılır. `Struct pointer`'ları, struct'ın veri elemanlarına direkt olarak değil, o struct'ın bellek adresine işaret ederek erişim sağlar.
+
+Bir fonksiyona struct'ı adres olarak göndermenin temel nedeni, struct'ın kopyasını oluşturmak yerine doğrudan orijinal struct üzerinde işlem yapma yeteneğini elde etmektir. C programlama dilinde fonksiyonlara argümanlar geçirildiğinde, argümanlar varsayılan olarak değer kopyaları olarak aktarılır. Bu, fonksiyonun aldığı argümanın kopyasının fonksiyon içerisinde oluşturulduğu ve bu kopya üzerinde işlem yapıldığı anlamına gelir.
+
+Ancak, struct pointer'ları kullanarak struct'ın bellek adresini fonksiyona aktarabilirsiniz. Bu sayede, fonksiyon, bu bellek adresine sahip struct'ın orijinal verisine erişebilir ve bunun üzerinde değişiklikler yapabilir.
+
+`struct pointer`'ları ile bir fonksiyona struct'ın adresini gönderme nedenleri:
+
+* **Bellek ve Performans Tasarrufu:** Struct'ın kopyasını oluşturmak yerine, adresi üzerinden erişim yaparak gereksiz bellek kopyalamasını önleriz. Bu daha hızlı çalışmaya ve bellek kullanımında tasarrufa yol açar.
+* **Veri Değişiklikleri:** Fonksiyon içerisinde struct'ın içeriğine yapılan değişiklikler, orijinal struct üzerinde de etki eder. Bu, fonksiyonun sonuçlarından dönen struct veya değer dönüşlerine gerek kalmadan veri değişikliklerini elde etmenizi sağlar.
+* **Karmaşık Veri Yapıları:** Struct'lar genellikle karmaşık veri yapılarını temsil eder. Bu veri yapıları büyük olabilir ve bunları kopyalamanın maliyeti yüksek olabilir. Struct pointer'ları kullanarak, fonksiyonlara bu karmaşık veri yapılarını daha verimli bir şekilde aktarabilirsiniz.
+
+<br></br>
+
+## `struct`'larda Operatörler ve Kullanımları
+
+<br>
+
+`Struct`'ların ve `struct pointer`'larının üyelerine erişmek için kullanılan operatörler vardır. Bu operatörlerin işlevleri ve nasıl kullanıldıkları şu şekildedir:
+
+<br>
+
+### Nokta (Point) Operatörü (.)
+---
+Nokta operatörü, bir struct değişkeninin veya structın kendisinin veri elemanlarına erişmek için kullanılır. Yani, struct değişkeni tanımlandığında doğrudan kullanılır.
+
+```c
+// Point isminde ve içerisinde 2 tane int tipinde değişken olan bir struct tanımladık
+struct Point {
+    int x;
+    int y;
+};
+
+// struct Point tipini kullanan p1 adında bir değişken oluşturduk
+struct Point p1;
+
+// p1 değişkenine ait x değerini 10, y değerini 20 olarak atadık
+p1.x = 10;
+p1.y = 20;
+```
+
+<br>
+
+### Ok İşareti (Arrow) Operatörü (->)
+---
+Ok işareti operatörü, `struct pointer`'larının gösterdiği bellek alanlarındaki veri elemanlarına erişmek için kullanılır. Yani, `struct pointer`'ı üzerinden elemanlara erişilir.
+
+```c
+// Point isminde ve içerisinde 2 tane int tipinde değişken olan bir struct tanımladık
+struct Point {
+    int x;
+    int y;
+};
+
+struct Point p1;
+
+// ptr değişkenine p1 adresini atayarak işaret ediyoruz
+struct Point *ptr = &p1;
+
+// p1 değişkeninin x değeri 30, y değeri 40 olacaktır
+ptr->x = 30;
+ptr->y = 40;
+```
+Burada ptr adında bir `struct pointer`'ı tanımlandı ve ptr ile `struct`'ın elemanlarına erişilmiştir.
+
+Özet: Nokta operatörü bir struct değişkeninin elemanlarına erişmek için kullanılırken, ok işareti operatörü struct pointer'larının gösterdiği bellek alanlarındaki elemanlara erişmek için kullanılır.
+
+<br>
+
+### Operatörler Hakkında Ek Bilgiler
+---
+
+Eğer bir struct pointer'ı kullanıyorsanız, ok işareti operatörü (->) ile erişim yapmanız gerekmektedir. Nokta operatörü (.) yalnızca struct değişkenlerine uygulanabilir.
+
+Doğru erişim şekilleri:
+
+* Struct değişkeni: `p1.x = 12;`
+* Struct pointer'ı: `ptr->x = 12;`
+
+<br>
+
+**p1->x = 12 şeklinde atama yapamaz mıyım?**
+<br>
+
+Hayır. Doğru erişim şekli p1.x olmalıdır. Struct değişkenlerine nokta operatörü (.) ile erişilirken, struct pointer'larına (ptr) ok işareti operatörü (->) ile erişilir.
+
+Yani, p1->x = 12; şeklinde erişim yapılamaz, bunun yerine p1.x = 12; şeklinde erişim yapmanız gerekmektedir.
+
+<br></br>
+
+# Bağlı Liste ve Node Nedir?
+
+<br>
+
+Bağlı liste (linked list), veri elemanlarını (veri) ve bu elemanların bir sonraki elemanın adresini (bağ) içeren düğümlerden oluşan bir veri yapısıdır. Bu yapı, veri elemanlarını sıralı bir şekilde saklamak ve manipüle etmek için kullanılır. Her düğüm, veriyi saklamak için kullanılan bir alan ve bir sonraki düğümün adresini tutan bir alan içerir. Bu sayede elemanlar arasında sıralı bir ilişki oluşturulur.
+
+Bağlı listeler, veri ekleme, çıkarma ve manipülasyon işlemlerini etkili bir şekilde gerçekleştirmenizi sağlar.
+
+<br>
+
+Bağlı listelerin temel bileşenleri:
+* **Düğüm (Node):** Bir veri elemanını saklayan, bir sonraki düğümün adresini içeren yapılardır. Her düğüm, en az iki bileşen içerir: veri elemanı ve bir sonraki düğümün adresi. Düğümler verileri sakladığı gibi, birbiriyle bağlantı kurarak liste oluştururlar.
+* **Veri (Data):** Her düğümde saklanan gerçek veriyi ifade eder. Bu veri, bağlı listenin amacına göre farklı tipte olabilir (örneğin, tam sayı, metin, yapılardan oluşan veri vb.).
+* **Bağ (Link):** Düğümler arasındaki ilişkiyi ifade eder. Bir düğümün bir sonraki düğümünü gösteren bir referans içermesi, düğümleri birbirine bağlar.
+
+<br>
+
+Bağlı listelerin türleri:
+* **Tek Yönlü Bağlı Liste (Singly Linked List):** Her düğüm, sadece bir sonraki düğümün adresini içerir. Listenin sonu, son düğümün sonraki düğümünü temsil eden bir gösterge (NULL) ile belirtilir. Burada her düğümde bir veri elemanı ve bir sonraki düğümün adresi bulunur. Örneğin, 1 numaralı düğümün verisi 1'dir ve bir sonraki düğüm olan 2 numaralı düğümü işaret eder. Aynı şekilde, 2 numaralı düğümün verisi 2'dir ve bir sonraki düğüm olan 3 numaralı düğümü işaret eder, ve böyle devam eder.
+  ```rust
+  1 -> 2 -> 3 -> 4 -> NULL
+  ```
+* **Çift Yönlü Bağlı Liste (Doubly Linked List):** Her düğüm, hem bir sonraki düğümün hem de önceki düğümün adresini içerir. Bu, düğümlerin hem ileri hem de geri yönde gezinilebilmesini sağlar.
+  ```rust
+  NULL <- 1 <-> 2 <-> 3 <-> 4 <-> 5 -> NULL
+  ```
+* **Dairesel Bağlı Liste (Circular Linked List):** Tek yönlü veya çift yönlü bağlı listenin son düğümü, ilk düğümü işaret eder. Böylece liste döngüsel bir yapıya sahip olur.
+  ```rust
+  1 -> 2 -> 3 -> 4 -> 5 -> 1
+  ```
+
+
+<br></br>
+
 # Fonksiyonlar Hakkında Satır Açıklamaları
+
+<br>
 
 ## `is` ile başlayan fonksiyonlar : Neden `int` veri tipi ile argüman alınır?
 
@@ -429,7 +607,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 `ft_strmapi`fonksiyonu yukarıda belirtildiği gibi yazılması istenilmiştir. Çağırılan fonksiyonun ilk girdisi `unsigned int` türünde, ikinci girdisi ise `char`türünde olmalıdır. Fonksiyonun dönüşü (return ettiği) `char *` olmalıdır. `main` dışında bu fonksiyon yazılmalıdır.
 <br></br>
 
-## `libft.h`: bonus kısmında eklenmesi zorunlu `struct` açıklaması
+## `libft.h` : bonus kısmında eklenmesi zorunlu `struct` açıklaması
 ```c
 typedef struct s_list
 {
@@ -446,6 +624,37 @@ Bu kod parçası, C programlama dilinde bir bağlı liste veri yapısını (link
 * `struct s_list *next`: Bu ifade, `s_list` yapısının bir diğer elemanıdır ve bir sonraki bağlı listesinin elemanına işaret eden bir işaretçi olan `next` adında bir değişkeni temsil eder. Bu, bağlı listelerdeki elemanları birbirine bağlamak için kullanılır.
 
 Kısacası, bu kod parçası bir bağlı liste veri yapısını tanımlar. Her eleman, içeriği `void *` türünde bir işaretçi olan `content` ve bir sonraki elemana işaret eden bir işaretçi olan `next` içerir. Bu yapının kullanımı, dinamik veri depolama ve elemanları bağlama gereksinimlerini karşılamak için oldukça yaygındır.
+<br></br>
+
+## `ft_lstnew` : neden `t_list	*ft_lstnew` şeklinde fonksiyonu tanımlıyoruz?
+
+Bir struct yapıları dizisi veya bağlı liste gibi veri yapıları oluşturmak istediğinizde, her bir elemanın farklı büyüklükte olabileceği durumlar söz konusu olabilir. Dinamik bellek tahsisi, her bir elemanın ihtiyaca göre ayarlanabilmesini sağlar. Bu yüzden `ft_lstnew` fonksiyonunu yazarken `malloc`kullanılmalıdır.
+
+`ft_lstnew` fonksiyonunun dönüş değeri `t_list` türünde bir değişken değil, `t_list` türünden bir `struct pointer` (`t_list *`) olmalıdır.
+
+Bunun nedeni, `ft_lstnew` fonksiyonunun dinamik bellek tahsis etmesi ve bu bellek bloğunun adresini döndürmesi gerektiğidir. Eğer `t_list` türünden bir struct değişkeni döndürürseniz, bellekte tahsis edilen alanın adresini geri döndürme imkanınız olmaz.
+
+```c
+t_list	*ft_lstnew(void *content)
+{
+	t_list	*new;
+
+	new = malloc(sizeof(t_list)); // Bellek tahsis ediliyor
+	if (!new)
+		return (0);               // Bellek tahsisi başarısız olduysa 0 döndürülüyor
+	new->content = content;
+	new->next = NULL;
+	return (new);                 // Yeni oluşturulan t_list yapısının adresi döndürülüyor
+}
+```
+
+<br>
+
+Kod açıklamaları:
+* **`void *content` kullanılma nedeni:** ft_lstnew fonksiyonunun daha genel ve esnek olmasını sağlamak için kullanılır. void işaretçisi (void *) herhangi bir türdeki veriye işaret edebilir, bu nedenle fonksiyona farklı veri tiplerinde içerikleri iletebilmenizi sağlar. Bu yöntem, veri yapısıyla çalışırken tür uyumsuzluğunu gidermeye yardımcı olur ve fonksiyonun daha geniş bir kullanım alanına sahip olmasını sağlar.
+* **`new`'in `t_list *` türünde olmasının nedeni:** `malloc` ile `t_list` boyutunda bellekte yer ayırmasını gerçekleştirdikten sonra bir pointer'a atamak gereklidir (Bunun nedenini **"`malloc` Kullanımı ve Heap Bellek"** aslı başlıktan detaylarına bakabilirsiniz.). Bu pointer'da yukarıda bahsedilen kod loğundaki `new` olur böylelikle.
+* **Arrow (`->`) operatörü kullanılmasının nedeni:** `Struct pointer` kullanıldığı için arrow operatörü kullanılmaktadır. new değişkeni `t_list` olarak tanımlansaydı eğer point (.) operatörü kullanılacaktı. Bu konunun detaylı açıklamasına **"`struct`'larda Operatörler ve Kullanımları"** adlı başlıktan detaylarına bakabilirsiniz.
+
 <br></br>
 
 ## `ft_lstdelone` : `del` fonksiyonu nasıl kullanılır?
@@ -516,21 +725,24 @@ Makefile yazmak için bazı ek ipuçları:
 * Makefile dosyanızın ne yaptığını açıklamak için yorumları kullanın. Bu, makefile dosyanızın bakımını kolaylaştıracaktır.
 * Yaygın olarak kullanılan değerleri saklamak için değişkenleri kullanın. Bu, makefile dosyanızı daha özlü ve okunması kolay hale getirecektir.
 * Diğer makefile dosyalarını dahil etmek için `include` direktifini kullanın. Bu, makefile dosyalarınızı düzenlemek için yararlı olabilir.
+
 <br></br>
 
-## **Derleyici**
+## Derleyici
 
 Derleyici, yüksek seviyeli bir dilde yazılmış bir programı, makine dili gibi düşük seviyeli bir dildeki bir programa çeviren bir programdır.
 <br></br>
 
-### **Derleme Adımları**
+### Derleme Adımları
+---
 * Derleyici; önişlemci kaynak kodu alır, yorumları ve kütüphaneleri kaldırır, makroları genişletir ve başlık dosyası içeriklerini çözer.
 * Derleyici, kodu assembly diline çevirir. Oluşan dosya uzantısı ".s" tir.
 * Derleyici, assembly dilindeki kodu makine dili olan object code'a çevrir. Oluşan dosya uzantısı ".o" dur.
 * Bağlayıcı (Linker) daha sonra makine dili nesne dosyalarını (.o uzantılı dosya) yürütülebilir bir dosyaya bağlar.
 <br></br>
 
-### **Linker (Bağlayıcı)**
+### Linker (Bağlayıcı)
+---
 
 Bağlayıcı, nesne dosyalarını alan ve bunları yürütülebilir bir dosyada birleştiren bir programdır. Bağlayıcı ayrıca, işlev çağrıları ve genel değişkenler gibi nesne dosyaları arasındaki referansları da çözer.
 
@@ -545,7 +757,8 @@ Bağlayıcı hakkında bazı ek ayrıntılar şunlardır:
 * Bağlayıcı, statik kitaplıklar oluşturmak için de kullanılabilir.
 <br></br>
 
-### **Statik Kitaplık**
+### Statik Kitaplık
+---
 
 Statik kitaplık, yürütülebilir bir dosya oluşturmak için birbirine bağlanabilen bir nesne dosyaları koleksiyonudur. Statik kitaplıklar genellikle farklı programlar arasında kod paylaşmak için kullanılır.
 
@@ -556,9 +769,9 @@ Statik bir kitaplık oluşturmak için `ar` komutunu kullanmanız gerekir. "ar" 
 ```makefile
 ar rcs libft.a ft_strcat.o ft_strcmp.o
 ```
-<br>
+<br></br>
 
-## **Makefile Dosya İçeriği (Basic)**
+## Makefile Dosya İçeriği (Basic)
 
 Makefile; değişken bildirimleri, kaynak dosyalar, nesne dosyaları ve statik kitaplık gibi projede kullanılacak farklı dosyaların adlarını tanımlar. Hedef kurallar, projede farklı dosyalar oluşturmak için atılması gereken adımları tanımlar. Örneğin, `all` hedefi için hedef kuralı şöyle görünebilir:
 
