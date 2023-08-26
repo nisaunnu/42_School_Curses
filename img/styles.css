@@ -1,0 +1,20 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px solid;
+    padding: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
