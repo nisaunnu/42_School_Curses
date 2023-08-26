@@ -248,14 +248,12 @@ Kodun recursive fonksiyon kısımını şema üzerinden detaylı olarak inceleye
 <br>
 
 ## ft_printf.c : `int ft_printf(const char *format, ...)`
----
 - `char *format` : Bu argüman, biçim dizisini temsil eder. Biçim dizisi, çıktının nasıl biçimlendirileceğini belirten bir metin dizisidir. Biçim dizisi içinde özel belirteçler kullanılarak farklı türlerdeki verileri çıktıya eklemek mümkün olur. *(Örnek: Çift tırnak içerisine yazılan kısım yani %c, %s, %d vb.)*
 - `... (üç nokta)` : Bu ifade, değişken sayıda argümanın işleve geçirileceğini gösterir. Bu argümanlar, biçim dizisinde kullanılan belirteçlere göre sırayla işleve aktarılır. *(Örnek: 'c', "proje", 12 vb.)*
 
 <br></br>
 
 ## ft_printf.c : `va_list arg`
----
 `va_list` bir C standardı kütüphanesi olan `<stdarg.h>` içerisinde tanımlanan bir türdür. Değişken sayıda argüman alan işlevlerin (örneğin printf) nasıl çalıştığını yönetmek için kullanılır. Bu tür, bir işlevin değişken sayıda argümanlarını taşımak ve bu argümanlara erişmek için kullanılan bir mekanizmadır.
 
 `va_list` türü, değişken sayıda argümanları işlemek için kullanılan bir mekanizmayı temsil eder. Bu tür, bir argüman listesini, yani değişken sayıda argümanları tutmaz. Bunun yerine, `va_list` daha çok bir işaretçi benzeri bir yapıdır ve argüman listesini işaret eder.
@@ -265,7 +263,6 @@ C programlama dili, işlevlere sabit sayıda argümanlar geçirmek için tasarla
 <br></br>
 
 ## ft_printf.c : `va_start(arg, format)`
----
 `va_start` işlevi, `<stdarg.h>` başlık dosyasında tanımlanan bir işlevdir ve değişken sayıda argüman alan bir işlevin kullanımını başlatmak için kullanılır. `va_start` ile `arg` adında bir `va_list` türünden değişkeni hazırlar.
 
 `va_start(arg, format)` ise şunu ifade etmektedir: format'tan sonra girilecekleri `arg` adındaki değişken olarak hazırla.
@@ -273,7 +270,6 @@ C programlama dili, işlevlere sabit sayıda argümanlar geçirmek için tasarla
 <br></br>
 
 ## ft_printf.c : `va_end(arg)`
----
 `va_end` fonksiyonu, değişken argüman listesinin sonlandırılması için kullanılır. Bu fonksiyonu, bellek sızıntılarını önlemek ve argüman listesinin düzgün bir şekilde sonlandırılmasını sağlamak için gereklidir.
 
 `va_end(arg)` anlamı: `arg` değişken argüman listesini sonlandır.
@@ -281,7 +277,6 @@ C programlama dili, işlevlere sabit sayıda argümanlar geçirmek için tasarla
 <br></br>
 
 ## ft_printf.c : `va_arg(arg, (data_type))`
----
 `va_arg`, değişken argüman listesi içindeki değerlere erişim sağlamak için kullanılan bir makro işlevidir. Bu makro, özellikle değişken sayıda argüman alan fonksiyonlar (örneğin, printf) içinde kullanılır. Değişken argüman listesi, bir fonksiyonun belirli bir sayıda sabit argümanın yanı sıra değişken sayıda ek argüman almasını sağlar. `va_arg` makrosu, bu değişken argümanları işlemek için kullanılır. Kullanımı oldukça dikkat gerektiren bir konudur, çünkü argümanların türlerini ve sıralarını doğru bir şekilde bilmek önemlidir.
 
 **`va_arg` makrosu; ilk çağırıldığında birinci argümanı, ikinciye çağırıldığında ikinci argümanı alır. Örneğin; aşağıdaki örnekte argümanlarımız 10, 20 ve 30'dur. `va_arg` ilk çağırıldığında 10, ikinci çağırıldığında 20, üçüncü çağırıldığında 30 değerini alır.**
@@ -326,7 +321,6 @@ Yukarıdaki örnekte, example_function adında bir fonksiyon tanımladık. Bu fo
 <br></br>
 
 ## ft_printf_utils.c : `ft_putchar("0123456789abcdef"[number % 16])`
----
 Kod satırını adım adım açıklayalım:
 
 1. `"0123456789abcdef"` : Bu bir karakter dizisidir. Onaltılık tabanda 0'dan 15'e kadar olan sayıları temsil eden karakterler içerir. Sırasıyla `0, 1, ..., 9, a, b, c, d, e, f ` karakterlerini temsil eder.
@@ -339,7 +333,6 @@ Kod satırını adım adım açıklayalım:
 <br></br>
 
 ## ft_printf_utils.c : Fonksiyonların `return` değerleri neden bir sayı?
----
 
 Kılavuzda yazan `man 3 printf` 'e göre `printf` fonksiyonu `return` değeri olarak ekrana yazdırdığının/yazdırdıklarının uzunluğunu döndürür. Bu yüzden `ft_printf` projesine ait fonksiyonlar yazılırken ekrana çıktı yazdıran fonksiyonlarının `return` 'leri ekrana yazdırılanların uzunluğunu içermektedir.
 
