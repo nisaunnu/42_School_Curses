@@ -16,9 +16,9 @@
 
 | Circle 0 & 1  | Durum  |
 | :-  	        | :-     |
-| [Libft](https://github.com/nisaunnu/42_School_Curses/tree/libft)                 | 125/100<!--[![nunnu's 42 Libft Score](https://badge42.vercel.app/api/v2/cldyzvso800060fmnnkmsw17v/project/3144746)](https://github.com/nisaunnu/42_School_Curses/tree/libft)-->|
-| [get_next_line](https://github.com/nisaunnu/42_School_Curses/tree/get_next_line) | 112/100<!--[![nunnu's 42 get_next_line](https://badge42.vercel.app/api/v2/cldyzvso800060fmnnkmsw17v/project/3208387)](https://github.com/nisaunnu/42_School_Curses/tree/get_next_line)-->|
-| [ft_printf](https://github.com/nisaunnu/42_School_Curses/tree/ft_printf)         | 100/100<!--[![nunnu's 42 ft_printf](https://badge42.vercel.app/api/v2/cldyzvso800060fmnnkmsw17v/project/3208180)](https://github.com/nisaunnu/42_School_Curses/tree/ft_printf)-->|
+| [Libft](https://github.com/nisaunnu/42_School_Curses/tree/libft)                 | 125 / 100<!--[![nunnu's 42 Libft Score](https://badge42.vercel.app/api/v2/cldyzvso800060fmnnkmsw17v/project/3144746)](https://github.com/nisaunnu/42_School_Curses/tree/libft)-->|
+| [get_next_line](https://github.com/nisaunnu/42_School_Curses/tree/get_next_line) | 112 / 100<!--[![nunnu's 42 get_next_line](https://badge42.vercel.app/api/v2/cldyzvso800060fmnnkmsw17v/project/3208387)](https://github.com/nisaunnu/42_School_Curses/tree/get_next_line)-->|
+| [ft_printf](https://github.com/nisaunnu/42_School_Curses/tree/ft_printf)         | 100 / 100<!--[![nunnu's 42 ft_printf](https://badge42.vercel.app/api/v2/cldyzvso800060fmnnkmsw17v/project/3208180)](https://github.com/nisaunnu/42_School_Curses/tree/ft_printf)-->|
 | [Born2beroot](https://github.com/nisaunnu/42_School_Curses/tree/born2beroot)     | <!--[![nunnu's 42 Born2beroot]()](https://github.com/nisaunnu/42_School_Curses/tree/born2beroot)-->|
 
 
