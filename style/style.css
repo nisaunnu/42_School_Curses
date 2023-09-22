@@ -1,0 +1,18 @@
+.rectangle {
+	width: 110px;
+	height: 40px;
+	background-color: rgba(1, 172, 7, 0.246);
+	text-align: center;
+	line-height: 70px;
+	font-size: 18px;
+	border-radius: 6px;
+}
+
+.styled-text {
+	color: white;
+	font-family: "Gill Sans", sans-serif;
+	font-size: 18px;
+	text-align: center;
+	text-transform: uppercase;
+	line-height: 2;
+}
