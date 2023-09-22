@@ -1,7 +1,7 @@
 .rectangle {
 	width: 110px;
-	height: 40px;
-	background-color: rgba(1, 172, 7, 0.246);
+	height: 30px;
+	background-color: rgb(13, 141, 18);
 	text-align: center;
 	line-height: 70px;
 	font-size: 18px;
@@ -14,5 +14,5 @@
 	font-size: 18px;
 	text-align: center;
 	text-transform: uppercase;
-	line-height: 2;
+	line-height: 1.5;
 }
