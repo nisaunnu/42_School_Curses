@@ -16,10 +16,10 @@
 
 | Circle 0 & 1  | Durum  |
 | :-  	        | :-     |
-| [Libft](https://github.com/nisaunnu/42_School_Curses/tree/libft)                 | 125 / 100<!--[![nunnu's 42 Libft Score](https://badge42.vercel.app/api/v2/cldyzvso800060fmnnkmsw17v/project/3144746)](https://github.com/nisaunnu/42_School_Curses/tree/libft)-->|
-| [get_next_line](https://github.com/nisaunnu/42_School_Curses/tree/get_next_line) | 112 / 100<!--[![nunnu's 42 get_next_line](https://badge42.vercel.app/api/v2/cldyzvso800060fmnnkmsw17v/project/3208387)](https://github.com/nisaunnu/42_School_Curses/tree/get_next_line)-->|
-| [ft_printf](https://github.com/nisaunnu/42_School_Curses/tree/ft_printf)         | 100 / 100<!--[![nunnu's 42 ft_printf](https://badge42.vercel.app/api/v2/cldyzvso800060fmnnkmsw17v/project/3208180)](https://github.com/nisaunnu/42_School_Curses/tree/ft_printf)-->|
-| [Born2beroot](https://github.com/nisaunnu/42_School_Curses/tree/born2beroot)     | <!--[![nunnu's 42 Born2beroot]()](https://github.com/nisaunnu/42_School_Curses/tree/born2beroot)-->|
+| [Libft](https://github.com/nisaunnu/42_School_Curses/tree/libft)                 |<html><p align="center"><a href="https://github.com/nisaunnu/42_School_Curses/tree/libft"><img src="https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27"></a></p></html>|
+| [get_next_line](https://github.com/nisaunnu/42_School_Curses/tree/get_next_line) |<html><p align="center"><a href="https://github.com/nisaunnu/42_School_Curses/tree/get_next_line"><img src="https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20112%20/%20100-02b331.svg?&style=for-the-badge&color=018f27"></a></p></html>|
+| [ft_printf](https://github.com/nisaunnu/42_School_Curses/tree/ft_printf)         |<html><p align="center"><a href="https://github.com/nisaunnu/42_School_Curses/tree/ft_printf"><img src="https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27"></a></p></html>|
+| [Born2beroot](https://github.com/nisaunnu/42_School_Curses/tree/born2beroot)     |<html><p align="center"><a href="https://github.com/nisaunnu/42_School_Curses/tree/born2beroot"><img src="https://custom-icon-badges.demolab.com/badge/✔%20%EF%B8%8E%2080%20%20/%20100-017520.svg?&style=for-the-badge&color=018f27"></a></p></html>|
 
 
 </td>
