@@ -384,8 +384,8 @@ struct yapısını tanımlamak:
 
 ```c
 struct Person {
-    char	name[50];
     int		age;
+    char	name[50];
     char	phone[15];
 };
 ```
@@ -400,9 +400,9 @@ struct Person person1;
 
 "person1" değişkeninin veri elemanlarına erişerek yeni veriler atamak:
 ```c
-person1.name = "Venus";
 person1.age = 22;
-person1.phone = "121-212";
+strcpy(person1.name, "Venus");      // strcpy ile karakter dizisi kopyalaması yapılmalı
+strcpy(person1.phone, "121-212";);  // strcpy ile karakter dizisi kopyalaması yapılmalı
 ```
 
 Struct'lar C programlama dilinde veri yapılarını düzenlemek ve yönetmek için kullanışlıdır.
