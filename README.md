@@ -13,7 +13,7 @@
 | :-                                | :-                                        |
 | [Libft][libft_tree]               | [![libft_badge]][libft_tree]              |
 | [get_next_line][gnl_tree]         | [![gnl_badge]][gnl_tree]                  |
-| [ft_printf][printf_tree]          | [![print_badge]][printf_tree]             |
+| [ft_printf][printf_tree]          | [![printf_badge]][printf_tree]            |
 | [Born2beroot][born2beroot_tree]   | [![born2beroot_badge]][born2beroot_tree]  |
 
 </td><td style="padding:0; margin:0;">
@@ -21,8 +21,8 @@
 | Circle 2                          | Durum                                     |
 | :-                                | :-                                        |
 | [fract'ol][fractol_tree]          | [![fractol_badge]][fractol_tree]          |
+| [minitalk][minitalk_tree]         | [![minitalk_badge]][minitalk_tree]        |
 | [push_swap][push_swap_tree]       | [![push_swap_badge]][push_swap_tree]      |
-| [pipex][pipex_tree]               | [![pipex_badge]][pipex_tree]              |
 | [Exam Rank 02][exam_rank02_tree]  | [![exam_rank02_badge]][exam_rank02_tree]  |
 
 </td></tr>
@@ -32,15 +32,15 @@
 [gnl_tree]: https://github.com/nisaunnu/42_School_Curses/tree/get_next_line
 [gnl_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20112%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
 [printf_tree]: https://github.com/nisaunnu/42_School_Curses/tree/ft_printf
-[print_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
+[printf_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
 [born2beroot_tree]: https://github.com/nisaunnu/42_School_Curses/tree/born2beroot
 [born2beroot_badge]: https://custom-icon-badges.demolab.com/badge/✔%20%EF%B8%8E%2080%20/%20100-017520.svg?&style=for-the-badge&color=018f27
 [fractol_tree]: https://github.com/nisaunnu/42_School_Curses/tree/fractol
 [fractol_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
 [push_swap_tree]: https://github.com/nisaunnu/42_School_Curses/tree/push_swap
 [push_swap_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[pipex_tree]: https://github.com/nisaunnu/42_School_Curses/tree/pipex
-[pipex_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
+[minitalk_tree]: https://github.com/nisaunnu/42_School_Curses/tree/minitalk
+[minitalk_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
 [exam_rank02_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank02
 [exam_rank02_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
 
