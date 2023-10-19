@@ -20,8 +20,8 @@
 
 | Circle 2                          | Durum                                     |
 | :-                                | :-                                        |
-| [fract'ol][fractol_tree]          | [![fractol_badge]][fractol_tree]          |
 | [minitalk][minitalk_tree]         | [![minitalk_badge]][minitalk_tree]        |
+| [fract'ol][fractol_tree]          | [![fractol_badge]][fractol_tree]          |
 | [push_swap][push_swap_tree]       | [![push_swap_badge]][push_swap_tree]      |
 | [Exam Rank 02][exam_rank02_tree]  | [![exam_rank02_badge]][exam_rank02_tree]  |
 
@@ -40,7 +40,7 @@
 [push_swap_tree]: https://github.com/nisaunnu/42_School_Curses/tree/push_swap
 [push_swap_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
 [minitalk_tree]: https://github.com/nisaunnu/42_School_Curses/tree/minitalk
-[minitalk_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
+[minitalk_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
 [exam_rank02_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank02
 [exam_rank02_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
 
