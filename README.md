@@ -70,6 +70,18 @@ Her işlem, işletim sistemi tarafından kendi PID'siyle izlenir ve bu, işletim
 
 <br></br>
 
+## PID'ler nasıl oluşmaktadır? 
+
+PID'ler rastgele oluşturulmaz, bunun yerine işletim sistemi tarafından belirli kurallara göre atanır. Her yeni süreç, bir üst süreçten miras alınan bir PID'ye sahip olur ve bu PID'ler genellikle ardışık olarak artar. Bu nedenle PID'ler rastgele değildir ve süreçlerin yönetimi ve tanımlanması için kullanılır. PID'lerin nasıl oluşturulduğu işletim sistemine ve kullanılan algoritmaya bağlı olarak değişebilir, ancak genellikle aşağıdaki şekillerde oluşturulur:
+
+- `Sıralı PID Ataması:` Birçok işletim sistemi, süreçleri başlatırken PID'leri sıralı olarak atar. İlk süreç (genellikle init veya systemd gibi sistem başlatma süreçleri) genellikle PID 1 alır ve ardışık olarak artan PID'ler diğer süreçlere atanır. Yani, bir sürecin PID'si bir önceki sürecin PID'sinin bir artı değeridir.
+- `Döngüsel PID Ataması:` Bazı işletim sistemleri, belirli bir sınırın üzerine çıktığında PID'yi sıfırlayan veya başka bir değere geri dönen bir döngüsel PID atama yöntemi kullanır. Bu, PID'nin aşırı büyümesini önlemek için kullanılabilir.
+- `Rastgele PID Ataması:` Bazı modern işletim sistemleri, rastgele PID atamasını destekleyebilir. Ancak, bu rastgelelik, belirli bir PID aralığı içinde gerçekleşir ve genellikle sürecin özel bir PID talep etmesiyle tetiklenir.
+
+PID'ler, bir sürecin işletim sistemi tarafından tanımlandığı ve yönetildiği bir sistemde benzersiz bir kimlik sağlamak amacıyla kullanılır. Bu nedenle, her PID yalnızca bir sürece atanır ve PID'ler tekrar kullanılmaz. Yani bir süreç sona erdiğinde veya sonlandırıldığında, bu PID daha sonra başka bir sürece atanabilir. Bu, süreçlerin izlenmesi, tanımlanması ve yönetilmesi için kritik bir öneme sahiptir.
+
+<br></br>
+
 # SIGUSR1 ve SIGUSR2 nedir?
 `SIGUSR1` ve `SIGUSR2`, Unix tabanlı işletim sistemlerinde kullanıcı tanımlı sinyal türlerini temsil eder. Bu sinyal türleri, sistem tarafından özel işlevlerle ilişkilendirilmemiş, kullanıcı tarafından kendi uygulamalarında tanımlanabilen sinyal türleridir. Bu sinyaller, özellikle işlem iletişimi ve işlem kontrolü için kullanışlıdır.
 
@@ -79,6 +91,10 @@ Her işlem, işletim sistemi tarafından kendi PID'siyle izlenir ve bu, işletim
 SIGUSR1 ve SIGUSR2 sinyalleri 1 veya 0 sinyali göndermez. Sadece iletim gerçekleşir. Bu sinyallere anlamlar yükleyebilen kodlardır. Örnek olarak: SIGUSR1 sinyali tetiklendiğinde 1 biti gelmiş olsun, SIGUSR2 sinyali tetiklendiğinde ise 0 biti gelmiş olsun diye kodda veri işlemesi yapılabilir.
 
 Bu sinyaller, özellikle kullanıcı tarafından belirli işlemlerin yönetilmesi ve iletişimi için kullanışlıdır. Uygulama geliştiricileri bu sinyalleri kendi yazılımlarında belirli görevleri gerçekleştirmek için özelleştirebilirler.
+
+Bu sinyaller, işletim sistemi tarafından yönetilen ve yazılım yoluyla tetiklenen yazılım düzeyinde olaylardır. Bu sinyaller, işletim sistemi düzeyinde yazılım tarafından oluşturulur ve işletim sistemi içindeki işlemciler tarafından işlenir. Özel bir işlem yapmak için yazılım tarafından kullanılan sinyallerdir.
+
+SIGUSR1 ve SIGUSR2 sinyalleri, işletim sistemi içinde süreçler arasında iletişim sağlamak ve özel işlemleri başlatmak için kullanılır. Örneğin, bir süreç diğer bir sürece bir sinyal göndererek, belirli bir eylemi gerçekleştirmesini sağlayabilir. Bu sinyaller, yazılım düzeyinde işletim sistemi tarafından yönetilir.
 
 <br></br>
 
