@@ -4,6 +4,7 @@
 # İçerik
 - [Executable dosya nedir?](#executable-dosya-nedir)
 - [PID (Process Identifier - Süreç Tanımlayıcı) nedir?](#pid-process-identifier---süreç-tanımlayıcı-nedir)
+	- [PID'ler nasıl oluşmaktadır?](#pidler-nasıl-oluşmaktadır)
 - [SIGUSR1 ve SIGUSR2 nedir?](#sigusr1-ve-sigusr2-nedir)
 - [Binary sisteminde operatörlerin kullanımı](#binary-sisteminde-operatörlerin-kullanımı)
 	- [AND ( `&` ) Operatörü](#and----operatörü)
@@ -70,7 +71,7 @@ Her işlem, işletim sistemi tarafından kendi PID'siyle izlenir ve bu, işletim
 
 <br></br>
 
-## PID'ler nasıl oluşmaktadır? 
+## PID'ler nasıl oluşmaktadır?
 
 PID'ler rastgele oluşturulmaz, bunun yerine işletim sistemi tarafından belirli kurallara göre atanır. Her yeni süreç, bir üst süreçten miras alınan bir PID'ye sahip olur ve bu PID'ler genellikle ardışık olarak artar. Bu nedenle PID'ler rastgele değildir ve süreçlerin yönetimi ve tanımlanması için kullanılır. PID'lerin nasıl oluşturulduğu işletim sistemine ve kullanılan algoritmaya bağlı olarak değişebilir, ancak genellikle aşağıdaki şekillerde oluşturulur:
 
