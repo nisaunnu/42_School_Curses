@@ -22,16 +22,16 @@ Proje, bonus bölümde UNICODE karakter desteği ve server'ın her mesajı onayl
 # Projeyi Nasıl Çalıştırırım?
 1.  İki terminal açın ve iki terminalde de ```cd``` komutu ile klasörün içerisine gidin.
 2.  1.terminale aşağıdaki komutu yazarak projenin derlemesini gerçekleştirin.
-	```
+	```ruby
 	make
 	```
 3.  `./server` yazın ve enter'a basın. Ekrana server'in PID'si yazdırılacaktır.
 4.  2.terminale yazacağınız komut satırının girdi formatı aşağıda yer almaktadır:
-	```
+	```ruby
 	./client <server_PID> <string>
 	```
-	`<server PID>` yerine, 1.terminalde aldığınız PID numarasını girin. `<string> yerine, server'a göndermek istediğiniz metini girin. Ardından enter'a basın. Örnek:
-	```
+	`<server PID>` yerine, 1.terminalde aldığınız PID numarasını girin. `<string>` yerine, server'a göndermek istediğiniz metini girin. Ardından enter'a basın. Örnek:
+	```ruby
 	./client 1212 "minitalk project"
 	```
 1.  2.terminale yazdığınız metini 1.terminalde artık görebilirsiniz.
