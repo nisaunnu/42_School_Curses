@@ -1,4 +1,6 @@
- # Minitalk Projesi
+<br>
+
+# Minitalk Projesi
 <br>
 
 Projenin notlarına ulaşmak için [tıklayınız](https://github.com/nisaunnu/42_School_Curses/blob/minitalk/notes.md)
