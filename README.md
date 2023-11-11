@@ -1,7 +1,7 @@
  # Minitalk Projesi
 <br>
 
-Projenin notlarına ulaşmak için [tıklayınız](https://github.com/nisaunnu/42_School_Curses/blob/minitalk/notes.md).
+Projenin notlarına ulaşmak için [tıklayınız](https://github.com/nisaunnu/42_School_Curses/blob/minitalk/notes.md)
 
 <br></br>
 
@@ -24,11 +24,11 @@ Proje, bonus bölümde UNICODE karakter desteği ve server'ın her mesajı onayl
 	make
 	```
 3.  `./server` yazın ve enter'a basın. Ekrana server'in PID'si yazdırılacaktır.
-4.  2.terminale aşağıdaki komut satırını yazın.
+4.  2.terminale yazacağınız komut satırının girdi formatı aşağıda yer almaktadır:
 	```
 	./client <server_PID> <string>
 	```
-	server PID olarak 1.terminalde aldığınız PID numarasını girin. string olarak ise server'a göndermek istediğiniz metini girin. Ardından enter'a basın. Örnek:
+	`<server PID>` yerine, 1.terminalde aldığınız PID numarasını girin. `<string> yerine, server'a göndermek istediğiniz metini girin. Ardından enter'a basın. Örnek:
 	```
 	./client 1212 "minitalk project"
 	```
