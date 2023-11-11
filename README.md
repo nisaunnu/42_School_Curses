@@ -1,4 +1,4 @@
-# Minitalk Projesi
+ # Minitalk Projesi
 <br>
 
 Projenin notlarına ulaşmak için [tıklayınız](https://github.com/nisaunnu/42_School_Curses/blob/minitalk/notes.md).
@@ -18,8 +18,19 @@ Proje, bonus bölümde UNICODE karakter desteği ve server'ın her mesajı onayl
 <br></br>
 
 # Projeyi Nasıl Çalıştırırım?
-1.  İki terminal açın ve iki terminalde de `cd` komutu ile klasörün içerisine gidin.
-2.  1.terminale `make` yazarak projenin derlemesini gerçekleştirin.
+1.  İki terminal açın ve iki terminalde de ```cd``` komutu ile klasörün içerisine gidin.
+2.  1.terminale aşağıdaki komutu yazarak projenin derlemesini gerçekleştirin.
+	```
+	make
+	```
 3.  `./server` yazın ve enter'a basın. Ekrana server'in PID'si yazdırılacaktır.
-4.  2.terminale `./client <server_PID> <string>` yazın. server PID olarak 1.terminalde aldığınız PID numarasını girin. string olarak ise server'a göndermek istediğiniz metini girin. Ardından enter'a basın. Örnek: `./client 1212 "minitalk project"`
-5.  2.terminale yazdığınız metini 1.terminalde artık görebilirsiniz.
+4.  2.terminale aşağıdaki komut satırını yazın.
+	```
+	./client <server_PID> <string>
+	```
+	server PID olarak 1.terminalde aldığınız PID numarasını girin. string olarak ise server'a göndermek istediğiniz metini girin. Ardından enter'a basın. Örnek:
+	```
+	./client 1212 "minitalk project"
+	```
+1.  2.terminale yazdığınız metini 1.terminalde artık görebilirsiniz.
+ 
