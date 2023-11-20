@@ -10,7 +10,7 @@ int *ft_range(int start, int end)
 		size = start - end + 1;
 	else
 		size = end - start + 1;
-	tab = (int *)malloc(sizeof(int) * (size + 1));
+	tab = (int *)malloc(sizeof(int) * size);
 	if (start > end)
 	{
 		while(start >= end)
