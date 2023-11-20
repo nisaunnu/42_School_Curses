@@ -1,6 +1,6 @@
 # Exam Rank 02
 
-Bütün exam_rank_02 sorularının işlevleriyle birlikte kodları bu repository'de yer almaktadır.
+Bütün exam_rank_02 sorularının işlevleri ve sınav esnasında karşıma çıkan soruların kodları bu repository'nin içerisinde yer almaktadır.
 
 <br>
 
