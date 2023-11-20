@@ -1,6 +1,6 @@
 ## Subject
 
-```rust
+```
 Assignment name  : fprime
 Expected files   : fprime.c
 Allowed functions: printf, atoi
