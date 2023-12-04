@@ -323,7 +323,7 @@ int write(int fd, const void *buf, size_t count);
 ```
 
 **Parametreler:**
-* **fd:** Standart hata (0), standart çıkış (1), standart giriş (2) ve dosya (2'den büyük sayılar) değerlerini alır.
+* **fd:** Standart hata (2), standart çıkış (1), standart giriş (0) ve dosya (2'den büyük sayılar) değerlerini alır.
 * **buf:** Yazılacak karakter dizisi veya veridir.
 * **count:** Yazılacak karakter veya veri sayısıdır/byte sayısıdır.
 
