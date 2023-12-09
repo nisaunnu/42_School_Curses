@@ -1,48 +1,81 @@
-# **nunnu's 42 projects**
+<br>
 
-<table width="100%" align="center">
-<tr style="display:flex; justify-content:space-around; paddind:0;">
-<td colspan="2" style="padding:0; margin:0; text-align:center;">
-	<p align="center">42 SCHOOL CURSES</p>
-</td></tr>
+# Fract-ol Projesi
+Proje kodlarının detaylı açıklamasına ulaşmak için [tıklayınız](https://github.com/nisaunnu/42_School_Curses/tree/fractol/fractol_with_code_explanations)
+<br></br>
 
-<tr style="display:flex; justify-content:space-around; paddind:0;">
-<td style="padding:0; margin:0;">
+## ❓ Fract-ol Projesi Nedir?
+"fract-ol" projesi, fraktal görselleştirme programı oluşturmasını amaçlayan bir bilgisayar grafiği projesidir. Proje, MiniLibX kütüphanesini kullanmayı ve belirli fraktal türlerini (Julia kümesi ve Mandelbrot kümesi) görselleştirmeyi içerir. Ayrıca, fare tekerleği kullanılarak yakınlaştırma ve uzaklaştırma özelliklerini içermelidir. Projenin bonus kısmında bir fraktal daha eklemek, gerçek farenin konumunu takip ederek yakınlaştırma, yön tuşlarıyla hareket etmek, renk değiştirme bulunmaktadır.
 
-| Circle 0 & 1                      | Durum                                     |
-| :-                                | :-                                        |
-| [Libft][libft_tree]               | [![libft_badge]][libft_tree]              |
-| [get_next_line][gnl_tree]         | [![gnl_badge]][gnl_tree]                  |
-| [ft_printf][printf_tree]          | [![printf_badge]][printf_tree]            |
-| [Born2beroot][born2beroot_tree]   | [![born2beroot_badge]][born2beroot_tree]  |
+Projenin temel amacı, grafik programlama konusunda deneyim kazandırmak ve görselleştirmeyi kullanarak fraktal matematiğini keşfettirmektir. Bu proje, MiniLibX’i tanımayı, karmaşık sayıların matematiksel kavramını keşfetmeyi/kullanmayı, bilgisayar grafiklerinde optimizasyon kavramını göz atmaya ve olay işleme alıştırması yapmak için bir fırsat olacaktır.
+<br></br>
 
-</td><td style="padding:0; margin:0;">
+## ⚡️ Projeyi Nasıl Çalıştırırım?
+<br>
 
-| Circle 2                          | Durum                                     |
-| :-                                | :-                                        |
-| [fract'ol][fractol_tree]          | [![fractol_badge]][fractol_tree]          |
-| [minitalk][minitalk_tree]         | [![minitalk_badge]][minitalk_tree]        |
-| [push_swap][push_swap_tree]       | [![push_swap_badge]][push_swap_tree]      |
-| [Exam Rank 02][exam_rank02_tree]  | [![exam_rank02_badge]][exam_rank02_tree]  |
+1. Projeyi indirin ve indirdiğiniz dosyadan "push" dosyasını terminalde açın. Aşağıdaki komutu terminale yazarak projenin derlemesini gerçekleştirin:
 
-</td></tr>
+	```rust
+	make
+	```
+<br>
 
-[libft_tree]: https://github.com/nisaunnu/42_School_Curses/tree/libft
-[libft_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[gnl_tree]: https://github.com/nisaunnu/42_School_Curses/tree/get_next_line
-[gnl_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20112%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[printf_tree]: https://github.com/nisaunnu/42_School_Curses/tree/ft_printf
-[printf_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[born2beroot_tree]: https://github.com/nisaunnu/42_School_Curses/tree/born2beroot
-[born2beroot_badge]: https://custom-icon-badges.demolab.com/badge/✔%20%EF%B8%8E%2080%20/%20100-017520.svg?&style=for-the-badge&color=018f27
-[fractol_tree]: https://github.com/nisaunnu/42_School_Curses/tree/fractol
-[fractol_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[push_swap_tree]: https://github.com/nisaunnu/42_School_Curses/tree/push_swap
-[push_swap_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[minitalk_tree]: https://github.com/nisaunnu/42_School_Curses/tree/minitalk
-[minitalk_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[exam_rank02_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank02
-[exam_rank02_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
+1. Giriş Formatı : `./fractol <fractol_tipi> <parametreler>`
 
+	|İsim                     |Açıklama                           |
+	|---                      |---                                |
+	|fractol_tipi             |Julia, Mandelbrot veya Burning_ship|
+	|parametreler (julia için)| -2 ile 2 arasında iki sayı girin  |
 
-</table>
+	Örnek:
+	```rust
+	./fractol Julia 1.2 0.2
+	```
+
+<br>
+
+3. Özellikler :
+
+	|Komut                                |Açıklama                                      |
+	|---                                  |---                                           |
+	|pencereyi kapatma                    | `ESC` tuşuna basın                           |
+	|hareket ettirme                      | `← ↑ → ↓` veya sol fare tıklaması            |
+	|yakınlaştırma / uzaklaştırma         | fare scroll'unu kaydırma                     |
+	|renk değişimi                        | `C` tuşuna basın                             |
+	|fare konumunu takip etme (julia için)| boşluk tuşuna basın ve fareyi hareket ettirin|
+<br>
+
+## 💡 Terminalde `memory leaks` Kontrolü
+<br>
+
+```markdown
+leaks -q --atExit -- ./fractol <arg>
+```
+
+* `leaks`: Bellek sızıntılarını kontrol etmek için kullanılan komut.
+* `-q` : Sessiz modda çalıştırır. Bu, işlem başlıklarını ve altbilgileri bastırmayarak çıktıyı daha sadeleştirir.
+* `--atExit` : Bu bayrak, programın çalışması sona erdiğinde leaks'in otomatik olarak çalıştırılmasını sağlar. Yani, program sona erdiğinde leaks komutu otomatik olarak çalışacak ve bellek sızıntılarını kontrol edecektir.
+* `--` : Bu, komut satırındaki seçeneklerin ve argümanların ayrıldığı bir işaret. Bu, daha sonra gelen ifadelerin seçenekler veya bayraklar olmadığını ve argümanlar olduğunu belirtir.
+* `./fractol` : Bu, kontrol etmek istediğiniz programın çalıştırılabilir dosyasının yolunu belirtir. `./` işareti, programın mevcut dizininde bulunduğunu belirtir. Programınızın gerçek adını ve yoluyla değiştirilmelidir.
+* `<arg>` : Bu, programınıza geçirilmek istenen argümandır. Eğer programınız argüman alıyorsa, bunu geçirmeniz gerekir. Eğer programınız daha fazla argüman alıyorsa, onları da bu noktada ekleyebilirsiniz.
+
+Örnek:
+```rust
+leaks -q --atExit -- ./fractol Mandelbrot
+```
+```rust
+leaks -q --atExit -- ./fractol Julia 0.2 1.2
+```
+<br></br>
+
+## 📚 Yararlanılan Kaynaklar
+
+* Dokümanlar:
+	* MiniLibX Komutları ve Açıklamaları: [42 Docs](https://harm-smits.github.io/42docs/libs/minilibx/prototypes.html)
+	* Julia Seti Hakkında Bilgiler: [Wikipedia - Julia](https://en.wikipedia.org/wiki/Julia_set)
+	* Mandelbrot Seti Hakkında Bilgiler: [Wikipedia - Mandelbrot](https://en.wikipedia.org/wiki/Mandelbrot_set)
+* Videolar:
+	* MiniLibX'e Giriş: [MiniLibX](https://www.youtube.com/watch?v=bYS93r6U0zg&list=PLm0eL6m0aMkV4C9SxaFLvCBgeF5tRIT6Z&index=2)
+	* Fraktal: [Fraktalların Oluşumları](https://www.youtube.com/watch?v=wUlVFYJIUNA)
+	* Mandelbrot Fraktalı Oynatma Listesi: [Mandelbrot](https://www.youtube.com/playlist?list=PLt5AfwLFPxWL7NpD_DKO28XhS0Ugctkpu)
+	* MiniLibX Komutlarını Kullanmak: [MiniLibX ile Bir Resim Çizmek](https://www.youtube.com/watch?v=9eAPbNUQD1Y&list=PLm0eL6m0aMkV4C9SxaFLvCBgeF5tRIT6Z&index=3)
