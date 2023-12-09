@@ -2,16 +2,19 @@
 
 # Fract-ol Projesi
 Proje kodlarının detaylı açıklamasına ulaşmak için [tıklayınız](https://github.com/nisaunnu/42_School_Curses/tree/fractol/fractol_with_code_explanations)
+
 <br></br>
 
-## ❓ Fract-ol Projesi Nedir?
+### ❓ Fract-ol Projesi Nedir?
+---
 "fract-ol" projesi, fraktal görselleştirme programı oluşturmasını amaçlayan bir bilgisayar grafiği projesidir. Proje, MiniLibX kütüphanesini kullanmayı ve belirli fraktal türlerini (Julia kümesi ve Mandelbrot kümesi) görselleştirmeyi içerir. Ayrıca, fare tekerleği kullanılarak yakınlaştırma ve uzaklaştırma özelliklerini içermelidir. Projenin bonus kısmında bir fraktal daha eklemek, gerçek farenin konumunu takip ederek yakınlaştırma, yön tuşlarıyla hareket etmek, renk değiştirme bulunmaktadır.
 
 Projenin temel amacı, grafik programlama konusunda deneyim kazandırmak ve görselleştirmeyi kullanarak fraktal matematiğini keşfettirmektir. Bu proje, MiniLibX’i tanımayı, karmaşık sayıların matematiksel kavramını keşfetmeyi/kullanmayı, bilgisayar grafiklerinde optimizasyon kavramını göz atmaya ve olay işleme alıştırması yapmak için bir fırsat olacaktır.
+
 <br></br>
 
-## ⚡️ Projeyi Nasıl Çalıştırırım?
-<br>
+### ⚡️ Projeyi Nasıl Çalıştırırım?
+---
 
 1. Projeyi indirin ve indirdiğiniz dosyadan "push" dosyasını terminalde açın. Aşağıdaki komutu terminale yazarak projenin derlemesini gerçekleştirin:
 
@@ -43,10 +46,10 @@ Projenin temel amacı, grafik programlama konusunda deneyim kazandırmak ve gör
 	|yakınlaştırma / uzaklaştırma         | fare scroll'unu kaydırma                     |
 	|renk değişimi                        | `C` tuşuna basın                             |
 	|fare konumunu takip etme (julia için)| boşluk tuşuna basın ve fareyi hareket ettirin|
-<br>
+<br></br>
 
-## 💡 Terminalde `memory leaks` Kontrolü
-<br>
+### 💡 Terminalde `memory leaks` Kontrolü
+---
 
 ```markdown
 leaks -q --atExit -- ./fractol <arg>
@@ -68,7 +71,8 @@ leaks -q --atExit -- ./fractol Julia 0.2 1.2
 ```
 <br></br>
 
-## 📚 Yararlanılan Kaynaklar
+### 📚 Yararlanılan Kaynaklar
+---
 
 * Dokümanlar:
 	* MiniLibX Komutları ve Açıklamaları: [42 Docs](https://harm-smits.github.io/42docs/libs/minilibx/prototypes.html)
