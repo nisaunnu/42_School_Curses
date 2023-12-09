@@ -16,7 +16,7 @@ Projenin temel amacı, grafik programlama konusunda deneyim kazandırmak ve gör
 ### ⚡️ Projeyi Nasıl Çalıştırırım?
 ---
 
-1. Projeyi indirin ve indirdiğiniz dosyadan "push" dosyasını terminalde açın. Aşağıdaki komutu terminale yazarak projenin derlemesini gerçekleştirin:
+1. Projeyi indirin ve indirdiğiniz dosyadan "fractol" dosyasını terminalde açın. Aşağıdaki komutu terminale yazarak projenin derlemesini gerçekleştirin:
 
 	```rust
 	make
