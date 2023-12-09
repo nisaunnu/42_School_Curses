@@ -27,6 +27,18 @@
 
 </td></tr>
 
+<tr style="display:flex; justify-content:space-around; paddind:0;">
+<td style="padding:0; margin:0;">
+
+| Circle 3                          | Durum                                     |
+| :-                                | :-                                        |
+| [Philosophers][philo_tree]        | [![philo_badge]][philo_tree]              |
+| [minishell][minishell_tree]       | [![minishell_badge]][minishell_tree]      |
+| [Exam Rank 03][exam_rank03_tree]  | [![exam_rank03_badge]][exam_rank03_tree]  |
+
+
+</td></tr>
+
 [libft_tree]: https://github.com/nisaunnu/42_School_Curses/tree/libft
 [libft_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
 [gnl_tree]: https://github.com/nisaunnu/42_School_Curses/tree/get_next_line
@@ -35,6 +47,7 @@
 [printf_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
 [born2beroot_tree]: https://github.com/nisaunnu/42_School_Curses/tree/born2beroot
 [born2beroot_badge]: https://custom-icon-badges.demolab.com/badge/✔%20%EF%B8%8E%2080%20/%20100-017520.svg?&style=for-the-badge&color=018f27
+
 [fractol_tree]: https://github.com/nisaunnu/42_School_Curses/tree/fractol
 [fractol_badge]:https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
 [push_swap_tree]: https://github.com/nisaunnu/42_School_Curses/tree/push_swap
@@ -44,5 +57,11 @@
 [exam_rank02_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank02
 [exam_rank02_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
 
+[philo_tree]: https://github.com/nisaunnu/42_School_Curses/tree/philosophers
+[philo_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
+[minishell_tree]: https://github.com/nisaunnu/42_School_Curses/tree/minishell
+[minishell_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
+[exam_rank03_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank03
+[exam_rank03_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
 
 </table>
