@@ -38,9 +38,8 @@ Benimsenen yaklaşım yalnızca QuickSort'un hızlı ortalama vaka çözümünü
 ---
 
 ### 🎯 Test:
-<br>
 
-- Sıralama algoritmasının çıktısını doğrulamak için [`checker_Mac`](https://github.com/nisaunnu/42_School_Curses/tree/push_swap/push_swap_with_code_explanations/checker_Mac) özelliğini kullanın.
+- Sıralama algoritmasının çıktısını doğrulamak için checker_Macözelliğini kullanın.
 
 - **Tester kullanın**: Sıralama başarısını, "Error" yazımının  tespitini, memory leaks kontrolünü ve diğer test kontrollerini gerçekleştirmek için push_swap tester'ları kullanın.
 	* [Push Swap Tester - 1](https://github.com/laisarena/push_swap_tester)
