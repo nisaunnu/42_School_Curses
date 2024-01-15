@@ -1,63 +1,53 @@
-# **nunnu's 42 projects**
 
-<table width="100%" align="center">
-<tr style="display:flex; justify-content:space-around; paddind:0;">
-<td colspan="3" style="padding:0; margin:0; text-align:center;">
-	<p align="center">42 SCHOOL CURSES</p>
-</td></tr>
+# Push_Swap'e hoş geldiniz
 
-<tr style="display:flex; justify-content:space-around; paddind:0;">
-<td style="padding:0; margin:0;">
+🚀 **Proje İsmi**: push_swap
 
-| Circle 0 & 1                      | Durum                                     |
-| :-                                | :-                                        |
-| [Libft][libft_tree]               | [![libft_badge]][libft_tree]              |
-| [get_next_line][gnl_tree]         | [![gnl_badge]][gnl_tree]                  |
-| [ft_printf][printf_tree]          | [![printf_badge]][printf_tree]            |
-| [Born2beroot][born2beroot_tree]   | [![born2beroot_badge]][born2beroot_tree]  |
+👩🏻‍💻 **Yazar**: [Nisa Ünnü](https://www.linkedin.com/in/nisaunnu/)
 
-</td><td style="padding:0; margin:0;">
+---
 
-| Circle 2                          | Durum                                     |
-| :-                                | :-                                        |
-| [fract'ol][fractol_tree]          | [![fractol_badge]][fractol_tree]          |
-| [minitalk][minitalk_tree]         | [![minitalk_badge]][minitalk_tree]        |
-| [push_swap][push_swap_tree]       | [![push_swap_badge]][push_swap_tree]      |
-| [Exam Rank 02][exam_rank02_tree]  | [![exam_rank02_badge]][exam_rank02_tree]  |
+### 🧠 Konsept:
+Push_Swap, sınırlı sayıda talimatla ve mümkün olan en az sayıda eylem kullanılarak bir yığındaki verilerin sıralanmasını gerektiren algoritmik bir zorluktur. Başarılı olmak için çeşitli algoritma türlerini kullanmanız ve optimize edilmiş bir sıralama için en uygun olanı seçmeniz gerekir.
 
-</td><td style="padding:0; margin:0;">
+---
 
-| Circle 3                          | Durum                                     |
-| :-                                | :-                                        |
-| [Philosophers][philo_tree]        | [![philo_badge]][philo_tree]              |
-| [minishell][minishell_tree]       | [![minishell_badge]][minishell_tree]      |
-| [Exam Rank 03][exam_rank03_tree]  | [![exam_rank03_badge]][exam_rank03_tree]  |
+### 🚀 Optimum Algoritma Füzyonu:
 
-</td></tr>
+- `push_swap`: Quick sort ve radix sort ilkelerini ve öbek tabanlı iyileştirmeyi kullanarak sıralama stratejisini veri boyutuna göre uyarlar.
 
-[libft_tree]: https://github.com/nisaunnu/42_School_Curses/tree/libft
-[libft_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[gnl_tree]: https://github.com/nisaunnu/42_School_Curses/tree/get_next_line
-[gnl_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20112%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[printf_tree]: https://github.com/nisaunnu/42_School_Curses/tree/ft_printf
-[printf_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[born2beroot_tree]: https://github.com/nisaunnu/42_School_Curses/tree/born2beroot
-[born2beroot_badge]: https://custom-icon-badges.demolab.com/badge/✔%20%EF%B8%8E%2080%20/%20100-017520.svg?&style=for-the-badge&color=018f27
+**Sıralama Seçeneklerine Hızlı Bakış**
+push_swap, değişken boyutlu diziler için QuickSort'un etkili bölümleme ve yığın tabanlı sıralamasının benzersiz bir karışımını kullanır. Bu çok yönlü taktik, push_Swap görevlerindeki çeşitli senaryolarda performansı optimize eder.
 
-[fractol_tree]: https://github.com/nisaunnu/42_School_Curses/tree/fractol
-[fractol_badge]:https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[push_swap_tree]: https://github.com/nisaunnu/42_School_Curses/tree/push_swap
-[push_swap_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[minitalk_tree]: https://github.com/nisaunnu/42_School_Curses/tree/minitalk
-[minitalk_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[exam_rank02_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank02
-[exam_rank02_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
+| Algoritma       | En Kötü  | Ortalama  | En İyi    | Algoritma için İdeal                     |
+|-----------------|----------|-----------|-----------|------------------------------------------|
+| Bubble Sort     | O(n^2)   | O(n^2)    | O(n)      | Küçük, basit listeler                    |
+| Insertion Sort  | O(n^2)   | O(n^2)    | O(n)      | Küçük, istikrarlı listeler               |
+| ...             | ...      | ...       | ...       | ...                                      |
+| QuickSort       | O(n^2)   | O(n log n)| O(n log n)| Büyük listeler, hızlı ortalama vakalar   |
+| Radix Sort      | O(nk)    | O(nk)     | O(nk)     | Tamsayı, karşılaştırmasız sıralama.      |
 
-[philo_tree]: https://github.com/nisaunnu/42_School_Curses/tree/philosophers
-[philo_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[minishell_tree]: https://github.com/nisaunnu/42_School_Curses/tree/minishell
-[minishell_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[exam_rank03_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank03
-[exam_rank03_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
+Benimsenen yaklaşım yalnızca QuickSort'un hızlı ortalama vaka çözümünü yakalamakla kalmıyor, aynı zamanda daha büyük setler için sistematik bir süreç getirerek Push_Swap programının ödün vermeden en yüksek verimliliği sürdürmesini sağlıyor.
 
-</table>
+---
+
+### 🧩 Algoritma Şemaları:
+- mandatory: [push_swap](algorithm/push_swap_algorithm.md)
+- bonus: [checker](algorithm/checker_algorithm.md)
+
+---
+
+### 🎯 Test:
+<br>
+
+- Sıralama algoritmasının çıktısını doğrulamak için [`checker_Mac`](https://github.com/nisaunnu/42_School_Curses/tree/push_swap/push_swap_with_code_explanations/checker_Mac) özelliğini kullanın.
+
+- **Tester kullanın**: Sıralama başarısını, "Error" yazımının  tespitini, memory leaks kontrolünü ve diğer test kontrollerini gerçekleştirmek için push_swap tester'ları kullanın.
+	* [Push Swap Tester - 1](https://github.com/laisarena/push_swap_tester)
+	* [Push Swap Tester - 2](https://github.com/LeoFu9487/push_swap_tester)
+
+- **Push_Swap'inizi Görselleştirin (Virtualization)**: Sıralamanızı adım adım veya otomatik olarak görselleştirmek/sanallaştırmak için program kullanın.
+	* [Push Swap Visualizer](https://github.com/o-reo/push_swap_visualizer)
+	* [42Barcelona - Push Swap Pro Checker](https://github.com/ailopez-o/42Barcelona-PushSwap-ProChecker)
+
+<br></br>
