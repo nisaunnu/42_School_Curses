@@ -1,5 +1,8 @@
 # get_next_line Projesi Notları
-<br>
+
+
+Açıklamalı kodlara ulaşmak için [tıklayınız](https://github.com/nisaunnu/42_School_Curses/tree/get_next_line/get_next_line_with_code_explanations)
+<br></br>
 
 ## 🖇️ İçerik
 - [Mandatory Part](#️-mandatory-part)
