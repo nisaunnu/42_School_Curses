@@ -2,8 +2,8 @@
 <br>
 
 ## 🖇️ İçerik
-- [✏️ Mandatory Part](#️-mandatory-part)
-- [✏️ Bonus Part](#️-bonus-part)
+- [Mandatory Part](#️-mandatory-part)
+- [Bonus Part](#️-bonus-part)
 - [Statik Değişken Nedir ve Nasıl Kullanılır?](#statik-değişken-nedir-ve-nasıl-kullanılır)
   - [Dosya Kapsamında (File Scope) `static` Değişkenler](#dosya-kapsamında-file-scope-static-değişkenler)
   - [Fonksiyon Kapsamında (Function Scope) `static` Değişkenler](#fonksiyon-kapsamında-function-scope-static-değişkenler)
