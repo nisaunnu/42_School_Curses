@@ -1,0 +1,66 @@
+NOT: "No commands-Komut yok" gibi hatalarla karşılaşırsanız "sudo" parametresiyle yeniden deneyin, büyük ihtimal ile sorun çözülecektir.
+
+SDA'lar yapılandırıldıktan sonra,
+	1-) "su" 									--> Yazıp root hesabına giriş yapılır (Root parolası soracak sistemi kurarken belirlemiş olduğumuz ilk parola)
+	2-) "apt install sudo" 						--> Yazıp sudo paketini yüklüyoruz (Sudo ile kullanıcılara root ayrıcalıkları tanınır)
+	3-) "adduser kullanıcı_adı sudo"			--> Belirtilen kullanıcıyı sudo grubuna ekler. NOT: "getent group sudo" ile kullanıcı gruba eklenmiş mi diye kontrol edin!
+	4-) Sistemi "reboot" komutu ile yeniden başlatıyoruz.
+	-------------------------------------------------------------------------------------------------------------------------------------------------------------
+	5-) Gruba eklenen kullanıcıya login olduktan sonra "sudo -v" ile tekrar kontrol sağlayalım.
+	6-) "sudo apt update"						--> Yazıp paket listelerini güncelleyelim.
+	7-) "sudo visudo -f /etc/sudoers.d/blabla"	--> Sudo dosyalarını "visudo" ile açmak daha güvenli bir yapı oluşturur, belirtilen dizine blabla adında yeni bir dosya yarattık ve aşağıda ki kodları ekleyeceğiz.
+		@-) Defaults		passwd_tries=3									// Sudo ile max şifre deneme sayısı 3 yapılır (Standart olarak da 3'tür)
+		@-) Defaults		badpass_message="bla bla bla bla bla bla"		// Hatalı şifre denemelerinden sonra gösterilecek hata mesajınız
+		@-) Defaults		logfile="/var/log/sudo/blabla"					// Tüm kullanılan sudo komutlarını belirtilen dosyanın içerisinde saklar
+		@-) Defaults		log_input,log_output							// Giriş ve çıkışların loglarını tutmak için kullanılır.
+		@-) Defaults		iolog_dir="/var/log/sudo"						// Belirtilen dizine log_input ve log_output olaylarını arşivler.
+		@-) Defaults		requiretty										// TTY modunu zorunlu kılar.
+		@-) Defaults		secure_path="pdf'ye bak"						// Sudo tarafından kullanılan dizinleri sınırlandırmak için.
+	8-) Sistemi "reboot" komutu ile yeniden başlatıyoruz.
+	-------------------------------------------------------------------------------------------------------------------------------------------------------------
+	9-) "sudo apt install openssh-server"		--> Openssh-server paketini kurar (Openssh dışarıdan gelen güvenli olmayan bir ağ üzerinden güvenli bir kanal sağlar)
+	10-) "sudo nano /etc/ssh/sshd_config"		--> SSH Yapılandırmaların olduğu kısım.
+		@-) "#Port 22" olan kısmı tırnaklar olmadan "Port 4242" olarak değiştirin
+		@-) "#PermitRootLogin prohibit-password" kısmını da "PermitRootLogin no" şeklinde değiştirin. NOT: Tırnak işaretleri ve # işaretlerini koymadan yapacaksınız.
+	11-) Sistemi "reboot" komutu ile yeniden başlatıyoruz.
+	-------------------------------------------------------------------------------------------------------------------------------------------------------------
+	12-) "sudo service ssh status"				--> Bu komutu yazarak ssh durumunu görüntüleye bilirsiniz.
+	13-) "sudo apt install ufw"					--> Açılımı "uncomplicated firewall" yani diyor ki karmaşık olmayan güvenlik duvarı imiş (: o paketi kurarsınız.
+	14-) "sudo ufw enable"						--> Güvenlik duvarımızı aktif ediyoruz.
+	15-) "sudo ufw allow 4242"					--> 4242 portu için güvenlik duvarımıza yeni kural ekleyip buna izin veriyoruz.
+	16-) "sudo ufw status"						--> güvenlik duvarımızın durumunu kontrol ediyoruz.
+	17-) Sistemi "poweroff" komutu ile kapatıyoruz.
+	-------------------------------------------------------------------------------------------------------------------------------------------------------------
+	BURASI ÖNEMLİ: SSH BAĞLANTISI ATABİLMEK İÇİN VM ÜZERİNDEN PORT YÖNLENDİRMESİ YAPMAMIZ GEREKMEKTE BUNU
+		-Kurduğumuz sanal sunucuya VM arayüzünde sağ tıklayıp ayarlar kısmından ağ kısmına gelinir daha sonra gelişmiş menüsü altında B.noktası yönelndirme bölümüne tıklanır
+		-Açılan yeni pencerenin sağ tarafında yeşil renkte yeni bağlantı kuralı butonu bulunur, 1 kere tıklayalım. Daha sonra 
+		-ADI Kısmına : SSH
+		-PROTOKOL Kısmına : TCP
+		-ANAMAKİNE IP Kısmına : 127.0.0.1
+		-ANAMAKİNE B.N Kısmına : 4242
+		-MİSAFİR IP Kısmına : 10.0.2.15
+		-MİSAFİR B.N Kısmına : 4242
+		Şeklinde düzenleme yapıp aşağıdan tamama basabilirsiniz.
+	-------------------------------------------------------------------------------------------------------------------------------------------------------------
+	18-) "sudo nano /etc/login.defs"			--> Nano ile dosyayı açarız ve içinde ararız (NOT: TERMINAL UZERINDEN ARTIK SSH BAĞLANTISI ATABILDIGIMIZ İÇİN SANAL SUNUCUNUN KENDİSİNDE YIPRANMAYIN) :)
+		@-) PASS_MAX_DAYS	99999 --> PASS_MAX_DAYS	30 //Parola her 30 günde süresinin dolacağını belirttik
+		@-) PASS_MIN_DAYS	0 --> PASS_MIN_DAYS	2 // Şifreyi değiştikten sonra en az 2 gün sonra tekrar değiştirile bilir hale geleceğini belirttik.
+		@-) PASS_WARN_AGE   7 //Kullanıcı şifresinin bitmesine 7 gün kala bir uyarı ile karşılaşsın diye belirttik.
+	19-) "sudo apt install libpam-pwquality"	--> Şifrelerin güvenliğini arttırmak için libpam-pwquality paketini kuruyoruz.
+	20-) "sudo nano /etc/pam.d/common-password"	--> common-password belgesi açılır ve içerisinde aratılır: "password		requisite						pam_pwquality.so retry=3"
+		-retry=3'den sonra birer boşluk bırakılarak şunlar eklenir:
+			@-) minlen=10					// Minimum uzunluk 10
+			@-) ucredit=-1 dcredit=-1		// En az bir büyük ve bir sayısal karakter içermesi zorunluğu
+			@-) maxrepeat=3					// En fazla art arda 3 karakter kullanıla bilir.
+			@-) reject_username				// Kullanıcı adını içermemelidir.
+			@-) difok=7						// Eski şifrenin içermediği 7 farklı karakter şartı
+			@-) enforce_for_root			// Kuralları root için de geçerli kıldık
+			@@-) SON HALİ: password		requisite						pam_pwquality.so retry=3 minlen=10 ucredit=-1 dcredit=-1 maxrepeat=3 reject_username difok=7 enforce_for_root
+	-------------------------------------------------------------------------------------------------------------------------------------------------------------
+	ŞİMDİ YENİ YAPILANDIRMALARIMIZI TEST ETMEK İÇİN  ROOT VE KURULUM SIRASINDA ADIMIZA AÇTIĞIMIZ DİĞER KULLANICININ ŞİFRELERİNİ DEĞİŞTİRECEĞİZ
+	-------------------------------------------------------------------------------------------------------------------------------------------------------------
+	21-) "sudo addgroup user42"					--> "user42" adında yeni grup oluşturduk.
+	22-) "sudo adduser kullanıcı_adı user42"	--> user42 grubuna belirlenen kullanıcıyı ekledik.
+	23-) "sudo passwd kullanıcı_adı"			--> şifrelerimizi değişelim.
+	-------------------------------------------------------------------------------------------------------------------------------------------------------------
+	24-) "sudo crontab -u root -e"				--> Crontab zamanlı dosya çalıştırma sistemi olarak düşünüle bilir. En alt satır "*/10 * * * * sh /path/to/script" değiştir ya da ekle.

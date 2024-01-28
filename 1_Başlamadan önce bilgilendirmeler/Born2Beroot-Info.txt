@@ -1,0 +1,33 @@
+BORN2BEROOT Debian ve CentOS nedir ?
+-Linux çekirdeği üzerine inşa edilmiş, açık kaynaklı işletim sistemlerinin iki popüler örnekleri. -Pek çok insan Linux çekirdeği üzerine ek bileşenler ekleyerek kendi sistemini yazabilir.
+
+————————Debian  —————————————-----------------------------------------------------------———CentOS——————————————
+-Ücretsiz ve açık kaynaklı dağıtımdır.					 -RHE Linux topluluk sürümüne dayanan bir topluluk sürümü ticari amaçla üretilmiş olup ücretlidir.
+-Paket yönetimini “apt”(Advanced Package Tool) kullanılır.  		 -Paket yönetimi için “yum”(Yellowdog Updater Modified) kullanılır. Bu paket yönetim sistemi paketleri yönetimi kolaylaştırır.
+-Yeni sürümleri daha sık çıkar.						 -RHEL ile uyumlu olcak şekilde çıkar ve yeni sürümleri daha uzun zamanda çıkar.
+-Geniş destek imkanı vardır.							 -Debian kadar olmasada destek imkanı geniştir.
+-Hem masaüstü hemde uzak sunucu için uygundur.		 		 -Genellikle iş ortamı için kullanılır. Hem teknik hemde yeni başlayanlar için kolaydır.			Daha çok kurumsal ve güvenilir alt yapı gerektiren kullanıcılar tercih eder.
+
+LVM nedir ?  
+-LVM(Logical Volume Manager) Linus tabanlı işletim sistemlerinde depolama alanlarının yönetiminde esneklik ve kolaylık için kullanılır.
+-LVM aynı zamanda fiziksel depolama birimlerini (sabit disk, disk bölümleri veya RAID ..) birleştirerek mantıksal bir yapı oluşturarak depolama alanını daha iyi kullanmanızı sağlar.
+
+LVM Bileşenleri:
+Physical Volumes(PVs) : Fiziksel depolama birimlerini temsil eder. PV'ler, sabit disklerin bölümleri veya RAID dizileri olabilir.
+Volume Group (VG): Volume Group, bir veya daha fazla fiziksel depolama birimini bir araya getiren ve mantıksal bir birim oluşturan yapıdır.
+Logical Volume (LV): Logical Volume, Volume Group içinde oluşturulan ve kullanıcıların veri saklayabileceği birimlerdir.
+Logical Volume (LV): Logical Volume, Volume Group içinde oluşturulan ve kullanıcıların veri saklayabileceği birimlerdir.
+
+Debianda Paket Yönetimi
+Debianda  kullanılan paket yönetimlerinden kullanılanlar : ‘aptitude’  ‘apt’ ‘ait-get’ ‘apt-cache’ ‘dpkg’ ….
+Ancak şuan benim bahsetceklerim ‘aptitude’ ve ‘apt’
+İki paket yönetimi aracıda paket kurma, kaldırma, güncelleme ve yönetme gibi işlemleri yapmaya olanak sağlar.
+
+————’aptitude’———————————————--------------------------------------------------------------------—————‘apt’————————————————
+- Terminal tabanlı bir TUI (Text User Interface) aracıdır. 				-Daha yeni bir araçtır ve Debian 8 (Jessie) ve sonraki sürümlerde
+Metin tabanlı bir arayüze sahiptir ve komutlarla kullanılır				kullanıma sunulmuştur. apt komutu, 
+Paket yönetim işlemleri için çeşitli komutlar ve seçenekler kullanılır.		         kullanımı daha kolay ve daha sezgisel bir arayüze sahiptir. 
+											Komutlar, daha basit ve kısa formda kullanılabilmektedir. 
+
+- Paket bağımlılıklarını daha iyi çözme ve yönetme eğilimindedir.			-Paketleri otomatik olarak tutarlı bir durumda tutma eğilimindedir. 							Örneğin, bir paketi kaldırdığınızda, ona bağımlı diğer paketleri otomatik 															olarak kaldırır.
+-Debian tabanlı sistemlerin çoğunda varsayılan olarak kurulu gelir.		-Daha yeni bir araç olduğundan, eski Debian sürümlerinde varsayılan 															olarak gelmeyebilir.
