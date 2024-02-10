@@ -1,84 +1,35 @@
-# **nunnu's 42 projects**
+# Exam Rank 03
 
-<table width="100%" align="center">
-<tr style="display:flex; justify-content:space-around; paddind:0;">
-<td colspan="2" style="padding:0; margin:0; text-align:center;">
-	<p align="center">42 SCHOOL CURSES</p>
-</td></tr>
+Bütün exam rank 03 sorularının işlevleri ve kodları bu repository'nin içerisinde yer almaktadır.
 
-<tr style="display:flex; justify-content:space-around; paddind:0;">
-<td style="padding:0; margin:0;">
+Exam Rank 03, tek soruluk bir sınavdır. Sınavda soru olarak karşınıza çıkabilecek iki farklı soru çeşidi bulunmaktadır:
+1. ft_printf
+2. get_next_line
 
-| Circle 0 & 1                      | Durum                                     |
-| :-                                | :-                                        |
-| [Libft][libft_tree]               | [![libft_badge]][libft_tree]              |
-| [get_next_line][gnl_tree]         | [![gnl_badge]][gnl_tree]                  |
-| [ft_printf][printf_tree]          | [![printf_badge]][printf_tree]            |
-| [Born2beroot][born2beroot_tree]   | [![born2beroot_badge]][born2beroot_tree]  |
+<br></br>
 
-</td><td style="padding:0; margin:0;">
+## `ft_printf`
+`ft_printf` , biçimlendirilmiş çıktıları ekrana yazdırmak için kullanılır. İlgili başlık dosyalarını (`<unistd.h>` ve `<stdarg.h>`) içerir ve bir değişken argüman listesi kullanır.
 
-| Circle 2                          | Durum                                     |
-| :-                                | :-                                        |
-| [fract'ol][fractol_tree]          | [![fractol_badge]][fractol_tree]          |
-| [minitalk][minitalk_tree]         | [![minitalk_badge]][minitalk_tree]        |
-| [push_swap][push_swap_tree]       | [![push_swap_badge]][push_swap_tree]      |
-| [Exam Rank 02][exam_rank02_tree]  | [![exam_rank02_badge]][exam_rank02_tree]  |
+- `void ft_putstr(char *str, int *len)`: Bir stringi ekrana yazdırmak için yardımcı bir fonksiyondur. Eğer string NULL ise, "(null)" stringini yazdırır.
 
-</td></tr>
+- `void ft_int(long long int nb, int *len, int base)`: Bir tamsayıyı belirtilen sayı tabanına göre ekrana yazdırmak için yardımcı bir fonksiyondur. Negatif sayıları da ele alır ve gerekirse eksi işareti ekler.
 
-<tr style="display:flex; justify-content:space-around; paddind:0;">
-<td style="padding:0; margin:0;">
+- `int ft_printf(const char *format, ...)`: Biçimlendirilmiş çıktıları ekrana yazdıran ana fonksiyondur. `format` stringi, çıktının formatını belirtir. `%` işareti ile başlayan özel belirteçleri tanır ve bu belirteçlere göre ilgili değerleri ekrana yazdırır. Desteklenen belirteçler arasında `%s` (string), `%d` (ondalık tamsayı), `%x` (hexadecimal tamsayı) bulunur.
 
-| Circle 3                          | Durum                                     |
-| :-                                | :-                                        |
-| [Philosophers][philo_tree]        | [![philo_badge]][philo_tree]              |
-| [minishell][minishell_tree]       | [![minishell_badge]][minishell_tree]      |
-| [Exam Rank 03][exam_rank03_tree]  | [![exam_rank03_badge]][exam_rank03_tree]  |
+<br></br>
 
-</td><td style="padding:0; margin:0;">
+## `get_next_line`
+`get_next_line` , bir dosyadan satır satır okuma işlemini gerçekleştirir. Başlık dosyasını (`"get_next_line.h"`) içerir.
 
-| Circle 4                          | Durum                                     |
-| :-                                | :-                                        |
-| [NetPractice][net_practice_tree]  | [![net_practice_badge]][net_practice_tree]|
-| [cub3d / miniRT][minirt_tree]     | [![minirt_badge]][minirt_tree]            |
-| [CPP Modules][cpp_modules_tree]   | [![cpp_modules_badge]][cpp_modules_tree]  |
-| [Exam Rank 04][exam_rank04_tree]  | [![exam_rank04_badge]][exam_rank04_tree]  |
+- `int ft_strlen(char *str)`: Bir stringin uzunluğunu hesaplamak için yardımcı bir fonksiyondur.
 
-</td></tr>
+- `char *ft_strjoin(char *str1, char *str2)`: İki stringi birleştirmek için yardımcı bir fonksiyondur.
 
-[libft_tree]: https://github.com/nisaunnu/42_School_Curses/tree/libft
-[libft_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[gnl_tree]: https://github.com/nisaunnu/42_School_Curses/tree/get_next_line
-[gnl_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20112%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[printf_tree]: https://github.com/nisaunnu/42_School_Curses/tree/ft_printf
-[printf_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[born2beroot_tree]: https://github.com/nisaunnu/42_School_Curses/tree/born2beroot
-[born2beroot_badge]: https://custom-icon-badges.demolab.com/badge/✔%20%EF%B8%8E%2080%20/%20100-017520.svg?&style=for-the-badge&color=018f27
+- `char *ft_substr(char *str, int i)`: Belirli bir aralıktaki karakterleri kopyalamak için yardımcı bir fonksiyondur.
 
-[fractol_tree]: https://github.com/nisaunnu/42_School_Curses/tree/fractol
-[fractol_badge]:https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[push_swap_tree]: https://github.com/nisaunnu/42_School_Curses/tree/push_swap
-[push_swap_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[minitalk_tree]: https://github.com/nisaunnu/42_School_Curses/tree/minitalk
-[minitalk_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[exam_rank02_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank02
-[exam_rank02_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
+- `int check(char *line)`: Verilen string içinde bir newline karakteri (satır sonu) kontrol eder. Eğer varsa, indeksini döndürür; yoksa, -1 döndürür.
 
-[philo_tree]: https://github.com/nisaunnu/42_School_Curses/tree/philosophers
-[philo_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[minishell_tree]: https://github.com/nisaunnu/42_School_Curses/tree/minishell
-[minishell_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[exam_rank03_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank03
-[exam_rank03_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
+- `char *next_line(char *line, int fd)`: Dosyadan bir satır okuma işlemini gerçekleştiren yardımcı bir fonksiyondur. `BUFFER_SIZE` kadar okuma yapar ve okunan veriyi stringe ekler.
 
-[net_practice_tree]: https://github.com/nisaunnu/42_School_Curses/tree/net_practice
-[net_practice_badge]:https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[minirt_tree]: https://github.com/nisaunnu/42_School_Curses/tree/minirt
-[minirt_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[cpp_modules_tree]: https://github.com/nisaunnu/42_School_Curses/tree/cpp_modules
-[cpp_modules_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[exam_rank04_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank04
-[exam_rank04_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-
-</table>
+- `char *get_next_line(int fd)`: Bir dosyadan satır satır okuma işlemini gerçekleştiren ana fonksiyondur. `check` ve `next_line` fonksiyonlarını kullanarak dosyadan satırları okur ve geri döndürür. Bu fonksiyon, statik bir değişken olan `line` üzerinde çalışır ve dosyadan okunan satırları saklar. Okuma işlemi tamamlandığında, kalan veriyi ve bellek temizleme işlemlerini gerçekleştirir.
