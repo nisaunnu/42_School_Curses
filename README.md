@@ -1,6 +1,8 @@
 # 🍽️ Philosophers Projesi
 
 Projenin notlarına ulaşmak için [tıklayınız](https://github.com/nisaunnu/42_School_Curses/blob/philosophers/notes.md)
+
+Projenin detaylı kod anlatımına ulaşmak için [tıklayınız](https://github.com/nisaunnu/42_School_Curses/tree/philosophers/philo_with_code_explanations)
 <br></br>
 
 ## 💡 Philosophers Projesi Nedir?
