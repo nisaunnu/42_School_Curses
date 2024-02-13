@@ -1,84 +1,54 @@
-# **nunnu's 42 projects**
+# 🍽️ Philosophers Projesi
 
-<table width="100%" align="center">
-<tr style="display:flex; justify-content:space-around; paddind:0;">
-<td colspan="2" style="padding:0; margin:0; text-align:center;">
-	<p align="center">42 SCHOOL CURSES</p>
-</td></tr>
+Projenin notlarına ulaşmak için [tıklayınız](https://github.com/nisaunnu/42_School_Curses/blob/philosophers/notes.md)
+<br></br>
 
-<tr style="display:flex; justify-content:space-around; paddind:0;">
-<td style="padding:0; margin:0;">
+## 💡 Philosophers Projesi Nedir?
+Philosophers projesi, "Dining Philosophers" adlı klasik bir senkronizasyon problemini temsil etmektedir. Bu projede, bir grup filozofun bir masada oturup yemek yemesi, düşünmesi ve uyuması simüle edilmeye çalışılır. Bir program tasarlamak için verilen argümanlar:
 
-| Circle 0 & 1                      | Durum                                     |
-| :-                                | :-                                        |
-| [Libft][libft_tree]               | [![libft_badge]][libft_tree]              |
-| [get_next_line][gnl_tree]         | [![gnl_badge]][gnl_tree]                  |
-| [ft_printf][printf_tree]          | [![printf_badge]][printf_tree]            |
-| [Born2beroot][born2beroot_tree]   | [![born2beroot_badge]][born2beroot_tree]  |
+- **[filozof_sayısı]**: Filozof sayısıdır (aynı zamanda çatal sayısıdır).
+- **[ölme_zamanı]** (milisaniye cinsinden): Eğer bir filozof, son yemeğinin başlangıcından veya simülasyonun başlangıcından bu yana belirtilen sürede yemeye başlamamışsa ölür.
+- **[yeme_zamanı]** (milisaniye cinsinden): Bir filozofun yemek yemesi için geçen süredir. Bu süre zarfında iki çatalı tutması gerekmektedir.
+- **[uyku_zamanı]** (milisaniye cinsinden): Bir filozofun uykuda geçireceği süredir.
+- **[her_filozof_yeme_zamanı_sayısı]** (isteğe bağlı argüman): Tüm filozoflar ***en az*** belirtilen sayıda yemek yemişse simülasyon durur.
 
-</td><td style="padding:0; margin:0;">
+Her filozofun bir numarası vardır ve 1 numaralı filozof, n.(filozof sayısı) filozofun yanında oturur. Diğer filozoflar birbirleriyle konuşmazlar. Çatallar, filozoflar arasında paylaşılan kaynaklar olduğu için çatal durumları (çatal sayısı, çatalı alma ve bırakma durumları) mutex ile korunur. Programın günlükleri şu durumları içerir:
 
-| Circle 2                          | Durum                                     |
-| :-                                | :-                                        |
-| [fract'ol][fractol_tree]          | [![fractol_badge]][fractol_tree]          |
-| [minitalk][minitalk_tree]         | [![minitalk_badge]][minitalk_tree]        |
-| [push_swap][push_swap_tree]       | [![push_swap_badge]][push_swap_tree]      |
-| [Exam Rank 02][exam_rank02_tree]  | [![exam_rank02_badge]][exam_rank02_tree]  |
+- Filozofun çatal aldığı an.
+- Filozofun yemek yediği an.
+- Filozofun uyuduğu an.
+- Filozofun düşündüğü an.
+- Filozofun öldüğü an.
 
-</td></tr>
+Filozoflar arasında veri yarışı (data race) olmamalıdır ve bir filozofun ölümü, gerçek ölümünden en fazla 10 ms sonra bildirilmelidir. Filozoflar, ölümden kaçınmalıdır ve simülasyon, belirtilen koşullar sağlandığında durmalıdır. Her filozof bir iplik (thread) olarak temsil edilir.
+<br></br>
 
-<tr style="display:flex; justify-content:space-around; paddind:0;">
-<td style="padding:0; margin:0;">
+## ✨ Projeyi Nasıl Çalıştırırım?
+1. Projeyi indirin ve indirdiğiniz dosyadan "philo" dosyasını terminalde açın. Aşağıdaki komutu terminale yazarak projenin derlemesini gerçekleştirin:
 
-| Circle 3                          | Durum                                     |
-| :-                                | :-                                        |
-| [Philosophers][philo_tree]        | [![philo_badge]][philo_tree]              |
-| [minishell][minishell_tree]       | [![minishell_badge]][minishell_tree]      |
-| [Exam Rank 03][exam_rank03_tree]  | [![exam_rank03_badge]][exam_rank03_tree]  |
+	```rust
+	make
+	```
+<br>
 
-</td><td style="padding:0; margin:0;">
+2. Giriş Formatı : `./philo <filozof_sayısı> <ölme_zamanı> <yeme_zamanı> <uyku_zamanı> <her_filozof_yeme_zamanı_sayısı>`
 
-| Circle 4                          | Durum                                     |
-| :-                                | :-                                        |
-| [NetPractice][net_practice_tree]  | [![net_practice_badge]][net_practice_tree]|
-| [cub3d / miniRT][minirt_tree]     | [![minirt_badge]][minirt_tree]            |
-| [CPP Modules][cpp_modules_tree]   | [![cpp_modules_badge]][cpp_modules_tree]  |
-| [Exam Rank 04][exam_rank04_tree]  | [![exam_rank04_badge]][exam_rank04_tree]  |
+   Örnek:
+	```rust
+	./philo 4 600 200 300 3
+	```
+<br></br>
 
-</td></tr>
-
-[libft_tree]: https://github.com/nisaunnu/42_School_Curses/tree/libft
-[libft_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[gnl_tree]: https://github.com/nisaunnu/42_School_Curses/tree/get_next_line
-[gnl_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20112%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[printf_tree]: https://github.com/nisaunnu/42_School_Curses/tree/ft_printf
-[printf_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[born2beroot_tree]: https://github.com/nisaunnu/42_School_Curses/tree/born2beroot
-[born2beroot_badge]: https://custom-icon-badges.demolab.com/badge/✔%20%EF%B8%8E%2080%20/%20100-017520.svg?&style=for-the-badge&color=018f27
-
-[fractol_tree]: https://github.com/nisaunnu/42_School_Curses/tree/fractol
-[fractol_badge]:https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[push_swap_tree]: https://github.com/nisaunnu/42_School_Curses/tree/push_swap
-[push_swap_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[minitalk_tree]: https://github.com/nisaunnu/42_School_Curses/tree/minitalk
-[minitalk_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[exam_rank02_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank02
-[exam_rank02_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-
-[philo_tree]: https://github.com/nisaunnu/42_School_Curses/tree/philosophers
-[philo_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[minishell_tree]: https://github.com/nisaunnu/42_School_Curses/tree/minishell
-[minishell_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[exam_rank03_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank03
-[exam_rank03_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-
-[net_practice_tree]: https://github.com/nisaunnu/42_School_Curses/tree/net_practice
-[net_practice_badge]:https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[minirt_tree]: https://github.com/nisaunnu/42_School_Curses/tree/minirt
-[minirt_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[cpp_modules_tree]: https://github.com/nisaunnu/42_School_Curses/tree/cpp_modules
-[cpp_modules_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[exam_rank04_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank04
-[exam_rank04_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-
-</table>
+## 🔍 Kontrol Yapılması için Gerekli Komutlar
+1. `leaks` komutu ile leaks kontrolü:
+	```rust
+	leaks -q --atExit -- ./philo <filozof_sayısı> <ölme_zamanı> <yeme_zamanı> <uyku_zamanı> <her_filozof_yeme_zamanı_sayısı>
+	```
+2. `valgrind` ile leaks kontrolü:
+	```rust
+	valgrind --leaks-check=full ./philo <filozof_sayısı> <ölme_zamanı> <yeme_zamanı> <uyku_zamanı> <her_filozof_yeme_zamanı_sayısı>
+	```
+3. `ThreadSanitizer` ile data race kontrolü: Makefile'da CFLAG'inizin devamına aşağıdaki bayrakları ekleyin.
+	```rust
+	-fsanitize=thread -pthread
+	```
