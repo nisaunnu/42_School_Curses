@@ -487,8 +487,6 @@ Bu durumun bazı olası etkileri şunlar olabilir:
 
 3. **Programın Kapatılması Önce İş Parçacığının Tamamlanmaması:** İş parçacığı, belirli bir görevi yerine getirmek üzere başlatılmış olabilir. Eğer ana program iş parçacığının tamamlanmasını beklemeksizin sona erirse, iş parçacığı bu görevi tamamlamadan kapatılabilir, ve bu da programın beklendiği gibi çalışmamasına neden olabilir.
 
-Böylelikle, iş parçacığı (thread) tamamlanana kadar beklemek için `pthread_join` kullanmak genel olarak iyi bir uygulama pratiğidir. Bu fonksiyon, iş parçacığının bitişini bekleyerek, kaynakların düzgün bir şekilde serbest bırakılmasını ve diğer temizleme işlemlerinin yapılmasını  ya da ana programın zamansız sonlanmamasını sağlar.
-
 <br></br>
 
 ## 🔹 Data Race
