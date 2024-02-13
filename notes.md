@@ -1,61 +1,60 @@
-# Philosophers Notları 🍽️
+# 🍽️ Philosophers Notları
 <br>
 
 # 🖇️ İçerik
-- [Philosophers Notları 🍽️](#philosophers-notları-️)
-- [🖇️ İçerik](#️-i̇çerik)
-- [¿ Bilinmesi Gerekenler](#-bilinmesi-gerekenler)
-- [📝 Kurallar](#-kurallar)
-- [✏️ Mandatory Part](#️-mandatory-part)
-- [🔹 Bellek Yönetimi ve Çeşitleri](#-bellek-yönetimi-ve-çeşitleri)
-	- [🔸 Statik Bellek Yönetimi](#-statik-bellek-yönetimi)
-	- [🔸 Dinamik Bellek Yönetimi](#-dinamik-bellek-yönetimi)
-	- [🔸 Yerel ve Global Bellek Yönetimi](#-yerel-ve-global-bellek-yönetimi)
-	- [🔸 Bellek Havuzları (Memory Pools)](#-bellek-havuzları-memory-pools)
-- [🔹 Paralel Programlama Nedir?](#-paralel-programlama-nedir)
-- [🔹 Process](#-process)
-	- [🔸 Process (İşlem) Nedir?](#-process-i̇şlem-nedir)
-	- [🔸 Process'in Temel Özellikleri](#-processin-temel-özellikleri)
-	- [🔸 Process Durumları Nelerdir?](#-process-durumları-nelerdir)
-- [🔹 Thread](#-thread)
-	- [🔸 Thread Nedir?](#-thread-nedir)
-	- [🔸 Multithreading (Çoklu Thread) Nedir?](#-multithreading-çoklu-thread-nedir)
-	- [🔸 Thread'lerin Temel Özellikleri](#-threadlerin-temel-özellikleri)
-	- [🔸 Thread Neden Kullanılır?](#-thread-neden-kullanılır)
-	- [🔸 Thread Nasıl Kullanılır?](#-thread-nasıl-kullanılır)
-	- [🔸 Thread Fonksiyonları](#-thread-fonksiyonları)
-- [🔹 Data Race](#-data-race)
-	- [🔸 Data Race Nedir?](#-data-race-nedir)
-	- [🔸 Data Race Hangi Durumlarda Çıkar?](#-data-race-hangi-durumlarda-çıkar)
-	- [🔸 Data Race Durumu Nasıl Önlenir?](#-data-race-durumu-nasıl-önlenir)
-- [🔹 Mutex](#-mutex)
-	- [🔸 Mutex Nedir ve Ne İşe Yarar?](#-mutex-nedir-ve-ne-i̇şe-yarar)
-	- [🔸 Mutex'in Temel Görevleri](#-mutexin-temel-görevleri)
-	- [🔸 Mutex Nasıl Kullanılır?](#-mutex-nasıl-kullanılır)
-	- [🔸 Mutex Fonksiyonları](#-mutex-fonksiyonları)
-- [🔹 Semaphore](#-semaphore)
-	- [🔸 Semaphore Nedir ve Ne işe Yarar?](#-semaphore-nedir-ve-ne-işe-yarar)
-	- [🔸 Semaphore Nasıl Kullanılır?](#-semaphore-nasıl-kullanılır)
-	- [🔸 Semaphore Fonksiyonları](#-semaphore-fonksiyonları)
-- [🔹 Semaphore ve Mutex Arasındaki Farklar](#-semaphore-ve-mutex-arasındaki-farklar)
-- [🔹 Fonksiyon Açıklamaları](#-fonksiyon-açıklamaları)
-	- [🔸 `memset` fonksiyonu](#-memset-fonksiyonu)
-	- [🔸 `printf` fonksiyonu](#-printf-fonksiyonu)
-	- [🔸 `malloc` fonksiyonu](#-malloc-fonksiyonu)
-	- [🔸 `free` fonksiyonu](#-free-fonksiyonu)
-	- [🔸 `write` fonksiyonu](#-write-fonksiyonu)
-	- [🔸 `usleep` fonksiyonu](#-usleep-fonksiyonu)
-	- [🔸 `gettimeofday` fonksiyonu](#-gettimeofday-fonksiyonu)
-	- [🔸 `pthread_create` fonksiyonu](#-pthread_create-fonksiyonu)
-	- [🔸 `pthread_join` fonksiyonu](#-pthread_join-fonksiyonu)
-	- [🔸 `pthread_detach` fonksiyonu](#-pthread_detach-fonksiyonu)
-	- [🔸 `pthread_mutex_init` fonksiyonu](#-pthread_mutex_init-fonksiyonu)
-	- [🔸 `pthread_mutex_destroy` fonksiyonu](#-pthread_mutex_destroy-fonksiyonu)
-	- [🔸 `pthread_mutex_lock` ve `pthread_mutex_unlock` fonksiyonları](#-pthread_mutex_lock-ve-pthread_mutex_unlock-fonksiyonları)
+1. [Bilinmesi Gerekenler](#-bilinmesi-gerekenler)
+2. [Kurallar](#-kurallar)
+3. [Mandatory Part](#️-mandatory-part)
+4. [Bellek Yönetimi ve Çeşitleri](#-bellek-yönetimi-ve-çeşitleri)
+	- [Statik Bellek Yönetimi](#-statik-bellek-yönetimi)
+	- [Dinamik Bellek Yönetimi](#-dinamik-bellek-yönetimi)
+	- [Yerel ve Global Bellek Yönetimi](#-yerel-ve-global-bellek-yönetimi)
+	- [Bellek Havuzları (Memory Pools)](#-bellek-havuzları-memory-pools)
+5. [Paralel Programlama Nedir?](#-paralel-programlama-nedir)
+6. [Process](#-process)
+	- [Process (İşlem) Nedir?](#-process-i̇şlem-nedir)
+	- [Process'in Temel Özellikleri](#-processin-temel-özellikleri)
+	- [Process Durumları Nelerdir?](#-process-durumları-nelerdir)
+7. [Thread](#-thread)
+	- [Thread Nedir?](#-thread-nedir)
+	- [Multithreading (Çoklu Thread) Nedir?](#-multithreading-çoklu-thread-nedir)
+	- [Thread'lerin Temel Özellikleri](#-threadlerin-temel-özellikleri)
+	- [Thread Neden Kullanılır?](#-thread-neden-kullanılır)
+	- [Thread Nasıl Kullanılır?](#-thread-nasıl-kullanılır)
+	- [Thread Fonksiyonları](#-thread-fonksiyonları)
+	- [`pthread_join` Kullanılmazsa Ne Olur?](#-pthread_join-kullanılmazsa-ne-olur)
+8. [Data Race](#-data-race)
+	- [Data Race Nedir?](#-data-race-nedir)
+	- [Data Race Hangi Durumlarda Çıkar?](#-data-race-hangi-durumlarda-çıkar)
+	- [Data Race Durumu Nasıl Önlenir?](#-data-race-durumu-nasıl-önlenir)
+9. [Mutex](#-mutex)
+	- [Mutex Nedir ve Ne İşe Yarar?](#-mutex-nedir-ve-ne-i̇şe-yarar)
+	- [Mutex'in Temel Görevleri](#-mutexin-temel-görevleri)
+	- [Mutex Nasıl Kullanılır?](#-mutex-nasıl-kullanılır)
+	- [Mutex Fonksiyonları](#-mutex-fonksiyonları)
+10. [Semaphore](#-semaphore)
+	- [Semaphore Nedir ve Ne işe Yarar?](#-semaphore-nedir-ve-ne-işe-yarar)
+	- [Semaphore Nasıl Kullanılır?](#-semaphore-nasıl-kullanılır)
+	- [Semaphore Fonksiyonları](#-semaphore-fonksiyonları)
+11. [Semaphore ve Mutex Arasındaki Farklar](#-semaphore-ve-mutex-arasındaki-farklar)
+12. [Fonksiyon Açıklamaları](#-fonksiyon-açıklamaları)
+	- [`memset` fonksiyonu](#-memset-fonksiyonu)
+	- [`printf` fonksiyonu](#-printf-fonksiyonu)
+	- [`malloc` fonksiyonu](#-malloc-fonksiyonu)
+	- [`free` fonksiyonu](#-free-fonksiyonu)
+	- [`write` fonksiyonu](#-write-fonksiyonu)
+	- [`usleep` fonksiyonu](#-usleep-fonksiyonu)
+	- [`gettimeofday` fonksiyonu](#-gettimeofday-fonksiyonu)
+	- [`pthread_create` fonksiyonu](#-pthread_create-fonksiyonu)
+	- [`pthread_join` fonksiyonu](#-pthread_join-fonksiyonu)
+	- [`pthread_detach` fonksiyonu](#-pthread_detach-fonksiyonu)
+	- [`pthread_mutex_init` fonksiyonu](#-pthread_mutex_init-fonksiyonu)
+	- [`pthread_mutex_destroy` fonksiyonu](#-pthread_mutex_destroy-fonksiyonu)
+	- [`pthread_mutex_lock` ve `pthread_mutex_unlock` fonksiyonları](#-pthread_mutex_lock-ve-pthread_mutex_unlock-fonksiyonları)
 
 <br></br>
 
-# ¿ Bilinmesi Gerekenler
+## ¿ Bilinmesi Gerekenler
 
 * Bir veya daha fazla filozof yuvarlak bir masada oturur. Masanın ortasında büyük bir kase spagetti vardır.
 * Filozoflar alternatif olarak yemek yer, düşünür veya uyurlar. Yemek yerken ne düşünürler ne de uyurlar; düşünürken ne yemek yiyor ne de uyuyorlar; uyurken yemek yemiyorlar ve düşünmüyorlar.
@@ -68,7 +67,7 @@
 * Filozoflar ölmekten kaçınmalıdır.
 <br></br>
 
-# 📝 Kurallar
+## 📝 Kurallar
 
 * Global değişkenler yasaktır!
 * Program(lar)ınız aşağıdaki argümanları almalıdır:
@@ -99,7 +98,7 @@
 * Programınızda herhangi bir **`veri yarışı (data race)`** olmamalıdır.
 <br></br>
 
-# ✏️ Mandatory Part
+## ✏️ Mandatory Part
 
 <br>
 <html lang="en">
@@ -121,7 +120,7 @@
 * Filozofların çatalları çoğaltmasını önlemek için, çatalların durumunu her biri için bir ,**`mutex`** ile korumalısınız.
 <br></br>
 
-# 🔹 Bellek Yönetimi ve Çeşitleri
+## 🔹 Bellek Yönetimi ve Çeşitleri
 Bellek yönetimi (memory management), bir bilgisayar sisteminde kullanılabilir belleğin etkili bir şekilde tahsis edilmesi, yönetilmesi ve serbest bırakılması sürecini içeren bir konsepttir. Bellek, bir bilgisayar programının çalıştığı sırada kullanılan verilerin depolandığı ve erişilebilir olduğu alandır. Bellek yönetimi, programların bellek ile etkileşimini düzenleyerek, bellek kullanımını optimize etmeyi ve bellek sızıntılarını önlemeyi amaçlar.
 
 Bellek yönetimi genellikle şu temel işlevleri içerir:
@@ -139,7 +138,7 @@ Bellek yönetimi genellikle şu temel işlevleri içerir:
 Bellek yönetimi, bir programın performansını, güvenilirliğini ve güvenliğini önemli ölçüde etkileyebilir. Yanlış bellek yönetimi uygulamaları, bellek sızıntılarına, aşırı bellek tüketimine veya program çökmelerine yol açabilir. Bu nedenle, bellek yönetimi konseptleri, yazılım geliştiricileri ve sistem yöneticileri için kritik bir öneme sahiptir.
 <br></br>
 
-## 🔸 Statik Bellek Yönetimi
+### 🔸 Statik Bellek Yönetimi
    - **Tanım:** Program derlendiğinde bellek alanları önceden belirlenir ve program çalıştığı süre boyunca değişmez.
    - **Örnek:**
      ```c
@@ -154,7 +153,7 @@ Bellek yönetimi, bir programın performansını, güvenilirliğini ve güvenli�
    - **Avantajlar:** Basit, hızlı ve öngörülebilir bellek kullanımı.
    - **Dezavantajlar:** Esneklik eksikliği, dinamik veri yapılarına uygun değil.
 
-## 🔸 Dinamik Bellek Yönetimi
+### 🔸 Dinamik Bellek Yönetimi
    - **Tanım:** Bellek alanları program çalışma zamanında tahsis edilir ve serbest bırakılabilir.
    - **Örnek:**
      ```c
@@ -165,7 +164,7 @@ Bellek yönetimi, bir programın performansını, güvenilirliğini ve güvenli�
    - **Avantajlar:** Esneklik, dinamik veri yapılarına uygun, bellek kullanımında optimizasyon.
    - **Dezavantajlar:** Bellek sızıntıları veya hatalı bellek serbest bırakma riski.
 
-## 🔸 Yerel ve Global Bellek Yönetimi
+### 🔸 Yerel ve Global Bellek Yönetimi
    - **Tanım:** Yerel bellek yönetimi, işlev çağrıları sırasında tanımlanan yerel değişkenlerin bellek yönetimini ifade eder. Global bellek yönetimi ise genellikle global değişkenlerin bellek yönetimini içerir.
    - **Örnek:**
      ```c
@@ -177,12 +176,12 @@ Bellek yönetimi, bir programın performansını, güvenilirliğini ve güvenli�
      }
      ```
 
-## 🔸 Bellek Havuzları (Memory Pools)
+### 🔸 Bellek Havuzları (Memory Pools)
    - **Tanım:** Bellek havuzları, önceden belirlenmiş bir boyuttaki bellek bloklarının havuzunu oluşturur. Bu bloklar, ihtiyaç duyulan yerlerde kullanılır ve serbest bırakıldığında havuza geri döner.
 <br></br>
 
 
-# 🔹 Paralel Programlama Nedir?
+## 🔹 Paralel Programlama Nedir?
 
 Paralel programlama, bir bilgisayar programının aynı anda birden fazla işlemcide veya işlem biriminde çalışmasını sağlayan bir programlama yaklaşımıdır. Temelde, bir görevi daha hızlı ve verimli bir şekilde gerçekleştirmek veya büyük problemleri daha küçük parçalara bölerek çözmek amacıyla kullanılır.
 
@@ -197,12 +196,12 @@ Paralel programlama, genellikle büyük veri setleri üzerinde veya karmaşık h
 Paralel programlama, bilgisayar donanımının evrimiyle birlikte daha yaygın hale gelmiştir çünkü günümüz bilgisayarları genellikle çoklu çekirdekli veya çoklu işlemci mimarilerine sahiptir. Paralel programlama, performans artışı sağlamak, enerji verimliliğini artırmak ve karmaşık problemleri daha etkili bir şekilde çözmek için yaygın olarak kullanılan bir tekniktir. Ancak paralel programlama, senkronizasyon ve veri tutarlılığı gibi zorlukları da içerir; dikkatli tasarım ve uygulama gerektirir.
 <br></br>
 
-# 🔹 Process
+## 🔹 Process
 
-## 🔸 Process (İşlem) Nedir?
+### 🔸 Process (İşlem) Nedir?
 Bir işlem (process), bilgisayar sistemlerinde çalışan bir programın veya uygulamanın çalışma sırasında sahip olduğu çalışma ortamını ifade eder. Her process, kendi bellek alanına, çeşitli kaynaklara (CPU, giriş/çıkış aygıtları, dosya sistemleri vb.) ve process'i yöneten bir dizi özelliğe sahiptir. İşletim sistemleri, birden çok işlemi yönetme ve koordinasyon sağlama yeteneğine sahiptir.
 
-## 🔸 Process'in Temel Özellikleri
+### 🔸 Process'in Temel Özellikleri
 
 1. **Bellek Alanı:** Her işlem, kendi adres alanına sahiptir. Bu adres alanı, process'in çalışma sırasında kullanabileceği bellek miktarını temsil eder.
 
@@ -212,7 +211,7 @@ Bir işlem (process), bilgisayar sistemlerinde çalışan bir programın veya uy
 
 >**Örnek :** Kullanıcı bir metin dosyasını açtığında, bu metin düzenleyici bir işlem (process) oluşturur. Bu işlem, kullanıcının metin üzerinde değişiklik yapmasına, kaydetmesine ve diğer işlemlerle etkileşimde bulunmasına olanak tanır. İşletim sistemi, bu işlemi diğer çalışan işlemlerle koordine eder ve gerekli kaynakları tahsis eder.
 
-## 🔸 Process Durumları Nelerdir?
+### 🔸 Process Durumları Nelerdir?
 Bir işlemin çalışma durumları, işletim sistemi tarafından yönetilir ve işlemin hangi aşamada olduğunu gösterir. İşlemin durumu, işletim sistemi çekirdeği tarafından belirlenir ve sürekli olarak değişebilir. İşlemler, genellikle şu temel çalışma durumları arasında geçiş yapar:
 
 1. **Başlatma (Start):** İşlem, başlatıldığında bu duruma girer. İşletim sistemi, işlemi oluşturur ve çalıştırmaya hazır hale getirir.
@@ -228,15 +227,15 @@ Bir işlemin çalışma durumları, işletim sistemi tarafından yönetilir ve i
 Bu durumlar, işlemin yaşam döngüsünü temsil eder. İşletim sistemi, işlemleri bu durumlar arasında geçiş yaparak etkili bir şekilde yönetir. İşletim sistemi, işlemleri adil bir şekilde sıralar, kaynakları etkili bir şekilde tahsis eder ve sistemdeki iş yükünü dengelemeye çalışır. Bu sayede çoklu görev (multitasking) ve paralel çalışma sağlanır.
 <br></br>
 
-# 🔹 Thread
+## 🔹 Thread
 
-## 🔸 Thread Nedir?
+### 🔸 Thread Nedir?
 Thread (i̇ngilizce "thread" kelimesi "iplik" veya "iplikçik" anlamına gelir), bir program içindeki bağımsız çalışma birimlerini temsil eden işlemcilik yapılarıdır. Thread'ler, bir işlem içinde paralel olarak çalışan, kendi bağlamına sahip olan ve işlem kaynaklarını paylaşan küçük iş parçacıklarıdır. Thread'ler, bir program içindeki bağımsız çalışma birimlerini temsil eden ve aynı anda birden çok görevi yürüten işlemcilik yapılarıdır.
 
-## 🔸 Multithreading (Çoklu Thread) Nedir?
+### 🔸 Multithreading (Çoklu Thread) Nedir?
 Multithreading, bir bilgisayar programının veya bir işletim sisteminin, aynı anda birden çok iş parçacığını veya thread'i yürütme yeteneğidir. Bu, bir programın veya bir işlemcinin, aynı anda birden çok görevi eşzamanlı olarak gerçekleştirebilmesine olanak tanır. Multithreading, genellikle işlemci kaynaklarını daha etkili bir şekilde kullanma, daha hızlı tepki süreleri elde etme ve paralel programlama uygulama yeteneği sağlama amacıyla kullanılır.
 
-## 🔸 Thread'lerin Temel Özellikleri
+### 🔸 Thread'lerin Temel Özellikleri
 1. **Hafiflik:** Thread'ler, işlemlere göre daha hafif yapılardır. İşlemci zamanını daha etkili kullanmaya olanak tanır ve çoklu görev (multitasking) için idealdir.
 
 2. **Paylaşılan Bellek:** Bir işlem içindeki thread'ler, aynı bellek alanını paylaşırlar. Bu, veri paylaşımını kolaylaştırır ancak dikkatli kullanım gerektirir, çünkü veri bütünlüğünü sağlamak önemlidir.
@@ -245,7 +244,7 @@ Multithreading, bir bilgisayar programının veya bir işletim sisteminin, aynı
 
 4. **Eşzamanlılık (Concurrency):** Thread'ler, aynı işlem içinde eşzamanlı olarak çalışabilirler. Bu, özellikle çoklu işlemlerin veya görevlerin aynı anda gerçekleştirilmesi gereken durumlarda faydalıdır.
 
-## 🔸 Thread Neden Kullanılır?
+### 🔸 Thread Neden Kullanılır?
 1. **Paralel İşleme (Concurrency):** Thread'ler, aynı program içinde eşzamanlı olarak çalışabilirler. Bu, bir programın birden çok görevi aynı anda yürütmesine olanak tanır. Örneğin, bir web tarayıcısı aynı anda birden çok sekme üzerinde çalışabilir; her sekme farklı bir thread tarafından yönetilebilir.
 
 2. **Daha Hızlı Tepki Süresi:** Thread'ler, kullanıcı arayüzü gibi etkileşimli uygulamalarda daha hızlı tepki süreleri sağlar. Ana program, kullanıcı girişine yanıt verirken, arka planda çalışan thread'ler diğer görevleri yürütebilir.
@@ -256,7 +255,7 @@ Multithreading, bir bilgisayar programının veya bir işletim sisteminin, aynı
 
 5. **İş Parçacığı (Thread) Havuzu:** Çoklu iş parçacığı havuzları, belirli bir görevi yerine getirmek üzere kullanılabilecek önceden oluşturulmuş thread'leri içerir. Bu havuzlar, thread oluşturma maliyetini azaltarak performansı artırabilir.
 
-## 🔸 Thread Nasıl Kullanılır?
+### 🔸 Thread Nasıl Kullanılır?
 
 1. **İlgili Kütüphanenin Eklenmesi veya İçe Aktarılması:**
    İlk adım olarak, thread'leri kullanabilmek için programlama dilinizin veya kullanacağınız ortamın ilgili kütüphanesini eklemelisiniz. Örneğin: C dilinde `pthread` kütüphanesi.
@@ -297,8 +296,8 @@ Multithreading, bir bilgisayar programının veya bir işletim sisteminin, aynı
    }
    ```
 
-4. **Thread'in Tamamlanmasını Bekleme (Opsiyonel):**
-   Eğer bir thread'in tamamlanmasını beklemek istiyorsanız, `pthread_join` fonksiyonunu kullanabilirsiniz. Bu, ana programın belirli bir thread'in tamamlanmasını beklemesini sağlar. Bu adım, programın diğer iş parçacıklarının thread'in tamamlanmasını beklemesini sağlar.
+4. **Thread'in Tamamlanmasını Bekleme:**
+   Eğer bir thread'in tamamlanmasını beklemek istiyorsanız, `pthread_join` fonksiyonunu kullanabilirsiniz. Bu, ana programın belirli bir thread'in tamamlanmasını beklemesini sağlar.
 
    ```c
    int joinResult = pthread_join(myThread, NULL); // Thread'in tamamlanmasını beklemek
@@ -310,14 +309,14 @@ Multithreading, bir bilgisayar programının veya bir işletim sisteminin, aynı
    }
    ```
 
-5. **Thread'i Sonlandırma (Opsiyonel):**
+5. **Thread'i Sonlandırma:**
    Eğer bir thread'in işlevini tamamladıktan sonra sonlandırılmasını istiyorsanız, ilgili kütüphanenin sağladığı fonksiyonları kullanarak thread'i sonlandırabilirsiniz.
 
    ```c
    pthread_exit(NULL); // Thread'i sonlandırmak (pthread kütüphanesi ile)
    ```
 
-## 🔸 Thread Fonksiyonları
+### 🔸 Thread Fonksiyonları
 
 1. **`pthread_create`**
    - **Amaç:** Yeni bir thread oluşturur ve belirtilen fonksiyonu çalıştırır.
@@ -476,36 +475,50 @@ Multithreading, bir bilgisayar programının veya bir işletim sisteminin, aynı
          return 0;
      }
      ```
+
+## 🔸 `pthread_join` Kullanılmazsa Ne Olur?
+Eğer `pthread_join` kullanılmazsa; ana program devam edebilir, ana program sonlanabilir veya iş parçacığı (thread) tamamlanmadan önce sona erebilir. Bu durumda, iş parçacığı (thread) başlatılmış olabilir ancak ana program, iş parçacığının tamamlanmasını beklemeksizin devam eder veya sonlanır.
+
+Bu durumun bazı olası etkileri şunlar olabilir:
+
+1. **İş Parçacığı (Thread) Tamamlanmadan Kaynak Sorunları:** İş parçacığı, kaynakları (bellek, dosya kolları, vb.) kullanıyor olabilir. Eğer ana program, iş parçacığı tamamlanmadan sona erirse, iş parçacığı bu kaynakları serbest bırakma şansına sahip olmayabilir. Bu durumda kaynak sızıntıları oluşabilir.
+
+2. **Veri Yarışları ve Beklenmeyen Davranışlar:** İş parçacığı ve ana program arasında paylaşılan veriler varsa ve senkronizasyon mekanizmaları kullanılmıyorsa, beklenmeyen davranışlar ve veri yarışları ortaya çıkabilir. İş parçacığı ve ana program arasındaki senkronizasyon olmadan paylaşılan verilere erişim, belirsiz sonuçlara yol açabilir.
+
+3. **Programın Kapatılması Önce İş Parçacığının Tamamlanmaması:** İş parçacığı, belirli bir görevi yerine getirmek üzere başlatılmış olabilir. Eğer ana program iş parçacığının tamamlanmasını beklemeksizin sona erirse, iş parçacığı bu görevi tamamlamadan kapatılabilir, ve bu da programın beklendiği gibi çalışmamasına neden olabilir.
+
+Böylelikle, iş parçacığı (thread) tamamlanana kadar beklemek için `pthread_join` kullanmak genel olarak iyi bir uygulama pratiğidir. Bu fonksiyon, iş parçacığının bitişini bekleyerek, kaynakların düzgün bir şekilde serbest bırakılmasını ve diğer temizleme işlemlerinin yapılmasını  ya da ana programın zamansız sonlanmamasını sağlar.
+
 <br></br>
 
-# 🔹 Data Race
+## 🔹 Data Race
 
-## 🔸 Data Race Nedir?
+### 🔸 Data Race Nedir?
 Data Race (Veri Yarışı), çoklu iş parçacığı (thread) veya işlem (process) ortamlarında paylaşılan bir değişkenin eşzamansız (asenkron) erişimi sonucu ortaya çıkan bir durumdur. Bu durum, en az iki iş parçacığının aynı anda bir değişkeni okuması veya yazması sonucunda gerçekleşir. Data race, genellikle programın istikrarsız hale gelmesine, hatalı sonuçlara ve beklenmeyen davranışlara neden olan bir senkronizasyon hatası türüdür.
 
-## 🔸 Data Race Hangi Durumlarda Çıkar?
+### 🔸 Data Race Hangi Durumlarda Çıkar?
 Data race durumları, özellikle çoklu iş parçacığı programlaması veya paralel programlama bağlamında ortaya çıkar. Data race, şu durumlarda görülebilir:
 
 1. **Yarış Koşulları (Race Conditions):** Birden çok iş parçacığı aynı veriye eşzamanlı eriştiğinde ve en az biri bu veriyi değiştiriyorsa, yarış koşulları meydana gelir. Bu durum, programın istenmeyen sonuçlar üretmesine yol açabilir.
 
 2. **Atomic Olmayan İşlemler:** Bazı işlemler, tek bir adımda tamamlanmayabilir ve işlem aşamasında bir başka iş parçacığı tarafından kesilebilir. Bu durum, veriye eşzamanlı erişimde sorunlara yol açabilir.
 
-## 🔸 Data Race Durumu Nasıl Önlenir?
+### 🔸 Data Race Durumu Nasıl Önlenir?
 Data race durumlarından kaçınmak için, paylaşılan veriye erişimi kontrol etmek için senkronizasyon mekanizmaları kullanılmalıdır. Mutex, semafor, kilit vb. gibi araçlarla uygun şekilde koruma sağlanmalıdır. Ayrıca, atomik işlemler ve senkronizasyon tekniklerinin doğru bir şekilde kullanılması önemlidir. Data race durumlarının önlenmesi, paralel programlamada güvenilir ve istikrarlı bir uygulama geliştirmenin önemli bir adımıdır.
 
 <br></br>
 
-# 🔹 Mutex
+## 🔹 Mutex
 
-## 🔸 Mutex Nedir ve Ne İşe Yarar?
+### 🔸 Mutex Nedir ve Ne İşe Yarar?
 Mutex (MUTual EXclusion), paralel programlamada kullanılan bir senkronizasyon mekanizmasıdır. Aynı anda sadece bir thread'in belirli bir kaynağı (veriyi veya kod bloğunu) kullanmasını sağlar. Bu, aynı anda birden fazla thread'in aynı kaynağa müdahale etmesini önleyerek veri bütünlüğünü korur.
 
-## 🔸 Mutex'in Temel Görevleri
+### 🔸 Mutex'in Temel Görevleri
 1. **Kritik Bölgeyi Koruma:** Birden çok thread'in aynı anda erişimine uygun olan kritik bir bölgeyi korur. Kritik bölge, paylaşılan veri veya kaynaklara erişim gerektiren kod bloğunu ifade eder.
 
 2. **Senkronizasyon Sağlama:** Thread'ler arasındaki işbirliğini sağlamak için kullanılır. Örneğin, bir thread'in tamamlanmasını beklemek veya belirli bir durumu diğer thread'lere bildirmek için mutex kullanılabilir.
 
-## 🔸 Mutex Nasıl Kullanılır?
+### 🔸 Mutex Nasıl Kullanılır?
 1. **Mutex Oluşturma:** `pthread_mutex_init` fonksiyonu ile bir mutex oluşturulur.
 
 3. **Kritik Bölgeye Giriş:** `pthread_mutex_lock` fonksiyonu ile kritik bölgeye giriş yapılır. Eğer başka bir thread bu mutex'i kilitlediyse, bekler.
@@ -516,7 +529,7 @@ Mutex (MUTual EXclusion), paralel programlamada kullanılan bir senkronizasyon m
 
 9. **Mutex'i Yok Etme:** `pthread_mutex_destroy` fonksiyonu ile mutex yok edilir.
 
-## 🔸 Mutex Fonksiyonları
+### 🔸 Mutex Fonksiyonları
 1. **`pthread_mutex_init`**
    - **Amaç:** Mutex (Karşılıklı dışlama) tanımlar.
    - **Prototip:** `int pthread_mutex_init(pthread_mutex_t *mutex, const pthread_mutexattr_t *attr);`
@@ -651,12 +664,12 @@ Mutex (MUTual EXclusion), paralel programlamada kullanılan bir senkronizasyon m
      ```
 <br></br>
 
-# 🔹 Semaphore
+## 🔹 Semaphore
 
-## 🔸 Semaphore Nedir ve Ne işe Yarar?
+### 🔸 Semaphore Nedir ve Ne işe Yarar?
 Semaphore, paralel programlamada ve işletim sistemlerinde kullanılan bir senkronizasyon nesnesidir. Ana olarak, kaynaklara erişimi düzenlemek ve koordine etmek amacıyla kullanılır. Semaphore, bir sayıyı temsil eder ve bu sayı, belirli bir kaynağa aynı anda kaç thread'in erişebileceğini kontrol etmek için kullanılır. Semaphore'lar, özellikle çoklu thread'li (multithreading) ve paralel programlamanın olduğu ortamlarda, kaynakların güvenli bir şekilde paylaşılmasını ve senkronize edilmesini sağlar.
 
-## 🔸 Semaphore Nasıl Kullanılır?
+### 🔸 Semaphore Nasıl Kullanılır?
 1. **Binary Semaphore (İkili Semaphore):** Yalnızca 0 ve 1 değerlerini alabilen bir semaphore türüdür. Bu tür bir semaphore genellikle bir kaynağın mevcudiyetini veya kullanılabilirliğini temsil eder. 0, kaynağın kullanımda olduğunu, 1 ise kaynağın boşta olduğunu gösterir.
 
     - **Semaphore Oluşturma:** `sem_init` fonksiyonu ile oluşturulur.
@@ -671,7 +684,7 @@ Semaphore, paralel programlamada ve işletim sistemlerinde kullanılan bir senkr
    - **Semaphore Değerini Arttırma:** `sem_post` fonksiyonu ile semaphore değeri artırılır, kaynağın serbest olduğunu belirtir.
    - **Semaphore'i Yok Etme:** `sem_destroy` fonksiyonu ile semaphore yok edilir.
 
-## 🔸 Semaphore Fonksiyonları
+### 🔸 Semaphore Fonksiyonları
 1. **`sem_init`**
    - **Amaç:** Bir semaforu başlatmak için kullanılır.
    - **Prototip:** `int sem_init(sem_t *sem, int pshared, unsigned int value);`
@@ -816,7 +829,7 @@ Semaphore, paralel programlamada ve işletim sistemlerinde kullanılan bir senkr
 		```
 <br></br>
 
-# 🔹 Semaphore ve Mutex Arasındaki Farklar
+## 🔹 Semaphore ve Mutex Arasındaki Farklar
 
 | Özellik               | Mutex (Muteks)                       | Semaphore (Semafor)                      |
 |------------------------|-------------------------------------|-----------------------------------------|
@@ -828,8 +841,8 @@ Semaphore, paralel programlamada ve işletim sistemlerinde kullanılan bir senkr
 | Fork Edilen Süreçlerle Kullanım | Genellikle tek bir süreç içindeki thread'ler arasında kullanılır, ancak fork edilen süreçler arasında da kullanılabilir. | Fork edilen süreçler arasında ve genellikle tek bir süreç içindeki thread'ler arasında kullanılabilir. |
 <br></br>
 
-# 🔹 Fonksiyon Açıklamaları
-## 🔸 `memset` fonksiyonu
+## 🔹 Fonksiyon Açıklamaları
+### 🔸 `memset` fonksiyonu
 - **Amaç:** Belirtilen bellek bloğunu belirli bir değerle doldurur.
 - **Prototip:** `void *memset(void *s, int c, size_t n);`
 - **Parametreler:**
@@ -856,7 +869,7 @@ Semaphore, paralel programlamada ve işletim sistemlerinde kullanılan bir senkr
   }
   ```
 
-## 🔸 `printf` fonksiyonu
+### 🔸 `printf` fonksiyonu
 - **Amaç:** Ekrana belirtilen formatla yazdırma işlemi gerçekleştirir.
 - **Prototip:** `int printf(const char *format, ...);`
 - **Parametreler:**
@@ -879,7 +892,7 @@ Semaphore, paralel programlamada ve işletim sistemlerinde kullanılan bir senkr
   }
   ```
 
-## 🔸 `malloc` fonksiyonu
+### 🔸 `malloc` fonksiyonu
 - **Amaç:** Dinamik bellek tahsisi yapar, belirtilen boyutta bir bellek bloğu oluşturur.
 - **Prototip:** `void *malloc(size_t size);`
 - **Parametreler:**
@@ -904,7 +917,7 @@ Semaphore, paralel programlamada ve işletim sistemlerinde kullanılan bir senkr
   }
   ```
 
-## 🔸 `free` fonksiyonu
+### 🔸 `free` fonksiyonu
 - **Amaç:** Dinamik olarak tahsis edilmiş belleği serbest bırakır.
 - **Prototip:** `void free(void *ptr);`
 - **Parametreler:**
@@ -929,7 +942,7 @@ Semaphore, paralel programlamada ve işletim sistemlerinde kullanılan bir senkr
   }
   ```
 
-## 🔸 `write` fonksiyonu
+### 🔸 `write` fonksiyonu
 - **Amaç:** Belirtilen dosya tanımlayıcısına belirtilen veriyi yazdırır.
 - **Prototip:** `ssize_t write(int fd, const void *buf, size_t count);`
 - **Parametreler:**
@@ -953,7 +966,7 @@ Semaphore, paralel programlamada ve işletim sistemlerinde kullanılan bir senkr
   }
   ```
 
-## 🔸 `usleep` fonksiyonu
+### 🔸 `usleep` fonksiyonu
 - **Amaç:** Belirtilen mikro saniye süresince programın beklemesini sağlar.
 - **Prototip:** `int usleep(useconds_t usec);`
 - **Parametreler:**
@@ -972,7 +985,7 @@ Semaphore, paralel programlamada ve işletim sistemlerinde kullanılan bir senkr
   }
   ```
 
-## 🔸 `gettimeofday` fonksiyonu
+### 🔸 `gettimeofday` fonksiyonu
 - **Amaç:** Sistem saatini ve zaman bilgilerini alır.
 - **Prototip:** `int gettimeofday(struct timeval *tv, struct timezone *tz);`
 - **Parametreler:**
@@ -1004,7 +1017,7 @@ Semaphore, paralel programlamada ve işletim sistemlerinde kullanılan bir senkr
   }
   ```
 
-## 🔸 `pthread_create` fonksiyonu
+### 🔸 `pthread_create` fonksiyonu
    - **Amaç:** Yeni bir thread oluşturur ve belirtilen fonksiyonu çalıştırır.
    - **Prototip:** `int pthread_create(pthread_t *thread, const pthread_attr_t *attr, void *(*start_routine)(void *), void *arg);`
    - **Parametreler:**
@@ -1041,7 +1054,7 @@ Semaphore, paralel programlamada ve işletim sistemlerinde kullanılan bir senkr
      }
      ```
 
-## 🔸 `pthread_join` fonksiyonu
+### 🔸 `pthread_join` fonksiyonu
    - **Amaç:** Belirtilen thread'in tamamlanmasını bekler.
    - **Prototip:** `int pthread_join(pthread_t thread, void **retval);`
    - **Parametreler:**
@@ -1080,7 +1093,7 @@ Semaphore, paralel programlamada ve işletim sistemlerinde kullanılan bir senkr
      }
      ```
 
-## 🔸 `pthread_detach` fonksiyonu
+### 🔸 `pthread_detach` fonksiyonu
    - **Amaç:** Belirtilen thread'in başka bir thread tarafından beklenmeden kaynaklarını serbest bırakmasını sağlar. Bu işlev, bir thread'in sonlanması durumunda otomatik olarak kaynaklarını temizlemek için kullanılır.
    - **Prototip:** `int pthread_detach(pthread_t thread);`
    - **Parametreler:**
@@ -1124,7 +1137,7 @@ Semaphore, paralel programlamada ve işletim sistemlerinde kullanılan bir senkr
      }
      ```
 
-## 🔸 `pthread_mutex_init` fonksiyonu
+### 🔸 `pthread_mutex_init` fonksiyonu
    - **Amaç:** Mutex (Karşılıklı dışlama) tanımlar.
    - **Prototip:** `int pthread_mutex_init(pthread_mutex_t *mutex, const pthread_mutexattr_t *attr);`
    - **Parametreler:**
@@ -1171,7 +1184,7 @@ Semaphore, paralel programlamada ve işletim sistemlerinde kullanılan bir senkr
      }
      ```
 
-## 🔸 `pthread_mutex_destroy` fonksiyonu
+### 🔸 `pthread_mutex_destroy` fonksiyonu
    - **Amaç:** Mutex'in bellekten serbest bırakılmasını sağlar. Mutex kullanımı sona erdiğinde, bu fonksiyonun çağrılması önerilir.
    - **Prototip:** `int pthread_mutex_destroy(pthread_mutex_t *mutex);`
    - **Parametreler:**
@@ -1210,7 +1223,7 @@ Semaphore, paralel programlamada ve işletim sistemlerinde kullanılan bir senkr
      }
      ```
 
-## 🔸 `pthread_mutex_lock` ve `pthread_mutex_unlock` fonksiyonları
+### 🔸 `pthread_mutex_lock` ve `pthread_mutex_unlock` fonksiyonları
    - **Amaç:** Mutex'i kilitleme (lock) ve kilidi açma (unlock) işlemlerini gerçekleştirir.
    - **Prototip (lock):** `int pthread_mutex_lock(pthread_mutex_t *mutex);`
    - **Prototip (unlock):** `int pthread_mutex_unlock(pthread_mutex_t *mutex);`
