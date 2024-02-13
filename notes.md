@@ -476,7 +476,7 @@ Multithreading, bir bilgisayar programının veya bir işletim sisteminin, aynı
      }
      ```
 
-## 🔸 `pthread_join` Kullanılmazsa Ne Olur?
+### 🔸 `pthread_join` Kullanılmazsa Ne Olur?
 Eğer `pthread_join` kullanılmazsa; ana program devam edebilir, ana program sonlanabilir veya iş parçacığı (thread) tamamlanmadan önce sona erebilir. Bu durumda, iş parçacığı (thread) başlatılmış olabilir ancak ana program, iş parçacığının tamamlanmasını beklemeksizin devam eder veya sonlanır.
 
 Bu durumun bazı olası etkileri şunlar olabilir:
