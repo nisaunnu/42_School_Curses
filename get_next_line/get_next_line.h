@@ -10,6 +10,6 @@
 #  define BUFFER_SIZE 1
 # endif
 
-char *get_net_line(int fd);
+char *get_next_line(int fd);
 
 #endif
