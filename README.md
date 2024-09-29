@@ -79,6 +79,6 @@
 [cpp_00_to_04_tree]: https://github.com/nisaunnu/42_School_Curses/tree/cpp_modules_00_to_04
 [cpp_00_to_04_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
 [exam_rank04_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank04
-[exam_rank04_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
+[exam_rank04_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
 
 </table>
