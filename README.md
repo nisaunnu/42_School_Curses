@@ -41,7 +41,7 @@
 | Circle 4                                    | Durum                                      |
 | :-                                          | :-                                         |
 | [NetPractice][net_practice_tree]            | [![net_practice_badge]][net_practice_tree] |
-| [cub3d / miniRT][minirt_tree]               | [![minirt_badge]][minirt_tree]             |
+| [cub3d][cub3d_tree]                         | [![cub3d_badge]][cub3d_tree]               |
 | [CPP Modules (00 to 04)][cpp_00_to_04_tree] | [![cpp_00_to_04_badge]][cpp_00_to_04_tree] |
 | [Exam Rank 04][exam_rank04_tree]            | [![exam_rank04_badge]][exam_rank04_tree]   |
 
@@ -74,8 +74,8 @@
 
 [net_practice_tree]: https://github.com/nisaunnu/42_School_Curses/tree/net_practice
 [net_practice_badge]:https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[minirt_tree]: https://github.com/nisaunnu/42_School_Curses/tree/minirt
-[minirt_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
+[cub3d_tree]: https://github.com/nisaunnu/42_School_Curses/tree/minirt
+[cub3d_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
 [cpp_00_to_04_tree]: https://github.com/nisaunnu/42_School_Curses/tree/cpp_modules_00_to_04
 [cpp_00_to_04_badge]: https://custom-icon-badges.demolab.com/badge/in%20progress-02b331.svg?&style=for-the-badge&color=8104c4
 [exam_rank04_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank04
