@@ -105,7 +105,7 @@
 [irc_tree]: https://github.com/nisaunnu/42_School_Curses/tree/ft_irc
 [irc_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
 [cpp_05_to_09_tree]: https://github.com/nisaunnu/42_School_Curses/tree/cpp_modules_05_to_09
-[cpp_05_to_09_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
+[cpp_05_to_09_badge]: https://custom-icon-badges.demolab.com/badge/in%20progress-02b331.svg?&style=for-the-badge&color=ffffff
 [exam_rank05_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank05
 [exam_rank05_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
 
