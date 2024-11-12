@@ -93,7 +93,7 @@
 
 [net_practice_tree]: https://github.com/nisaunnu/42_School_Curses/tree/net_practice
 [net_practice_badge]:https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[cub3d_tree]: https://github.com/nisaunnu/42_School_Curses/tree/minirt
+[cub3d_tree]: https://github.com/nisaunnu/42_School_Curses/main
 [cub3d_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20105%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
 [cpp_00_to_04_tree]: https://github.com/nisaunnu/42_School_Curses/tree/cpp_modules_00_to_04
 [cpp_00_to_04_badge]: https://custom-icon-badges.demolab.com/badge/%20CPP%20(Part%201)-02b331.svg?&style=for-the-badge&color=7E0080
