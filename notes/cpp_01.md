@@ -1,6 +1,5 @@
 ## CPP Module 01 Notları
 
-- [CPP Module 01 Notları](#cpp-module-01-notları)
 - [Memory Allocation (Bellek Tahsisi)](#memory-allocation-bellek-tahsisi)
 	- [1. Statik Bellek Tahsisi](#1-statik-bellek-tahsisi)
 		- [Özellikler:](#özellikler)
