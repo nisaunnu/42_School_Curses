@@ -1,6 +1,5 @@
-## İçerik
+## CPP Module 02 Notları
 
-- [İçerik](#i̇çerik)
 - [Ortodoks Kanonik Form](#ortodoks-kanonik-form)
 	- [Tanımlanması Gereken Altı Üye İşlev](#tanımlanması-gereken-altı-üye-i̇şlev)
 	- [Neden Kullanılır?](#neden-kullanılır)
