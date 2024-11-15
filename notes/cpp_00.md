@@ -90,6 +90,8 @@
 		- [5. Kapsam Dışı Kalan `namespace` Elemanları](#5-kapsam-dışı-kalan-namespace-elemanları)
 - [`friend` Nedir?](#friend-nedir)
 
+<br></br>
+
 ## Temel Stdio Streamleri
 
 C++'de **stdio streamleri**, giriş (input) ve çıkış (output) işlemlerini gerçekleştirmek için kullanılan akışlardır (streams). Bu akışlar, standart giriş ve çıkış cihazlarıyla (örneğin klavye ve ekran) veri alışverişi yapmak için kullanılır.
