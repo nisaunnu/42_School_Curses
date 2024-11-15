@@ -1,5 +1,4 @@
 ## CPP Module 00 Notları
-- [CPP Module 00 Notları](#cpp-module-00-notları)
 - [Temel Stdio Streamleri](#temel-stdio-streamleri)
 - [`<iostream>` Kütüphanesi](#iostream-kütüphanesi)
 	- [➤ `<iostream>` Kütüphanesinin İçeriği](#-iostream-kütüphanesinin-i̇çeriği)
