@@ -1,3 +1,39 @@
+## İçerik
+
+- [İçerik](#i̇çerik)
+- [Ortodoks Kanonik Form](#ortodoks-kanonik-form)
+	- [Tanımlanması Gereken Altı Üye İşlev](#tanımlanması-gereken-altı-üye-i̇şlev)
+	- [Neden Kullanılır?](#neden-kullanılır)
+	- [Rule of Three / Rule of Five / Rule of Zero](#rule-of-three--rule-of-five--rule-of-zero)
+- [Floating Point Numbers (Kayan Noktalı Sayılar)](#floating-point-numbers-kayan-noktalı-sayılar)
+	- [Floating Point Sayı Nedir?](#floating-point-sayı-nedir)
+	- [Avantajları](#avantajları)
+	- [Dezavantajları](#dezavantajları)
+	- [Ne Zaman Kullanılır?](#ne-zaman-kullanılır)
+- [Fixed Point Numbers (Sabit Noktalı Sayılar)](#fixed-point-numbers-sabit-noktalı-sayılar)
+	- [Fixed Point Sayılar Nedir?](#fixed-point-sayılar-nedir)
+	- [Avantajları](#avantajları-1)
+	- [Dezavantajları](#dezavantajları-1)
+	- [Ne Zaman Kullanılır?](#ne-zaman-kullanılır-1)
+- [Karşılaştırmalar](#karşılaştırmalar)
+	- [Floating Point vs Integers](#floating-point-vs-integers)
+	- [Floating Point vs Fixed Point](#floating-point-vs-fixed-point)
+		- [Sonuç](#sonuç)
+- [`roundf` fonksiyonu](#roundf-fonksiyonu)
+	- [`roundf` Fonksiyonunun Söz Dizimi ve Kullanımı](#roundf-fonksiyonunun-söz-dizimi-ve-kullanımı)
+	- [`roundf` Fonksiyonunun Çalışma Mantığı](#roundf-fonksiyonunun-çalışma-mantığı)
+	- [Yuvarlama Kuralı](#yuvarlama-kuralı)
+	- [`roundf` ile Diğer Yuvarlama Fonksiyonları Arasındaki Farklar](#roundf-ile-diğer-yuvarlama-fonksiyonları-arasındaki-farklar)
+- [`std::ostream` Sınıfı](#stdostream-sınıfı)
+	- [`std::ostream` Sınıfında `operator` Aşırı Yüklemesi](#stdostream-sınıfında-operator-aşırı-yüklemesi)
+		- [Operatör Aşırı Yüklemesi Nasıl Yapılır?](#operatör-aşırı-yüklemesi-nasıl-yapılır)
+		- [Operatör Aşırı Yüklenmenin Çağırıldığını Nasıl Anlarız?](#operatör-aşırı-yüklenmenin-çağırıldığını-nasıl-anlarız)
+		- [Operatör Aşırı Yüklemenin Avantajları](#operatör-aşırı-yüklemenin-avantajları)
+		- [Dikkat Edilmesi Gerekenler](#dikkat-edilmesi-gerekenler)
+- [Polimorfizm](#polimorfizm)
+
+<br></br>
+
 ## Ortodoks Kanonik Form
 
 C++'da "Ortodoks Kanonik Form" (Orthodox Canonical Form), bir sınıfın (class) uygun şekilde kopyalanabilir ve atanabilir olmasını sağlamak için kullanılan kurallar bütünüdür. Bu form, özellikle kopyalama işlemlerinin doğru ve güvenli şekilde yapılabilmesi için sınıfın beş temel üyesinin doğru şekilde tanımlanmasını önerir. Bu üyelere ***[Rule of Five (Beşin Kuralı)]()*** denir. Bu modülde ***[Rule of Three]()*** kuralı kullanılmaktadır.
