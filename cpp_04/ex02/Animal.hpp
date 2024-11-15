@@ -10,19 +10,19 @@
 
 # include <iostream>
 
-class Animal
+class AAnimal
 {
 	protected:
 		std::string	type;
 
 	public:
-		Animal();
-		Animal(const Animal& other);
-		Animal&	operator=(const Animal& other);
-		virtual	~Animal();
+		AAnimal();
+		AAnimal(const AAnimal& other);
+		AAnimal&	operator=(const AAnimal& other);
+		virtual	~AAnimal();
 
 		std::string		getType() const;
-		virtual void	makeSound() const;
+		virtual void	makeSound() const = 0;
 };
 
 #endif

@@ -4,8 +4,8 @@
 
 int main()
 {
-	const Animal*	dog = new Dog();
-	const Animal*	cat = new Cat();
+	const AAnimal*	dog = new Dog();
+	const AAnimal*	cat = new Cat();
 
 	std::cout << "Dog type: " << dog->getType() << std::endl;
 	std::cout << "Cat type: " << cat->getType() << std::endl;
@@ -16,21 +16,21 @@ int main()
 	delete dog;
 	delete cat;
 
-	std::cout << "\nTesting array of Animals:\n" << std::endl;
-	const int	animalCount = 4;
-	Animal* animals[animalCount];
+	std::cout << "\nTesting array of AAnimals:\n" << std::endl;
+	const int	AAnimalCount = 4;
+	AAnimal* AAnimals[AAnimalCount];
 
-	for (int i = 0; i < animalCount / 2; ++i)
-		animals[i] = new Dog();
+	for (int i = 0; i < AAnimalCount / 2; ++i)
+		AAnimals[i] = new Dog();
 
-	for (int i = animalCount / 2; i < animalCount; ++i)
-		animals[i] = new Cat();
+	for (int i = AAnimalCount / 2; i < AAnimalCount; ++i)
+		AAnimals[i] = new Cat();
 
-	for (int i = 0; i < animalCount; ++i)
-		animals[i]->makeSound();
+	for (int i = 0; i < AAnimalCount; ++i)
+		AAnimals[i]->makeSound();
 
-	for (int i = 0; i < animalCount; ++i)
-		delete animals[i];
+	for (int i = 0; i < AAnimalCount; ++i)
+		delete AAnimals[i];
 
 	return 0;
 }

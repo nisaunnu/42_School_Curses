@@ -16,10 +16,10 @@ Brain &Brain::operator=(const Brain &other)
 {
 	if (this != &other)
 	{
-		std::cout << GOLD << "Brain copy assignment operator called" << RESET << std::endl;
 		for (int i = 0; i < 100; ++i)
 			this->ideas[i] = other.ideas[i];
 	}
+	std::cout << GOLD << "Brain copy assignment operator called" << RESET << std::endl;
 	return (*this);
 }
 

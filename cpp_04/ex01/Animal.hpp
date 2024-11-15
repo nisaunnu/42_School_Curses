@@ -6,6 +6,7 @@
 # define BLUE      "\033[38;5;39m"
 # define PURPLE    "\033[38;5;183m"
 # define RED       "\033[38;5;203m"
+# define PINK      "\033[38;5;219m"
 # define GOLD      "\033[38;5;220m"
 
 # include <iostream>

@@ -1,35 +1,29 @@
 #include "Animal.hpp"
 
-Animal::Animal() : type("Animal")
+AAnimal::AAnimal() : type("AAnimal")
 {
-	std::cout << GREEN << "Animal default constructor called" << RESET << std::endl;
+	std::cout << GREEN << "AAnimal default constructor called" << RESET << std::endl;
 }
 
-Animal::Animal(const Animal& other) : type(other.type)
+AAnimal::AAnimal(const AAnimal& other) : type(other.type)
 {
-	std::cout << PURPLE << "Animal copy constructor called" << RESET << std::endl;
+	std::cout << PURPLE << "AAnimal copy constructor called" << RESET << std::endl;
 }
 
-Animal& Animal::operator=(const Animal& other)
+AAnimal& AAnimal::operator=(const AAnimal& other)
 {
 	if (this != &other)
 		type = other.type;
-	std::cout << GOLD << "Animal copy assignment operator called" << RESET << std::endl;
+	std::cout << GOLD << "AAnimal copy assignment operator called" << RESET << std::endl;
 	return (*this);
 }
 
-Animal::~Animal()
+AAnimal::~AAnimal()
 {
-	std::cout << RED << "Animal destructor called" << RESET << std::endl;
+	std::cout << RED << "AAnimal destructor called" << RESET << std::endl;
 }
 
-std::string	Animal::getType() const
+std::string	AAnimal::getType() const
 {
 	return (type);
 }
-
-void	Animal::makeSound() const
-{
-	std::cout << BLUE << "Animal makes a generic sound!" << RESET << std::endl;
-}
-
