@@ -1,6 +1,5 @@
 ## CPP Module 04 Notları
 
-- [CPP Module 04 Notları](#cpp-module-04-notları)
 - [`virtual` Anahtar Kelimesi](#virtual-anahtar-kelimesi)
 	- [Temel Kavramlar](#temel-kavramlar)
 	- [Virtual Kullanımı](#virtual-kullanımı)
@@ -27,11 +26,7 @@
 	- [`Soyut Sınıflar` ve `Miras`](#soyut-sınıflar-ve-miras)
 - [Kopyalama İşlemleri : `Deep Copy` ve `Shallow Copy`](#kopyalama-i̇şlemleri--deep-copy-ve-shallow-copy)
 	- [`Shallow Copy` (Yüzeysel Kopya)](#shallow-copy-yüzeysel-kopya)
-		- [Tanım](#tanım)
-		- [Özellikler](#özellikler)
 	- [`Deep Copy` (Derin Kopya)](#deep-copy-derin-kopya)
-		- [Tanım](#tanım-1)
-		- [Özellikler](#özellikler-1)
 	- [`Shallow Copy` ve `Deep Copy` Karşılaştırması](#shallow-copy-ve-deep-copy-karşılaştırması)
 	- [Kopyalama İşlemlerini Kontrol Etmek](#kopyalama-i̇şlemlerini-kontrol-etmek)
 	- [C++11 ve Sonrası: `Move Semantics`](#c11-ve-sonrası-move-semantics)
