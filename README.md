@@ -20,7 +20,7 @@ Yazdığım yazılım sayesinde push_swap projem dünyada sıralamaya girmiştir
 - 100 sayıyı sıralarken kullanılan ortalama min hamle sayısı:
 - 500 sayıyı sıralarken kullanılan ortalama min hamle sayısı:
 
-[push_swap_record](./push_swap_record.png)
+![push_swap_record](./push_swap_record.jpg)
 
 ---
 
