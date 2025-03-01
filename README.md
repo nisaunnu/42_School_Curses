@@ -12,6 +12,18 @@ Push_Swap, sınırlı sayıda talimatla ve mümkün olan en az sayıda eylem kul
 
 ---
 
+### ⚡️ Başarı:
+
+Yazdığım yazılım sayesinde push_swap projem dünyada sıralamaya girmiştir! 
+
+İşte başarı sıralamaları:
+- 100 sayıyı sıralarken kullanılan ortalama min hamle sayısı:
+- 500 sayıyı sıralarken kullanılan ortalama min hamle sayısı:
+
+[push_swap_record](./push_swap_record.png)
+
+---
+
 ### 🚀 Optimum Algoritma Füzyonu:
 
 - `push_swap`: Quick sort ve radix sort ilkelerini ve öbek tabanlı iyileştirmeyi kullanarak sıralama stratejisini veri boyutuna göre uyarlar.
