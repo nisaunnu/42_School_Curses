@@ -1,5 +1,4 @@
 ## Exam Rank 05 - Konu Anlatımı
-- [Exam Rank 05 - Konu Anlatımı](#exam-rank-05---konu-anlatımı)
 - [Coplien Form Nedir?](#coplien-form-nedir)
 - [Abstract Class (Soyut Sınıf) Nedir?](#abstract-class-soyut-sınıf-nedir)
 	- [Pure Virtual (Saf Sanal) Fonksiyon Nedir?](#pure-virtual-saf-sanal-fonksiyon-nedir)
