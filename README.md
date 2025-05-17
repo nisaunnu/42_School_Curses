@@ -1,117 +1,397 @@
-# **nunnu's 42 projects**
+## Exam Rank 05 - Konu Anlatımı
+- [Exam Rank 05 - Konu Anlatımı](#exam-rank-05---konu-anlatımı)
+- [Coplien Form Nedir?](#coplien-form-nedir)
+- [Abstract Class (Soyut Sınıf) Nedir?](#abstract-class-soyut-sınıf-nedir)
+	- [Pure Virtual (Saf Sanal) Fonksiyon Nedir?](#pure-virtual-saf-sanal-fonksiyon-nedir)
+		- [Tanım](#tanım)
+		- [Örnek Üzerinden Anlatım](#örnek-üzerinden-anlatım)
+		- [Kullanım Örneği](#kullanım-örneği)
+		- [Neden Kullanılır?](#neden-kullanılır)
+	- [Temel Sözdizimi](#temel-sözdizimi)
+	- [Soyut Sınıftan Kalıtım ve Kullanım](#soyut-sınıftan-kalıtım-ve-kullanım)
+	- [Kullanım Örneği](#kullanım-örneği-1)
+- [`std::map` Nedir?](#stdmap-nedir)
+	- [Genel Yapısı](#genel-yapısı)
+	- [Map’e Eleman Ekleme](#mape-eleman-ekleme)
+	- [Map’ten Değer Alma](#mapten-değer-alma)
+	- [Eleman Varsa mı Diye Kontrol Etme](#eleman-varsa-mı-diye-kontrol-etme)
+	- [Map’ten Eleman Silme](#mapten-eleman-silme)
+	- [Tüm Map’i Gezmek (döngü ile)](#tüm-mapi-gezmek-döngü-ile)
+	- [Map Bellek Yönetimi (Pointerlarla Çalışıyorsan)](#map-bellek-yönetimi-pointerlarla-çalışıyorsan)
+	- [Map’in Özellikleri](#mapin-özellikleri)
+	- [Sık Kullanılan Fonksiyonlar](#sık-kullanılan-fonksiyonlar)
+	- [Uygulamalı Örnek](#uygulamalı-örnek)
+	- [`std::map` Ne Zaman Kullanılmalı?](#stdmap-ne-zaman-kullanılmalı)
 
-<table width="100%" align="center">
-<tr style="display:flex; justify-content:space-around; paddind:0;">
-<td colspan="3" style="padding:0; margin:0; text-align:center;">
-	<p align="center">42 SCHOOL CURSES</p>
-</td></tr>
+<br></br>
 
-<tr style="display:flex; justify-content:space-around; paddind:0;">
-<td style="padding:0; margin:0;">
+## Coplien Form Nedir?
 
-| Circle 0 & 1                                | Durum                                        |
-| :-                                          | :-                                           |
-| [Libft][libft_tree]                         | [![libft_badge]][libft_tree]                 |
-| [get_next_line][gnl_tree]                   | [![gnl_badge]][gnl_tree]                     |
-| [ft_printf][printf_tree]                    | [![printf_badge]][printf_tree]               |
-| [Born2beroot][born2beroot_tree]             | [![born2beroot_badge]][born2beroot_tree]     |
+C++‘de Coplien’s Form veya Ortodoks Kanonik Form (Orthodox Canonical Form), bir sınıfın doğru şekilde kaynak yönetimini sağlaması ve C++’in temel prensipleriyle uyumlu olması için gereken özel üye fonksiyonları tanımlama pratiğidir. Bu form, özellikle dinamik bellek kullanan sınıflarda önemlidir.
 
-</td><td style="padding:0; margin:0;">
+Coplien’s Form kapsamında aşağıdaki özel üye fonksiyonlar yer alır:
 
-| Circle 4                                    | Durum                                        |
-| :-                                          | :-                                           |
-| [NetPractice][net_practice_tree]            | [![net_practice_badge]][net_practice_tree]   |
-| [cub3D][cub3d_tree]                         | [![cub3d_badge]][cub3d_tree]                 |
-| [CPP (00 to 04)][cpp_00_to_04_tree]         | [![cpp_00_to_04_badge]][cpp_00_to_04_tree]   |
-| [Exam Rank 04][exam_rank04_tree]            | [![exam_rank04_badge]][exam_rank04_tree]     |
+1. Default Constructor (Varsayılan Yapıcı)
+	•	Sınıfın bir örneğini argüman vermeden oluşturmak için kullanılır.
+	•	Eğer herhangi bir kurucu yazmazsanız, derleyici varsayılan bir tane sağlar.
 
-</td></tr>
+	```cpp
+	class Example
+	{
+		public:
+			Example()
+			{
+				// Varsayılan işlemler
+			}
+	};
+	```
 
-<tr style="display:flex; justify-content:space-around; paddind:0;">
-<td style="padding:0; margin:0;">
+2. Copy Constructor (Kopya Yapıcı)
+	•	Bir nesneyi başka bir nesneden kopyalamak için kullanılır.
+	•	Özellikle sınıfta dinamik bellek kullanılıyorsa, derin kopyalama yapmak için önemlidir.
 
-| Circle 2                                    | Durum                                        |
-| :-                                          | :-                                           |
-| [fract'ol][fractol_tree]                    | [![fractol_badge]][fractol_tree]             |
-| [minitalk][minitalk_tree]                   | [![minitalk_badge]][minitalk_tree]           |
-| [push_swap][push_swap_tree]                 | [![push_swap_badge]][push_swap_tree]         |
-| [Exam Rank 02][exam_rank02_tree]            | [![exam_rank02_badge]][exam_rank02_tree]     |
+	```cpp
+	class Example
+	{
+		public:
+			Example(const Example& other)
+			{
+				// 'other' nesnesinden kopyalama işlemleri
+			}
+	};
+	```
 
-</td><td style="padding:0; margin:0;">
+3. Copy Assignment Operator (Kopya Atama Operatörü)
+	•	Bir nesneyi başka bir nesneye kopyayla atamak için kullanılır.
+	•	Mevcut nesnenin içeriğini temizlemeyi ve derin kopyayı düzgün bir şekilde yapmayı gerektirir.
 
-| Circle 5                                    | Durum                                        |
-| :-                                          | :-                                           |
-| [Inception][inception_tree]                 | [![inception_badge]][inception_tree]         |
-| [ft_irc][irc_tree]                          | [![irc_badge]][irc_tree]                     |
-| [CPP (05 to 09)][cpp_05_to_09_tree]         | [![cpp_05_to_09_badge]][cpp_05_to_09_tree]   |
-| [Exam Rank 05][exam_rank05_tree]            | [![exam_rank05_badge]][exam_rank05_tree]     |
+	```cpp
+	class Example
+	{
+		public:
+			Example& operator=(const Example& other)
+			{
+				if (this != &other)
+				{
+					// Mevcut kaynakları temizle
+					// 'other' nesnesinden kopyalama işlemleri
+				}
+				return *this;
+			}
+	};
+	```
 
-</td></tr>
+4. Destructor (Yıkıcı)
+	•	Nesne ömrü sona erdiğinde çağrılır.
+	•	Dinamik olarak tahsis edilen kaynakları serbest bırakmak için önemlidir.
 
-<tr style="display:flex; justify-content:space-around; paddind:0;">
-<td style="padding:0; margin:0;">
+	```cpp
+	class Example
+	{
+		public:
+			~Example()
+			{
+				// Kaynakları serbest bırak
+			}
+	};
+	```
 
-| Circle 3                                    | Durum                                        |
-| :-                                          | :-                                           |
-| [Philosophers][philo_tree]                  | [![philo_badge]][philo_tree]                 |
-| [minishell][minishell_tree]                 | [![minishell_badge]][minishell_tree]         |
-| [Exam Rank 03][exam_rank03_tree]            | [![exam_rank03_badge]][exam_rank03_tree]     |
+<br></br>
 
-</td><td style="padding:0; margin:0;">
+## Abstract Class (Soyut Sınıf) Nedir?
 
-| Circle 6                                    | Durum                                        |
-| :-                                          | :-                                           |
-| [ft_transcendence][transcendence_tree]      | [![transcendence_badge]][transcendence_tree] |
-| [Exam Rank 06][exam_rank06_tree]            | [![exam_rank06_badge]][exam_rank06_tree]     |
+C++’de bir abstract class, en az bir pure virtual function (saf sanal fonksiyon) içeren sınıftır.
 
-</td></tr>
+Soyut sınıflardan nesne oluşturulamaz. Sadece kalıtım (inheritance) yoluyla kullanılabilirler.
 
-[libft_tree]: https://github.com/nisaunnu/42_School_Curses/tree/libft
-[libft_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[gnl_tree]: https://github.com/nisaunnu/42_School_Curses/tree/get_next_line
-[gnl_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20112%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[printf_tree]: https://github.com/nisaunnu/42_School_Curses/tree/ft_printf
-[printf_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[born2beroot_tree]: https://github.com/nisaunnu/42_School_Curses/tree/born2beroot
-[born2beroot_badge]: https://custom-icon-badges.demolab.com/badge/✔%20%EF%B8%8E%2080%20/%20100-017520.svg?&style=for-the-badge&color=018f27
+<br></br>
 
-[fractol_tree]: https://github.com/nisaunnu/42_School_Curses/tree/fractol
-[fractol_badge]:https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[push_swap_tree]: https://github.com/nisaunnu/42_School_Curses/tree/push_swap
-[push_swap_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[minitalk_tree]: https://github.com/nisaunnu/42_School_Curses/tree/minitalk
-[minitalk_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[exam_rank02_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank02
-[exam_rank02_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
+### Pure Virtual (Saf Sanal) Fonksiyon Nedir?
 
-[philo_tree]: https://github.com/nisaunnu/42_School_Curses/tree/philosophers
-[philo_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[minishell_tree]: https://github.com/nisaunnu/42_School_Curses/tree/minishell
-[minishell_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20103%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[exam_rank03_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank03
-[exam_rank03_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
+C++’de pure virtual function, bir abstract (soyut) fonksiyondur. Bu fonksiyonun gövdesi (içi) yoktur ve alt sınıflar tarafından mutlaka yeniden tanımlanması (override) gerekir.
 
-[net_practice_tree]: https://github.com/nisaunnu/42_School_Curses/tree/net_practice
-[net_practice_badge]:https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[cub3d_tree]: https://github.com/nisaunnu/42_School_Curses/tree/main
-[cub3d_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20105%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
-[cpp_00_to_04_tree]: https://github.com/nisaunnu/42_School_Curses/tree/cpp_part_one
-[cpp_00_to_04_badge]: https://custom-icon-badges.demolab.com/badge/%20CPP%20(Part%201)-02b331.svg?&style=for-the-badge&color=7E0080
-[exam_rank04_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank04
-[exam_rank04_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
+#### Tanım
 
-[inception_tree]: https://github.com/nisaunnu/42_School_Curses/tree/inception
-[inception_badge]:https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[irc_tree]: https://github.com/nisaunnu/42_School_Curses/tree/ft_irc
-[irc_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[cpp_05_to_09_tree]: https://github.com/nisaunnu/42_School_Curses/tree/cpp_part_two
-[cpp_05_to_09_badge]: https://custom-icon-badges.demolab.com/badge/in%20progress-02b331.svg?&style=for-the-badge&color=ffffff
-[exam_rank05_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank05
-[exam_rank05_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
+Saf sanal fonksiyon şu şekilde tanımlanır:
+```cpp
+virtual void fonksiyonAdi() = 0;
+```
 
-[transcendence_tree]: https://github.com/nisaunnu/42_School_Curses/tree/ft_transcendence
-[transcendence_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
-[exam_rank06_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank06
-[exam_rank06_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
+- `virtual` : Bu fonksiyonun sanal (virtual) olduğunu belirtir.
+- `= 0`     : Bu fonksiyonun saf (pure) olduğunu belirtir.
+- Fonksiyonun gövdesi yoktur.
 
-</table>
+#### Örnek Üzerinden Anlatım
+
+```cpp
+class Sekil
+{
+	public:
+		// saf sanal fonksiyon
+		virtual void ciz() = 0;
+};
+```
+
+Yukarıda:
+- `ciz()` fonksiyonu saf sanal fonksiyondur.
+- `Sekil` sınıfı da bu yüzden soyut sınıftır.
+- Bu fonksiyonun nasıl çalışacağını `alt sınıf (child class)` belirlemek zorundadır.
+
+#### Kullanım Örneği
+```cpp
+class Sekil
+{
+	public:
+		virtual void ciz() = 0; // pure virtual
+};
+
+class Daire : public Sekil
+{
+	public:
+		void ciz()
+		{
+			std::cout << "Daire ciziliyor.\n";
+		}
+};
+
+int main()
+{
+	Sekil* s = new Daire();
+
+	s->ciz(); // "Daire ciziliyor."
+
+	delete s;
+	return 0;
+}
+```
+
+- `Daire` sınıfı `Sekil`’i miras alıyor ve `ciz()` fonksiyonunu `override` ediyor.
+- Bu sayede `Sekil* sekil = new Daire();` polimorfik kullanım mümkün oluyor.
+
+#### Neden Kullanılır?
+
+- Taban sınıf (base class) sadece bir arayüz (interface) sağlar.
+- Türeyen sınıflar kendi özel davranışlarını tanımlar.
+- Bu, polimorfizm için temel oluşturur.
+
+<br></br>
+
+### Temel Sözdizimi
+```cpp
+class Sekil
+{
+	public:
+		// saf sanal fonksiyon
+		virtual void ciz() = 0;
+
+		// normal fonksiyon olabilir
+		void bilgi()
+		{
+			std::cout << "Bu bir sekildir.\n";
+		}
+};
+```
+
+Yukarıdaki örnekte `Sekil` soyut bir sınıftır çünkü `ciz()` fonksiyonu saf sanaldır.
+
+<br>
+
+### Soyut Sınıftan Kalıtım ve Kullanım
+```cpp
+class Daire : public Sekil
+{
+	public:
+		void ciz()
+		{
+			std::cout << "Daire ciziliyor.\n";
+		}
+};
+
+class Kare : public Sekil
+{
+	public:
+		void ciz()
+		{
+			std::cout << "Kare ciziliyor.\n";
+		}
+};
+```
+<br>
+
+### Kullanım Örneği
+```cpp
+int main()
+{
+	// Sekil s; // HATA! Soyut sınıftan nesne olusturulamaz.
+
+	Sekil* sekil1 = new Daire();
+	Sekil* sekil2 = new Kare();
+
+	sekil1->ciz(); // Daire ciziliyor.
+	sekil2->ciz(); // Kare ciziliyor.
+
+	delete sekil1;
+	delete sekil2;
+	return 0;
+}
+```
+
+<br></br>
+
+## `std::map` Nedir?
+
+`std::map`, anahtar-değer (key-value) eşleşmesi yapan bir kapsayıcıdır.
+
+Gerçek hayattan örnek:
+
+Bir telefon rehberi düşün:
+- İsim (anahtar)          : “Ali”
+- Telefon numarası (değer): “0533”
+
+İşte map tam olarak böyle çalışır:
+```cpp
+std::map<std::string, std::string> rehber;
+rehber["Ali"] = "0533";
+```
+
+<br>
+
+### Genel Yapısı
+```cpp
+std::map<KeyType, ValueType> isim;
+```
+
+Örnekler:
+```cpp
+std::map<std::string, int> yaslar;        // İsim → yaş
+std::map<std::string, ASpell*> buyuler;   // Büyü ismi → büyü nesnesi
+```
+
+<br>
+
+### Map’e Eleman Ekleme
+```cpp
+yaslar["Ahmet"] = 25;
+yaslar["Ayşe"] = 30;
+```
+Eğer aynı anahtarla tekrar eklersen, eski değerin üzerine yazar.
+
+<br>
+
+### Map’ten Değer Alma
+```cpp
+std::cout << yaslar["Ayşe"];  // 30 yazar
+```
+
+<br>
+
+### Eleman Varsa mı Diye Kontrol Etme
+```cpp
+if (yaslar.find("Ahmet") != yaslar.end())
+	std::cout << "Ahmet bulundu!\n";
+```
+
+- `.find(key)` : anahtarı bulursa iterator döner
+- Bulamazsa `.end()` döner (yani “yok” demek)
+
+<br>
+
+### Map’ten Eleman Silme
+```cpp
+yaslar.erase("Ayşe");  // Ayşe'yi map'ten siler
+```
+Silerken önce `find` ile var mı diye kontrol edebilirsin.
+
+<br>
+
+### Tüm Map’i Gezmek (döngü ile)
+```cpp
+std::map<std::string, int>::iterator it;
+
+for (it = yaslar.begin(); it != yaslar.end(); ++it)
+	std::cout << it->first << ": " << it->second << std::endl;
+```
+
+- `it->first`  : Anahtar
+- `it->second` : Değer
+
+<br>
+
+### Map Bellek Yönetimi (Pointerlarla Çalışıyorsan)
+
+Eğer map’in içindeki değerler işaretçi (pointer) ise, onları `delete` etmek gerekir:
+```cpp
+for (it = buyuler.begin(); it != buyuler.end(); ++it)
+{
+	delete it->second;
+}
+buyuler.clear();
+```
+
+<br>
+
+### Map’in Özellikleri
+
+|Özellik             |Açıklama                                                   |
+|--------------------|-----------------------------------------------------------|
+|Sıralıdır           | Anahtarlar küçükten büyüğe sıralı tutulur (operator< ile) |
+|Anahtarlar eşsizdir | Aynı anahtardan bir tane olabilir                         |
+|Erişim hızı         | Ortalama O(log n), yani çok hızlı                         |
+
+<br>
+
+### Sık Kullanılan Fonksiyonlar
+
+| Fonksiyon    | Ne işe yarar                          |
+|--------------|---------------------------------------|
+| `map[key]`   | Anahtara göre değer ekler/alır        |
+| `find(key)`  | Anahtarı arar, bulursa iterator döner |
+| `erase(key)` | Anahtara göre siler                   |
+| `begin()`    | İlk elemana işaret eden iterator      |
+| `end()`      | Sonraki elemana işaret eden iterator  |
+| `clear()`    | Tüm map’i temizler                    |
+
+<br>
+
+### Uygulamalı Örnek
+```cpp
+#include <iostream>
+#include <map>
+#include <string>
+
+int main()
+{
+	std::map<std::string, int> skor;
+
+	skor["Ali"] = 10;
+	skor["Ayşe"] = 20;
+
+	// Eleman yazdır
+	std::cout << "Ali: " << skor["Ali"] << std::endl;
+
+	// Güncelle
+	skor["Ali"] = 15;
+
+	// Varsa yazdır
+	if (skor.find("Ayşe") != skor.end())
+		std::cout << "Ayşe: " << skor["Ayşe"] << std::endl;
+
+	// Sil
+	skor.erase("Ayşe");
+
+	// Gez
+	for (std::map<std::string, int>::iterator it = skor.begin(); it != skor.end(); ++it)
+		std::cout << it->first << ": " << it->second << std::endl;
+
+	return 0;
+}
+```
+
+<br>
+
+### `std::map` Ne Zaman Kullanılmalı?
+- Anahtar-değer eşlemesi yapacaksan
+- Anahtarla hızlı erişim istiyorsan
+- Anahtarlar otomatik sıralansın istiyorsan
+
+<br></br>
