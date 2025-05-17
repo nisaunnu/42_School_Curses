@@ -1,5 +1,6 @@
 ## FT_IRC PROJESİ
 Bu rapo'da ft_irc projesinin kodları içermemektedir. Grup projesi olduğundan dolayı kod konulmamıştır. İlerleyen zamanlarda kodların repo'ya konulma ihtimali vardır. Şuanlık sadece projeyi yaparken gerekli olan bilgileri içeren README.md dosyası mevcuttur. 
+<br></br>
 
 ## İçerik
 - [Port Numarasının Alabileceği Değerler](#port-numarasının-alabileceği-değerler)
