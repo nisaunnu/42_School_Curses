@@ -1,5 +1,21 @@
 # **nunnu's 42 projects**
 
+İstediğiniz repo'yu kendi bilgisayarınıza clone'layabilmek için aşağıdaki komut satırında düzenlemeler yaparak terminalinize yazın. `<` ve `>` işaretleri arasındaki yerlere belirtilenleri yazınız.
+
+* branch-adi : Hangi branch’i klonlayacağını belirtir (örneğin: push_swap)
+* repo-linki : GitHub repository URL’si (örneğin: https://github.com/nisaunnu/42_School_Curses.git)
+
+```bash
+git clone --branch <branch-adi> --single-branch <repo-linki>
+```
+
+Örnek:
+```bash
+git clone --branch push_swap --single-branch https://github.com/nisaunnu/42_School_Curses.git
+```
+
+<br></br>
+
 <table width="100%" align="center">
 <tr style="display:flex; justify-content:space-around; paddind:0;">
 <td colspan="3" style="padding:0; margin:0; text-align:center;">
@@ -101,13 +117,13 @@
 [exam_rank04_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
 
 [inception_tree]: https://github.com/nisaunnu/42_School_Curses/tree/inception
-[inception_badge]:https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
+[inception_badge]: https://custom-icon-badges.demolab.com/badge/in%20progress-02b331.svg?&style=for-the-badge&color=ffffff
 [irc_tree]: https://github.com/nisaunnu/42_School_Curses/tree/ft_irc
-[irc_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
+[irc_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
 [cpp_05_to_09_tree]: https://github.com/nisaunnu/42_School_Curses/tree/cpp_part_two
 [cpp_05_to_09_badge]: https://custom-icon-badges.demolab.com/badge/in%20progress-02b331.svg?&style=for-the-badge&color=ffffff
 [exam_rank05_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank05
-[exam_rank05_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
+[exam_rank05_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
 
 [transcendence_tree]: https://github.com/nisaunnu/42_School_Curses/tree/ft_transcendence
 [transcendence_badge]: https://custom-icon-badges.demolab.com/badge/not%20defined-02b331.svg?&style=for-the-badge&color=c42404
