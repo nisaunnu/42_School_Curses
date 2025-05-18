@@ -1,6 +1,24 @@
 # **nunnu's 42 projects**
+<details>
+<summary><span style="font-size:20px; font-weight:bold;"> Project Download Steps [EN]</span></summary><br>
+To clone the repo you want to your own computer, make the following changes to the command line and write it to your terminal. Write the specified fields between the < and > signs.
 
-İstediğiniz repo'yu kendi bilgisayarınıza clone'layabilmek için aşağıdaki komut satırında düzenlemeler yaparak terminalinize yazın. `<` ve `>` işaretleri arasındaki yerlere belirtilenleri yazınız.
+* branch-name : Specifies which branch to clone (for example: push_swap)
+* repo-link : GitHub repository URL (for example: https://github.com/nisaunnu/42_School_Curses.git)
+
+```bash
+git clone --branch <branch-name> --single-branch <repo-link>
+```
+
+Example:
+```bash
+git clone --branch push_swap --single-branch https://github.com/nisaunnu/42_School_Curses.git
+```
+<br>
+</details>
+<details>
+<summary><span style="font-size:20px; font-weight:bold;"> Proje İndirme Adımları [TR]</span></summary><br>
+İstediğiniz repo'yu kendi bilgisayarınıza clone'layabilmek için aşağıdaki komut satırında düzenlemeler yaparak terminalinize yazın. < ve > işaretleri arasındaki yerlere belirtilenleri yazınız.
 
 * branch-adi : Hangi branch’i klonlayacağını belirtir (örneğin: push_swap)
 * repo-linki : GitHub repository URL’si (örneğin: https://github.com/nisaunnu/42_School_Curses.git)
@@ -13,7 +31,7 @@ git clone --branch <branch-adi> --single-branch <repo-linki>
 ```bash
 git clone --branch push_swap --single-branch https://github.com/nisaunnu/42_School_Curses.git
 ```
-
+</details>
 <br></br>
 
 <table width="100%" align="center">
