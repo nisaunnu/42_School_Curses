@@ -1,6 +1,5 @@
 ## CPP Module 05 Notları
 
-- [CPP Module 05 Notları](#cpp-module-05-notları)
 - [Repetition (Tekrar)](#repetition-tekrar)
 - [Exceptions (İstisnalar)](#exceptions-i̇stisnalar)
 	- [Temel Yapı](#temel-yapı)
