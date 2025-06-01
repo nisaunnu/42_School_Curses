@@ -1,6 +1,5 @@
 ## İçerik
 
-- [İçerik](#i̇çerik)
 - [C++ Genel Bakış](#c-genel-bakış)
 	- [➤ C++ Nedir?](#-c-nedir)
 	- [➤ C++'ın Bazı Temel Özellikleri](#-cın-bazı-temel-özellikleri)
