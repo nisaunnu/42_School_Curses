@@ -1,5 +1,5 @@
 ## CPP Module 06 Notları
-- [CPP Module 06 Notları](#cpp-module-06-notları)
+
 - [`static` Nedir?](#static-nedir)
 	- [`static` Fonksiyonlar Ne Anlama Geliyor?](#static-fonksiyonlar-ne-anlama-geliyor)
 	- [Neden `static` Kullanılıyor?](#neden-static-kullanılıyor)
