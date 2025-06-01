@@ -1,5 +1,5 @@
 ## CPP Module 07 Notları
-- [CPP Module 07 Notları](#cpp-module-07-notları)
+
 - [`Templates`](#templates)
 	- [`template` Nedir? Ne İşe Yarar?](#template-nedir-ne-i̇şe-yarar)
 	- [`typename` Ne İşe Yarar?](#typename-ne-i̇şe-yarar)
