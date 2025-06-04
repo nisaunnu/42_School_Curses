@@ -139,7 +139,7 @@ git clone --branch push_swap --single-branch https://github.com/nisaunnu/42_Scho
 [irc_tree]: https://github.com/nisaunnu/42_School_Curses/tree/ft_irc
 [irc_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
 [cpp_05_to_09_tree]: https://github.com/nisaunnu/42_School_Curses/tree/cpp_part_two
-[cpp_05_to_09_badge]: https://custom-icon-badges.demolab.com/badge/in%20progress-02b331.svg?&style=for-the-badge&color=ffffff
+[cpp_05_to_09_badge]: https://custom-icon-badges.demolab.com/badge/%20CPP%20(Part%202)-02b331.svg?&style=for-the-badge&color=7E0080
 [exam_rank05_tree]: https://github.com/nisaunnu/42_School_Curses/tree/exam_rank05
 [exam_rank05_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
 
