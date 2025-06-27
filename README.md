@@ -4,3 +4,4 @@
 - [CPP Modül 06 için Konu Anlatımı](notes/cpp_06.md)
 - [CPP Modül 07 için Konu Anlatımı](notes/cpp_07.md)
 - [CPP Modül 08 için Konu Anlatımı](notes/cpp_08.md)
+- [CPP Modül 09 için Konu Anlatımı](notes/cpp_09.md)
