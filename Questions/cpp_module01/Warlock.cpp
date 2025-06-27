@@ -22,7 +22,7 @@ void	Warlock::setTitle(const std::string& other) { this->_title = other; }
 
 void	Warlock::learnSpell(ASpell* spell)
 {
-	if (spell != nullptr)
+	if (spell != NULL)
 	{
 		std::map<std::string, ASpell *>::iterator	spellIterator = _spellMap.find(spell->getName());
 

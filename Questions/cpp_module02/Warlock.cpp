@@ -27,7 +27,7 @@ void	Warlock::launchSpell(std::string spellName, ATarget& target)
 {
 	ASpell*	spell = _spellbook.createSpell(spellName);
 
-	if (spell != nullptr)
+	if (spell != NULL)
 	{
 		spell->launch(target);
 		delete spell;

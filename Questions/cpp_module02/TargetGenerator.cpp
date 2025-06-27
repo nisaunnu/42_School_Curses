@@ -7,7 +7,7 @@ TargetGenerator::~TargetGenerator() { _targetMap.clear(); }
 
 void		TargetGenerator::learnTargetType(ATarget* target)
 {
-	if (target != nullptr)
+	if (target != NULL)
 	{
 		std::map<std::string, ATarget *>::iterator	targetIterator = _targetMap.find(target->getType());
 
@@ -30,5 +30,5 @@ ATarget*	TargetGenerator::createTarget(std::string const & targetType)
 
 	if (targetIterator != _targetMap.end())
 		return targetIterator->second->clone();
-	return nullptr;
+	return NULL;
 }
