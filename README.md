@@ -135,7 +135,7 @@ git clone --branch push_swap --single-branch https://github.com/nisaunnu/42_Scho
 [exam_rank04_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
 
 [inception_tree]: https://github.com/nisaunnu/42_School_Curses/tree/inception
-[inception_badge]: https://custom-icon-badges.demolab.com/badge/in%20progress-02b331.svg?&style=for-the-badge&color=ffffff
+[inception_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20100%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
 [irc_tree]: https://github.com/nisaunnu/42_School_Curses/tree/ft_irc
 [irc_badge]: https://custom-icon-badges.demolab.com/badge/✔%EF%B8%8E%20125%20/%20100-02b331.svg?&style=for-the-badge&color=018f27
 [cpp_05_to_09_tree]: https://github.com/nisaunnu/42_School_Curses/tree/cpp_part_two
