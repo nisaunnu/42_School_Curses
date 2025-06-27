@@ -1,8 +1,9 @@
 ## FT_IRC PROJESİ
-Bu repo'da ft_irc projesinin kodları içermemektedir. Grup projesi olduğundan dolayı kod konulmamıştır. İlerleyen zamanlarda kodların repo'ya konulma ihtimali vardır. Şuanlık sadece projeyi yaparken gerekli olan bilgileri içeren README.md dosyası mevcuttur. 
-<br></br>
+<br>
 
 ## İçerik
+- [FT\_IRC PROJESİ](#ft_irc-projesi̇)
+- [İçerik](#i̇çerik)
 - [Port Numarasının Alabileceği Değerler](#port-numarasının-alabileceği-değerler)
 	- [Maksimum Port Numarası: 65535](#maksimum-port-numarası-65535)
 	- [Port Aralığı Genel Olarak](#port-aralığı-genel-olarak)
