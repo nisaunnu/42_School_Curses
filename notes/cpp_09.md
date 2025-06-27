@@ -7,8 +7,8 @@
 - [`clock_t` ve `clock()` Fonksiyonu](#clock_t-ve-clock-fonksiyonu)
 	- [Temel Kullanımı](#temel-kullanımı-2)
 - [Kod Açıklamaları](#kod-açıklamaları)
-	- [\> ex00 \<](#-ex00-)
-	- [\> ex01 \<](#-ex01-)
+	- [ex00](#-ex00-)
+	- [ex01](#-ex01-)
 
 ## `std::ifstream`
 
