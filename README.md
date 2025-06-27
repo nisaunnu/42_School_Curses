@@ -6,8 +6,6 @@ Projeyi yaparken yapılması gereken adımlar aşağıda yer almaktadır. Yazıl
 
 ## İçerik
 
-- [Inception Projesi](#inception-projesi)
-- [İçerik](#i̇çerik)
 - [Virtual Machine Oluşturma](#virtual-machine-oluşturma)
 - [Virtual Machine'ni VS Code ile Kendi Bilgisayarınıza Bağlama](#virtual-machineni-vs-code-ile-kendi-bilgisayarınıza-bağlama)
 - [Docker](#docker)
