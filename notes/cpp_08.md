@@ -1,6 +1,5 @@
 ## CPP Module 08 Notları
 
-- [CPP Module 08 Notları](#cpp-module-08-notları)
 - [Containers](#containers)
 	- [STL Containers Nedir?](#stl-containers-nedir)
 	- [C++98’de STL Container Türleri](#c98de-stl-container-türleri)
