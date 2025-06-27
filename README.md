@@ -2,8 +2,6 @@
 <br>
 
 ## İçerik
-- [FT\_IRC PROJESİ](#ft_irc-projesi̇)
-- [İçerik](#i̇çerik)
 - [Port Numarasının Alabileceği Değerler](#port-numarasının-alabileceği-değerler)
 	- [Maksimum Port Numarası: 65535](#maksimum-port-numarası-65535)
 	- [Port Aralığı Genel Olarak](#port-aralığı-genel-olarak)
